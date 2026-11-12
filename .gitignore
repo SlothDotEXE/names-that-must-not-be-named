@@ -1,0 +1,15 @@
+node_modules/
+dist/
+public/data/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.potfile
+*.restore
+*.restore.new
+*.session
+*.session.*
+extract-output/
+extraction-output/

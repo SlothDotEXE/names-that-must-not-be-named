@@ -1,0 +1,33 @@
+Static consumer Blueprint callsites — Steam build 26175237
+
+All offsets are into extracted IoStore package chunks in <research-work>, not original .ucas offsets. Resolved using zen_reader.py, kismet_reader.py and global-script-object-names.json from that directory; these scripts and maps are analysis tools, not shipped game data.
+
+UI_BP_AvatarCreator.bin, ValidatePlayerName:
+  0x222f6: JumpIfNot(CheckProfanity).
+  0x2230c, 0x22348: concatenate FirstName + space + LastName.
+  0x223a4: ContainsBannedWord(concatenated name, FinalizePage.WizardWords, CheckSubstrings=False, ...).
+  0x2241b: ContainsBannedWord(LastName, FinalizePage.WizardWords, CheckSubstrings=True, ...).
+  0x22492: ContainsBannedWord(FirstName, FinalizePage.WizardWords, CheckSubstrings=True, ...).
+  0x224f7–0x2256b: BooleanOR combines the three results and branches on the combined result.
+Its ExecuteUbergraph calls ValidatePlayerName at 0x1417b and 0x14226 with CheckProfanity=False, and at 0x14ea6 with CheckProfanity=True.
+
+UI_BP_CharCreator_Finalize.bin, ValidatePlayerName:
+  0xd7e6: JumpIfNot(CheckProfanity).
+  0xd80e and 0xd85f: ContainsBannedWord(LastName, WizardWords, False, ...) and ContainsBannedWord(FirstName, WizardWords, False, ...).
+  0xd89e: BooleanOR combines those results.
+Its ExecuteUbergraph call at 0xa80d passes CheckProfanity=False.
+
+UI_BP_TextInputScreen.bin, ExecuteUbergraph:
+  0x7394: ContainsBannedWord(CallFunc_Conv_TextToString_ReturnValue, WizardWords, CheckSubstrings=True, ...).
+The package is under /Game/UI/Nurturing/ and its name map includes CreatureNameText and SetTextToCreatureName. These declarations support creature-related use but do not independently establish every route into this screen or every species affected.
+
+Native hash helper in HogwartsLegacy.exe (image base 0x140000000):
+  RVA 0x5f92cf0, file 0x5f920f0: reflected EncryptString thunk.
+  RVA 0x5f76750, file 0x5f75b50: thunk target. Appends input, calls Unicode case transform, prepends UTF-16 literal phoenix, and replaces sequence U+00E3 U+20AC U+20AC with empty text before byte conversion.
+  RVA 0xf0e830, file 0xf0dc30: UTF-16-to-UTF-8 conversion, including surrogate handling.
+  RVA 0x3a0da90, file 0x3a0ce90: digest initialization constants 67452301 efcdab89 98badcfe 10325476 (MD5).
+  RVA 0x5f76a30, file 0x5f75e30: formats 16 digest bytes using UTF-16 literal %02x, yielding 32 lowercase hex digits.
+  A/Z case-table deltas are +32 and a/z deltas 0 at VA 0x148a70fc0; thus ordinary ASCII formula is lowercase hex MD5(UTF8('phoenix' + lower(input))). Exact locale-dependent Unicode casing and malformed-input behavior require additional investigation.
+  Independent table checks: MD5 UTF-8 of phoenixass = 302c47742c539fbd8c9ae093ff8c3109; MD5 UTF-8 of phoenixfuck = 47a101c55d7b23e945364866e25222bc. Both hashes occur in extracted DT_WizardWords. These checks do not by themselves establish whole-name or substring policy.
+
+These are static observations only; no game session was launched. Presence of a call in a Blueprint and flags at a given static callsite does not prove that the callsite ran in a particular session.

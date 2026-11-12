@@ -1,0 +1,28 @@
+{
+  "name": "names-that-must-not-be-named",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "data:build": "python3 tools/build_data.py",
+    "predev": "npm run data:build",
+    "dev": "vite",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:data": "python3 -m unittest discover -s tests -p 'test_*.py'",
+    "build": "npm run data:build && npm run typecheck && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@noble/hashes": "2.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "6.0.3",
+    "vite": "8.3.8",
+    "vitest": "5.1.0"
+  }
+}

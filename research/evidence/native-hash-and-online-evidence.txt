@@ -1,0 +1,27 @@
+Static PE instruction evidence, HogwartsLegacy.exe, Steam build 26175237
+
+Target: Phoenix/Binaries/Win64/HogwartsLegacy.exe, 383492096 bytes. Image base 0x140000000. In .udata, file offset = RVA - 0xc00; in .xdata, file offset = RVA - 0xc00. The executable was read only and was not launched.
+
+Reflected hash method:
+  File 0x8814f90 contains a pair of preferred VAs: 0x148812370 (ASCII EncryptString, file 0x8811770) and 0x145f92cf0 (native reflected thunk, RVA 0x5f92cf0, file 0x5f920f0). The thunk invokes:
+    145f92dad: call 0x145f76750
+  This implementation lowercases input through calls including 0x14398c380 and 0x14667d400. The latter reads delta table 0x148a70fc0 and adds it to code units at 0x14667d542. Table bytes give ASCII A/Z delta +32 and a/z delta 0.
+  At 0x145f7687d–0x145f768b5 it prepends UTF-16 literal 'phoenix' from VA 0x14880b470, file 0x880a870. At 0x145f76920 it passes literal U+00E3 U+20AC U+20AC at 0x14880b480 and the empty string as replacement to 0x1439079b0. At 0x145f769d5 it invokes UTF-16-to-UTF-8 conversion 0x140f0e830; 0x140f0e8f2–0x140f0e91f explicitly emits UTF-8 multibyte sequences.
+  Digest initialization is:
+    143a0da92: mov DWORD PTR [rcx],0x67452301
+    143a0da9f: mov DWORD PTR [rcx+0x4],0xefcdab89
+    143a0daa6: mov DWORD PTR [rcx+0x8],0x98badcfe
+    143a0daad: mov DWORD PTR [rcx+0xc],0x10325476
+  These are the MD5 initialization constants. At 0x145f76a30–0x145f76a7c, 16 output bytes are formatted using UTF-16 '%02x' at 0x146a70990, producing lowercase hex.
+  ASCII check against the independently extracted DT_WizardWords row keys: MD5 UTF-8('phoenixass') = 302c47742c539fbd8c9ae093ff8c3109; MD5 UTF-8('phoenixfuck') = 47a101c55d7b23e945364866e25222bc. Both keys occur in the table. Thus for ordinary ASCII the observed operation matches MD5(UTF8('phoenix' + lowercase(input))); Unicode case edge cases, the odd replacement sequence, and non-ASCII normalization should not be generalized beyond the instructions shown.
+
+Online-manager path:
+  Reflection registration pairs file 0x7f6d220 and following pointer identify RequestWizardWords thunk 0x14386d6b0 (RVA 0x386d6b0, file 0x386cab0). Its final instruction:
+    14386d6c5: jmp 0x1434cc6c0
+  The callee constructs its resource key by copying literal 'profanities-' at VA 0x147a0fcc8, file 0x7a0f0c8, appending a string previously obtained through a provider virtual call, then hands the result to an operation:
+    1434cc73d: lea r8,[rip+0x4543584]  # 0x147a0fcc8
+    1434cc8ff: call 0x14209ce80
+  No candidate-name input is parsed by this reflected request thunk. It constructs a callback with vtable VA 0x147a19888, file 0x7a18c88. Its callbacks 0x1434b3620/0x1434b3e30 call 0x1434aa330, which on its success branch constructs another callback using vtable VA 0x147a19830, file 0x7a18c30. Callback 0x1434b3330 passes manager+0x2b8 to 0x143905220, then dispatches the UTF-16 label WizardWordsLoaded at VA 0x147a0fca0, file 0x7a0f0a0. Its sibling callback 0x1434b3b20 has the same essential behavior.
+  GetWizardWords reflected thunk 0x14386d170 calls 0x1434b9980 (RVA 0x34b9980, file 0x34b8d80), which copies an array from manager+0x2b8 with count manager+0x2c0. Together these support an asynchronous list-fetch/update model rather than a per-name server request in this method. They do not establish the actual endpoint, transport, server response schema, live availability, or absence of other network checks.
+
+Consumer routing and fallback are separately documented in consumer-callsite-evidence.txt and setup-wizardwords-evidence.txt, respectively. For repeatable native disassembly use objdump -D -Mintel with bounded --start-address and --stop-address on the PE; all addresses above are preferred virtual addresses unless marked RVA or file offset. No runtime observations were made.

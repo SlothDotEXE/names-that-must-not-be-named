@@ -1,0 +1,29 @@
+{
+  "initialImportUtc": "2026-11-12T18:33:51.533836+00:00",
+  "artifacts": {
+    "restricted-word-hashes.csv": {
+      "sourceArtifact": "restricted-word-hashes.csv",
+      "sha256": "6edb65defea2b7fd188d31c75cf54071dc93410c5d056c8bae6b22b9345c78e3",
+      "bytes": 439086,
+      "excludedTrailingPartialBytes": 0
+    },
+    "recovered-words.csv": {
+      "sourceArtifact": "recovered-words.csv",
+      "sha256": "45e3845406b14c61777c15c1966fc2584e0f2a11aa32c26eac1c99e8661ed4cf",
+      "bytes": 98941,
+      "excludedTrailingPartialBytes": 0
+    },
+    "language-segments/hashcat-new-matches.txt": {
+      "sourceArtifact": "language-segments/hashcat-new-matches.txt",
+      "sha256": "27b5fc71fb8ee173fb45e7a2eba221a97a496ee57d7c6877d6b180b5bcd0536a",
+      "bytes": 77085,
+      "excludedTrailingPartialBytes": 0
+    },
+    "language-segments/summary.json": {
+      "sourceArtifact": "language-segments/summary.json",
+      "sha256": "518ea1e8e003c02a6dd5374b8cb5658fe1bd8cfa2c8d172d933602e8458d61b8",
+      "bytes": 4891,
+      "excludedTrailingPartialBytes": 0
+    }
+  }
+}

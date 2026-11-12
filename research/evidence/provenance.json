@@ -1,0 +1,71 @@
+{
+  "description": "Original and path-sanitized evidence byte checksums; historical counts in evidence reflect their original snapshots.",
+  "files": [
+    {
+      "sourceLabel": "findings.txt",
+      "output": "findings.txt",
+      "originalSha256": "2d37fc3f8a99b55c30b0f9bd99647e0089e142770e48f651264d70d9283846b9",
+      "sanitizedSha256": "5277bbe322d94366e2c20b2ca1ea93ce451b6c284bd144d4e94ae5c7882f45eb"
+    },
+    {
+      "sourceLabel": "native-hash-and-online-evidence.txt",
+      "output": "native-hash-and-online-evidence.txt",
+      "originalSha256": "84ee6e7bec54bf60f711116ef506fbdd64db28e836948abcd311fd84cf7b9a02",
+      "sanitizedSha256": "84ee6e7bec54bf60f711116ef506fbdd64db28e836948abcd311fd84cf7b9a02"
+    },
+    {
+      "sourceLabel": "consumer-callsite-evidence.txt",
+      "output": "consumer-callsite-evidence.txt",
+      "originalSha256": "82496e3852f92397aad9aaaee25073f7338df8a8127df192ac3bce4895500a61",
+      "sanitizedSha256": "86f8da6deeaf2256af1a8c0bc2ffb73aa03ac8fa096901ad6bd15218c556018e"
+    },
+    {
+      "sourceLabel": "setup-wizardwords-evidence.txt",
+      "output": "setup-wizardwords-evidence.txt",
+      "originalSha256": "ab8e93b54d128d0c6bae083ad0af42fc1b3bea50ab5d36277e33c67d91081d25",
+      "sanitizedSha256": "6e77f85e71b0da787e7460cbcdd60512f85b8ad316fb555c4068dd44c1b8d42d"
+    },
+    {
+      "sourceLabel": "offline-bytecode-examples.json",
+      "output": "offline-bytecode-examples.json",
+      "originalSha256": "dabb917d8868a180ba248048cd5dc8fed5ecd7ed8e31c0ff1012a859d1122ae0",
+      "sanitizedSha256": "dabb917d8868a180ba248048cd5dc8fed5ecd7ed8e31c0ff1012a859d1122ae0"
+    },
+    {
+      "sourceLabel": "static-evidence/ContainsBannedWord.decoded.txt",
+      "output": "ContainsBannedWord.decoded.txt",
+      "originalSha256": "6b0216c3648120bf83cfe7f37c13220cddd9b67d4a72aa8eca047671b0b592d0",
+      "sanitizedSha256": "6b0216c3648120bf83cfe7f37c13220cddd9b67d4a72aa8eca047671b0b592d0"
+    },
+    {
+      "sourceLabel": "static-evidence/ContainsBannedWord.decoded.json",
+      "output": "ContainsBannedWord.decoded.json",
+      "originalSha256": "f3fe0a5da25ba133ef9a265cebfa97f161433fe2d07c2a9a4056b901ee6a6adc",
+      "sanitizedSha256": "f3fe0a5da25ba133ef9a265cebfa97f161433fe2d07c2a9a4056b901ee6a6adc"
+    },
+    {
+      "sourceLabel": "static-evidence/UI_BP_AvatarCreator.ValidatePlayerName.decoded.txt",
+      "output": "UI_BP_AvatarCreator.ValidatePlayerName.decoded.txt",
+      "originalSha256": "9ba4549bc4f9aa679be20bb32e56c295154a05473eab4d5f0d4385110591b255",
+      "sanitizedSha256": "9ba4549bc4f9aa679be20bb32e56c295154a05473eab4d5f0d4385110591b255"
+    },
+    {
+      "sourceLabel": "static-evidence/UI_BP_CharCreator_Finalize.ValidatePlayerName.decoded.txt",
+      "output": "UI_BP_CharCreator_Finalize.ValidatePlayerName.decoded.txt",
+      "originalSha256": "19f154258063f974d142917aa32af41179593b214a96d061b9a719d99b3b4b3f",
+      "sanitizedSha256": "19f154258063f974d142917aa32af41179593b214a96d061b9a719d99b3b4b3f"
+    },
+    {
+      "sourceLabel": "static-evidence/UI_BP_TextInputScreen.ExecuteUbergraph_UI_BP_TextInputScreen.decoded.txt",
+      "output": "UI_BP_TextInputScreen.ExecuteUbergraph_UI_BP_TextInputScreen.decoded.txt",
+      "originalSha256": "d403ce6f4d506b4cb5e64de8ef8efaef03c39497748bf6f35dcf06ba6a8bed17",
+      "sanitizedSha256": "d403ce6f4d506b4cb5e64de8ef8efaef03c39497748bf6f35dcf06ba6a8bed17"
+    }
+  ],
+  "helper": {
+    "sourceLabel": "original zen_reader.py",
+    "output": "tools/research/zen_reader.py",
+    "originalSha256": "cdf221517f29b60e23297458daeae13bfa8998d796e96a39f3d2522714ed09d9",
+    "sanitizedSha256": "cdf221517f29b60e23297458daeae13bfa8998d796e96a39f3d2522714ed09d9"
+  }
+}

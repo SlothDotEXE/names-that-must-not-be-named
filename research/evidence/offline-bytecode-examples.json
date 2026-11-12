@@ -1,0 +1,66 @@
+[
+  {
+    "input": "Prometheus",
+    "check_substrings": true,
+    "locale": "en-US",
+    "restricted": true,
+    "matching_candidates": [
+      "meth"
+    ],
+    "scope": "offline-interpreted-serialized-bytecode; ASCII engine builtins modeled; no game execution"
+  },
+  {
+    "input": "Prometheus",
+    "check_substrings": false,
+    "locale": "en-US",
+    "restricted": false,
+    "matching_candidates": [],
+    "scope": "offline-interpreted-serialized-bytecode; ASCII engine builtins modeled; no game execution"
+  },
+  {
+    "input": "Classic",
+    "check_substrings": true,
+    "locale": "en-US",
+    "restricted": false,
+    "matching_candidates": [],
+    "scope": "offline-interpreted-serialized-bytecode; ASCII engine builtins modeled; no game execution"
+  },
+  {
+    "input": "Ass",
+    "check_substrings": true,
+    "locale": "en-US",
+    "restricted": true,
+    "matching_candidates": [
+      "Ass"
+    ],
+    "scope": "offline-interpreted-serialized-bytecode; ASCII engine builtins modeled; no game execution"
+  },
+  {
+    "input": "Raven",
+    "check_substrings": true,
+    "locale": "en-US",
+    "restricted": false,
+    "matching_candidates": [],
+    "scope": "offline-interpreted-serialized-bytecode; ASCII engine builtins modeled; no game execution"
+  },
+  {
+    "input": "a ss",
+    "check_substrings": true,
+    "locale": "en-US",
+    "restricted": true,
+    "matching_candidates": [
+      "ass"
+    ],
+    "scope": "offline-interpreted-serialized-bytecode; ASCII engine builtins modeled; no game execution"
+  },
+  {
+    "input": "me-th",
+    "check_substrings": true,
+    "locale": "en-US",
+    "restricted": true,
+    "matching_candidates": [
+      "meth"
+    ],
+    "scope": "offline-interpreted-serialized-bytecode; ASCII engine builtins modeled; no game execution"
+  }
+]
