@@ -1,6 +1,6 @@
 # Hogwarts Legacy Name Check
 
-A browser-based predictor of the traced bundled name restriction check in Steam build **26175237**. Innocent names can contain restricted fragments. The intended GitHub Pages address is <https://slothdotexe.github.io/names-that-must-not-be-named/>; publication and live availability depend on the Pages deployment.
+A browser-based predictor of the traced bundled name restriction check in Steam build **26175237**. Innocent names can contain restricted fragments. **Live site:** <https://slothdotexe.github.io/names-that-must-not-be-named/>.
 
 The bundled table contains 7,614 hash rows in this snapshot. **The checker uses every eligible hash, including those without a recovered word.** Recovery statistics count rows with verified candidate preimages, not the number of readable words or evidence of original capitalization. Public hashes and recovery exports are intentional for auditing; recovered words can contain offensive terms and are hidden in the interface until explicitly revealed.
 
@@ -32,7 +32,7 @@ Open the address printed by Vite. `predev` automatically builds the dataset firs
 | `npm test` | Run matcher tests; run the build or data generation first so the real-data fixture exists. |
 | `npm run preview` | Serve the production build locally. |
 
-`public/data/` and `dist/` are generated and ignored, not committed. The site and downloads can be served under a project subpath; no backend is required.
+`public/data/` and `dist/` are generated and ignored, not committed. The site and downloads can be served under a project subpath; no backend is required. Fonts are local system fonts, and the geometric favicon is self-contained rather than fetched from the host's domain root.
 
 ## Updating recovery inputs
 
