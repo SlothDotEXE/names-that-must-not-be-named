@@ -13,3 +13,27 @@ __pycache__/
 *.session.*
 extract-output/
 extraction-output/
+.cracking/
+
+# Local credentials, environments and editor state
+.env
+.env.*
+!.env.example
+.venv/
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Build-tool caches and local run logs
+.vite/
+.vitest-cache/
+*.log
+
+# Interrupted atomic data/import writes
+public/.data-stage-*/
+public/.data-backup-*/
+research/source/.recovery-*

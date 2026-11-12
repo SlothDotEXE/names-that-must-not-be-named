@@ -1,0 +1,70 @@
+{
+  "latin_script_locales": [
+    "en-US",
+    "de-DE",
+    "es-ES",
+    "es-MX",
+    "fr-FR",
+    "it-IT",
+    "pl-PL",
+    "pt-BR"
+  ],
+  "segments": [
+    {
+      "segment": "en-US",
+      "language": "English (US)"
+    },
+    {
+      "segment": "de-DE",
+      "language": "German"
+    },
+    {
+      "segment": "es-ES",
+      "language": "Spanish (Spain)"
+    },
+    {
+      "segment": "es-MX",
+      "language": "Spanish (Mexico)"
+    },
+    {
+      "segment": "fr-FR",
+      "language": "French"
+    },
+    {
+      "segment": "it-IT",
+      "language": "Italian"
+    },
+    {
+      "segment": "pl-PL",
+      "language": "Polish"
+    },
+    {
+      "segment": "pt-BR",
+      "language": "Portuguese (Brazil)"
+    },
+    {
+      "segment": "ar-AE",
+      "language": "Arabic"
+    },
+    {
+      "segment": "ja-JP",
+      "language": "Japanese"
+    },
+    {
+      "segment": "ko-KR",
+      "language": "Korean"
+    },
+    {
+      "segment": "ru-RU",
+      "language": "Russian"
+    },
+    {
+      "segment": "zh-CN",
+      "language": "Chinese (Simplified)"
+    },
+    {
+      "segment": "zh-TW",
+      "language": "Chinese (Traditional)"
+    }
+  ]
+}

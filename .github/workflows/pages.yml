@@ -22,6 +22,7 @@ jobs:
           python-version: '3.12'
       - run: npm ci
       - run: npm run test:data
+      - run: python3 tools/build_data.py && python3 tools/recovery_map.py --check
       - run: npm run build
       - run: npm test
       - name: Configure Pages

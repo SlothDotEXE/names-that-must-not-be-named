@@ -3,59 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="An offline-in-the-browser prediction of the bundled Hogwarts Legacy name restriction check.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 3 29 16 16 29 3 16Z' fill='none' stroke='%23d3b46f' stroke-width='3'/%3E%3C/svg%3E">
-  <title>Hogwarts Legacy Name Check</title>
+  <meta name="description" content="Find restricted words hidden in Hogwarts Legacy names across all 14 languages, with English definitions when available.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 3 29 16 16 29 3 16Z' fill='none' stroke='%23c5a56a' stroke-width='3'/%3E%3C/svg%3E">
+  <title>Check a name | Names that must not be named</title>
 </head>
 <body>
-  <header class="site-header wrapper">
-    <a class="brand" href="#top">Name Check <span aria-hidden="true">✧</span></a>
-    <nav aria-label="Main navigation"><a href="#checker">Checker</a><a href="#recovery">Recovery</a><a href="#methodology">Methodology</a></nav>
-  </header>
-  <main id="top" class="wrapper">
-    <section class="hero" aria-labelledby="title">
-      <div class="ornament" aria-hidden="true">◇ <span></span> ◇</div>
-      <p class="eyebrow">A bundled-list research tool</p>
-      <h1 id="title">Hogwarts Legacy Name Check</h1>
-      <p>Even an innocent name can contain a restricted fragment. Check it against the game's bundled list before you enter it.</p>
-    </section>
-    <section id="checker" class="card checker" aria-labelledby="checker-heading">
-      <h2 id="checker-heading">Check a name</h2>
-      <p>Names stay in your browser. They are not sent, saved, or included in the URL.</p>
-      <p id="load-status" role="status">Loading restriction data…</p>
+  <!-- site-header -->
+  <main id="main" class="wrapper">
+    <section id="checker" class="checker-section" aria-labelledby="checker-heading">
+    <header class="checker-intro">
+      <svg class="bookplate" viewBox="0 0 180 80" fill="none" stroke="currentColor" aria-hidden="true"><path d="M30 70a60 55 0 0 1 120 0M43 70a47 42 0 0 1 94 0" opacity=".35"/><path d="M70 46q10-5 20 3 10-8 20-3v25q-10-5-20 1-10-6-20-1zm20 3v23m0-63 2 7 7 2-7 2-2 7-2-7-7-2 7-2Z"/></svg>
+      <h1 id="checker-heading">What’s hiding in your name?</h1>
+      <p>Hogwarts Legacy can reject a name for just a few letters inside it. Type a name to see which parts match its restricted list.</p>
+    </header>
+    <section class="checker-card" aria-label="Name checker">
       <form id="name-form" novalidate>
-        <fieldset><legend>Name type</legend><div class="mode-options"><label><input type="radio" name="kind" value="character" checked> Character</label><label><input type="radio" name="kind" value="beast"> Beast / pet</label></div></fieldset>
-        <div id="character-fields" class="field-grid"><label>First name <span>(required)</span><input id="first-name" autocomplete="off" required></label><label>Last name <span>(optional)</span><input id="last-name" autocomplete="off"></label></div>
-        <div id="beast-fields" hidden><label>Beast / pet name <span>(required)</span><input id="beast-name" autocomplete="off"></label></div>
-        <label for="checker-locale">Game language</label><select id="checker-locale" disabled></select>
-        <p class="hint">Rows marked always-check apply in every language, in addition to the selected language's rows.</p>
-        <p class="hint">Tool limit: 128 UTF-16 units per field; this is not a claimed game limit.</p>
+        <input id="name" autocomplete="off" spellcheck="false" aria-label="Name" placeholder="Sebastian Sallow" aria-controls="result" aria-describedby="validation load-status checker-privacy">
+        <p id="load-status" role="status">Loading name lists…</p>
         <p id="validation" class="validation" role="alert"></p>
-        <button id="check-button" type="submit" disabled>Check name</button>
       </form>
-      <div id="result" class="result" aria-live="polite" aria-atomic="true"></div>
+      <p id="check-status" class="visually-hidden" role="status" aria-atomic="true"></p>
+      <div id="result" class="result"></div>
     </section>
-    <section id="recovery" class="section" aria-labelledby="recovery-heading"><div class="section-heading"><p class="eyebrow">Explore the evidence</p><h2 id="recovery-heading">Recovery explorer</h2><p>Recovery describes which hashes have a verified readable candidate. The checker uses the complete hash table, including unresolved rows.</p></div><div id="recovery-content" class="card"><p>Loading recovery data…</p></div></section>
-    <section id="methodology" class="section methodology" aria-labelledby="methodology-heading">
-      <p class="eyebrow">Research &amp; limitations</p><h2 id="methodology-heading">How this works</h2>
-      <p>Innocent names can be caught by substring restrictions, a frustration raised in <a href="https://www.reddit.com/r/HarryPotterGame/comments/1xu2n97/really_in_a_single_player_game/">community discussion</a> (motivation, not technical evidence).</p>
-      <h3>From the bundled table to candidates</h3><p>For Steam build 26175237, a read-only extractor locates the bundled table, verifies the container and extracted chunk digests, and checks its row structure. Candidate plaintexts are verified against MD5 of the UTF-8 bytes of <code>phoenix</code> followed by the candidate. Hashcat can discover candidates; a verified preimage is not decryption or proof of the original capitalization. Recovery counts are calculated from the current repository inputs.</p>
-      <h3>How names are checked</h3><p>The active rows are those for the selected game locale plus all always-check rows. A character's combined first and last name is checked exactly, then the last and first names separately in substring mode. A beast name uses substring mode. In substring mode hyphens, apostrophes and backticks become spaces; short separate tokens are checked when there are multiple tokens, then spaces are removed and the compact name is checked whole if at most three UTF-16 units, or as every substring of four or more units otherwise. Candidates are lowercased, the traced special sequence is removed, and salted MD5 is compared to every active hash. Every hit is reported, even when its plaintext was not previously recovered.</p>
-      <h3>What this cannot promise</h3><p>This is an offline model of the traced bundled restriction check, not observed in-game approval. The game may replace the list online or apply other naming rules. Native Unicode casing and indexing equivalence is not established; non-ASCII results are approximate. No proprietary game assets are included.</p>
-      <h3>Reproduce and inspect</h3><p>Use an owned matching installation and the pinned decompressor described in the guide. These commands are examples; replace the installation and wordlist paths for your system.</p>
-      <pre><code>python3 tools/extract_table.py \
-  --paks "$HOME/path/to/Hogwarts Legacy/Phoenix/Content/Paks" \
-  --unoodle "$HOME/.cargo/bin/unoodle" \
-  --output "$HOME/wizardwords-extraction"
-hashcat -m 20 -a 0 --outfile-format 1,2 \
-  -o new-matches.txt public/data/language-segments/all/unresolved.hashcat \
-  /path/to/your-wordlist.txt
-npm run data:build</code></pre>
-      <p>Read the <a href="https://github.com/SlothDotEXE/names-that-must-not-be-named/blob/main/research/methodology.md">full methodology and setup guide</a>, <a href="https://github.com/SlothDotEXE/names-that-must-not-be-named/blob/main/research/provenance.json">input provenance</a>, <a href="https://github.com/SlothDotEXE/names-that-must-not-be-named/blob/main/research/evidence/provenance.json">evidence provenance</a>, <a href="https://github.com/SlothDotEXE/names-that-must-not-be-named/blob/main/research/evidence/ContainsBannedWord.decoded.txt">decoded restriction logic</a>, <a href="https://github.com/SlothDotEXE/names-that-must-not-be-named/blob/main/research/evidence/native-hash-and-online-evidence.txt">native hash and online-list evidence</a>, <a href="https://github.com/SlothDotEXE/names-that-must-not-be-named/blob/main/research/evidence/consumer-callsite-evidence.txt">consumer callsite evidence</a>, and <a href="https://github.com/SlothDotEXE/names-that-must-not-be-named/blob/main/tools/research/zen_reader.py">original helper source</a>.</p>
+    <div class="checker-notes">
+      <p id="checker-privacy">Checking is local. Definitions send flagged text, including whole-entry matches, to <a href="https://dictionaryapi.dev/" target="_blank" rel="noopener noreferrer">Dictionary API</a>.</p>
+      <p>The game may use a newer list or other naming rules.</p>
+    </div>
+    </section>
+
+    <section id="methodology" class="research-section method-section" aria-labelledby="methodology-heading">
+      <h2 id="methodology-heading">How it works</h2>
+      <p>The game stores restricted words as hashes. We compare names and their fragments with that list.</p>
+      <div class="hash-diagram">
+        <h3>Checking a name</h3>
+        <div class="hash-flow">
+          <div class="hash-step"><span class="hash-value">Pro<mark>meth</mark>eus</span><span>Take a name fragment</span></div>
+          <span class="flow-arrow" aria-hidden="true">→</span>
+          <div class="hash-step"><span class="hash-value">phoenix + meth</span><span>Salt first, then the fragment</span></div>
+          <span class="flow-arrow" aria-hidden="true">→</span>
+          <div class="hash-step"><span class="hash-value" title="2e34b9f2a9acb537c33178033cc79258">2e34…9258</span><span>MD5 hash matches the list</span></div>
+        </div>
+        <h3>Finding the words</h3>
+        <div class="hash-flow">
+          <div class="hash-step"><span class="hash-value">Candidate words</span><span>Try possible words</span></div>
+          <span class="flow-arrow" aria-hidden="true">→</span>
+          <div class="hash-step"><span class="hash-value">Salt + MD5</span><span>Apply the same steps</span></div>
+          <span class="flow-arrow" aria-hidden="true">→</span>
+          <div class="hash-step"><span class="hash-value">Matching hash</span><span>Word recovered, not decrypted</span></div>
+        </div>
+      </div>
+      <div class="method-notes">
+        <section>
+          <h3>What gets checked</h3>
+          <p>We check your whole entry, then its fragments, across all language lists. Fragments can cross spaces; first and last names aren’t treated separately.</p>
+        </section>
+        <section>
+          <h3>Limits and privacy</h3>
+          <p>A match may not apply to every language or naming context. Built for Steam build 26175237; updated lists may differ and non-ASCII results are approximate. Definition requests send flagged text to Dictionary API. English meanings do not explain why the game restricts a word.</p>
+        </section>
+      </div>
+      <p class="method-research"><a href="https://github.com/SlothDotEXE/names-that-must-not-be-named/blob/main/research/methodology.md">Read the full research on GitHub</a></p>
+    </section>
+
+    <section id="recovery" class="research-section" aria-labelledby="recovery-heading">
+      <h2 id="recovery-heading">Word recovery</h2>
+      <div id="recovery-content"><p role="status">Loading recovery data…</p></div>
     </section>
   </main>
-  <footer class="wrapper">Independent research tool · Bundled Steam build 26175237</footer>
-  <noscript><p class="noscript">JavaScript is required to load the dataset and check names locally in your browser.</p></noscript>
+  <!-- site-footer -->
+  <noscript><p class="noscript wrapper">Enable JavaScript to check names and browse recovered words in your browser.</p></noscript>
   <script type="module" src="/src/main.ts"></script>
 </body>
 </html>

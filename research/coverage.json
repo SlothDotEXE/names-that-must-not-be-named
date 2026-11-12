@@ -1,0 +1,359 @@
+{
+  "recordedAtUtc": "2026-11-12T22:58:03.637843+00:00",
+  "buildId": "26175237",
+  "hashMode": 20,
+  "salt": "phoenix",
+  "hashcatVersion": "7.1.2",
+  "scopeNote": "All verified recoveries in the reconciled research snapshot are imported. Scope names describe the locale pool; coverage applies only to each run's exact target snapshot, not every original hash. Exhausting a Latin-only search does not establish coverage for other locales. A locale is not proof of candidate script.",
+  "evidenceNote": "This is a portable summary of the maintainer's external research ledger, not a copy of its private workspace. Historical evidence is identified by digest, not by local filename. The priority queue's retained session log records all seven masks exhausted; its verified results are merged.",
+  "reconciliation": {
+    "sourceLedgerSha256": "ca8f4182433b050e5414bbaf53ebeedd3ee803ac584e3fc5eaed8386d0c348fe",
+    "totalHashes": 7614,
+    "recoveredHashes": 6019,
+    "remainingHashes": 1595,
+    "newlyImportedHashes": 2940,
+    "pendingMergeSessions": []
+  },
+  "initialEnumeration": {
+    "status": "recorded-complete",
+    "scope": "all",
+    "spaces": [
+      {
+        "charset": "?l?d",
+        "lengths": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "charset": "?l",
+        "lengths": [
+          5
+        ]
+      }
+    ],
+    "evidence": "Original manifest and historical investigation; original enumeration command was not retained. Manual probes and inflections are not exhaustive coverage."
+  },
+  "runs": [
+    {
+      "id": "hl-latin-lower",
+      "scope": "latin-script-all",
+      "status": "exhausted-user-terminal",
+      "targetSha256": "13a766ea935d93a0b1cf5498b21ed2e75ac4538b23a8ad6874b015073dc0d395",
+      "targetCount": 2439,
+      "verifiedResultCount": 1572,
+      "flags": "-m 20 -a 3 -d 1 -O -w 2 --outfile-format 1,2 --status --status-timer 30 --increment --increment-min 6 --increment-max 10",
+      "mask": "?l?l?l?l?l?l?l?l?l?l",
+      "commandEvidence": "Supplied command; user terminal confirmed mode, optimized kernel, final mask, queue 5/5 and Exhausted. Output independently verified.",
+      "outputSha256": "2054436037d5c5c9b0b2b569fa9236a43d4c612e0afc090146852428de8f7646"
+    },
+    {
+      "id": "hl-latin-alnum-symbols",
+      "scope": "latin-script-all",
+      "status": "completed-user-report",
+      "targetSha256": "7d5e60277436804c8210bf21f97422f01d822c21387935b6b31761baa5460374",
+      "targetCount": 867,
+      "verifiedResultCount": 108,
+      "flags": "-m 20 -a 3 -d 1 -O -w 2 --outfile-format 1,2 --status --status-timer 30",
+      "masks": [
+        "?l?d,?1?1?1?1?1",
+        "?l?d,?1?1?1?1?1?1",
+        "?l?d,?1?1?1?1?1?1?1",
+        "?l?d,?1?1?1?1?1?1?1?1",
+        "?l?d?s,?1",
+        "?l?d?s,?1?1",
+        "?l?d?s,?1?1?1",
+        "?l?d?s,?1?1?1?1",
+        "?l?d?s,?1?1?1?1?1",
+        "?l?d?s,?1?1?1?1?1?1",
+        "?l?d?s,?1?1?1?1?1?1?1"
+      ],
+      "maskSha256": "5af9f72edd1b37c51fb772b4bdd981dc4e834c70f74728ec4530605ddde0af73",
+      "evidence": "User reported completion; saved matches were verified. No final traversal log. No --increment; each mask is one queue entry."
+    },
+    {
+      "id": "unicode-short-pilot",
+      "scope": "all",
+      "status": "exhausted-observed",
+      "targetSha256": "729a193ed333eb5e0644b008ef8bc3481caf8ec4256af61791dcdcf718196463",
+      "targetCount": 2872,
+      "verifiedResultCount": 693,
+      "flags": "-m 20 -a 3 -d 1 -O -w 2 --outfile-format 1,2 --hex-charset --runtime 90 --restore-disable --logfile-disable --status --status-timer 5",
+      "masks": [
+        "e3,818283,808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebf,?1?2?3",
+        "e3,818283,808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebf,?1?2?3?1?2?3",
+        "e3,818283,808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebf,?1?2?3?1?2?3?1?2?3",
+        "e3,818283,808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebf,?1?2?3?1?2?3?1?2?3?1?2?3",
+        "e3e4e5e6e7e8e9,808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebf,808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebf,?1?2?3",
+        "e3e4e5e6e7e8e9,808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebf,808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebf,?1?2?3?1?2?3",
+        "eaebeced,808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebf,808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebf,?1?2?3",
+        "eaebeced,808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebf,808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebf,?1?2?3?1?2?3",
+        "d0d1,808182838485868788898a8b8c8d8e8f91b0b1b2b3b4b5b6b7b8b9babbbcbdbebf,?1?2",
+        "d0d1,808182838485868788898a8b8c8d8e8f91b0b1b2b3b4b5b6b7b8b9babbbcbdbebf,?1?2?1?2",
+        "d0d1,808182838485868788898a8b8c8d8e8f91b0b1b2b3b4b5b6b7b8b9babbbcbdbebf,?1?2?1?2?1?2",
+        "d0d1,808182838485868788898a8b8c8d8e8f91b0b1b2b3b4b5b6b7b8b9babbbcbdbebf,?1?2?1?2?1?2?1?2",
+        "d0d1,808182838485868788898a8b8c8d8e8f91b0b1b2b3b4b5b6b7b8b9babbbcbdbebf,?1?2?1?2?1?2?1?2?1?2",
+        "d8d9,8182838485868788898aa1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9ba,?1?2",
+        "d8d9,8182838485868788898aa1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9ba,?1?2?1?2",
+        "d8d9,8182838485868788898aa1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9ba,?1?2?1?2?1?2",
+        "d8d9,8182838485868788898aa1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9ba,?1?2?1?2?1?2?1?2",
+        "d8d9,8182838485868788898aa1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9ba,?1?2?1?2?1?2?1?2?1?2"
+      ],
+      "maskSha256": "9b626032ea96f48a21a8505fe879d4b0c84a6bad74d4fb35f613c260ca94546a",
+      "evidence": "Saved log: Exhausted, 18/18, zero rejected, exit 1. All accepted candidates independently verified. No explicit --session was used."
+    },
+    {
+      "id": "hl-unicode-priority",
+      "scope": "all",
+      "status": "exhausted-retained-log",
+      "completionAuthority": "Retained Hashcat 7.1.2 session log, corroborated by user-supplied final Exhausted status, queue 7/7, zero rejected.",
+      "targetSha256": "689d19b605f2359fb879954f7024b1b40a3053a3ce2efcef162a9fdbd1a6d2c3",
+      "targetCount": 2179,
+      "verifiedResultCount": 584,
+      "maskSha256": "62442e26dbbd46f128faacc7ecf3bb80f9631fd0de4d417b60ea7d4efe2e54b3",
+      "outputSha256": "58bf2094b9816b831b26b1faf4bcf3918603ca132a8c0b7c097a082fc3f35bf9",
+      "sessionLogSha256": "955647f0c78b12edd533ce4ca48fd47538c7a0aafdb2da0b6e82eee9c1f9863d",
+      "completedMasks": 7,
+      "statusCodeDefinition": {
+        "url": "https://raw.githubusercontent.com/hashcat/hashcat/v7.1.2/include/types.h",
+        "symbol": "STATUS_EXHAUSTED",
+        "value": 5
+      },
+      "mergeState": "All 584 verified output hashes merged; the 693 previously merged pilot entries in the potfile were not counted again.",
+      "flags": "-m 20 -a 3 -d 1 -O -w 2 --outfile-format 1,2 --hex-charset --session hl-unicode-priority --runtime 21600 --status --status-timer 30",
+      "masks": [
+        "e3,818283,808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebf,?1?2?3?1?2?3?1?2?3?1?2?3?1?2?3",
+        "eaebeced,808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebf,808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebf,?1?2?3?1?2?3?1?2?3",
+        "d0d1,808182838485868788898a8b8c8d8e8f91b0b1b2b3b4b5b6b7b8b9babbbcbdbebf,?1?2?1?2?1?2?1?2?1?2?1?2",
+        "d0d1,808182838485868788898a8b8c8d8e8f91b0b1b2b3b4b5b6b7b8b9babbbcbdbebf,?1?2?1?2?1?2?1?2?1?2?1?2?1?2",
+        "d8d9,8182838485868788898aa1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9ba,?1?2?1?2?1?2?1?2?1?2?1?2",
+        "d8d9,8182838485868788898aa1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9ba,?1?2?1?2?1?2?1?2?1?2?1?2?1?2",
+        "e3e4e5e6e7e8e9,808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebf,808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebf,?1?2?3?1?2?3?1?2?3"
+      ],
+      "evidence": "The retained log has status-after-work 5 for each of the seven masks in order. Target, mask and log checksums verified during import. Raw logs are not committed because they contain machine-specific paths; checksums identify evidence retained outside this repository."
+    }
+  ],
+  "plannedSearches": [
+    {
+      "id": "optional-kana-length6",
+      "status": "prepared-not-run",
+      "targetScope": "Unassigned; no target snapshot or completed traversal.",
+      "flags": "-m 20 -a 3 --hex-charset",
+      "mask": "e3,818283,808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebf,?1?2?3?1?2?3?1?2?3?1?2?3?1?2?3?1?2?3",
+      "maskSha256": "f8a93b0873ca30c0a8c63fe685d436771004d0048439c5032658ff3452658963",
+      "scope": "Six units from U+3040 through U+30FF; excludes halfwidth kana. A speed probe is not completed coverage."
+    }
+  ],
+  "dictionaries": {
+    "scope": "all",
+    "initialSources": [
+      {
+        "url": "https://raw.githubusercontent.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words/master/en",
+        "candidate_text_sha256": "75fc02b9be17694e93b87afaf3566794e0b28d5afcd374b3e4331bf97bf43d21",
+        "candidate_text_lines": 403
+      },
+      {
+        "url": "https://raw.githubusercontent.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words/master/zh",
+        "candidate_text_sha256": "b4780702c214a54d56753b7232bbf8e99f84b4c5a8afb9acd171f2eeb1cc3c62",
+        "candidate_text_lines": 319
+      },
+      {
+        "url": "https://raw.githubusercontent.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words/master/de",
+        "candidate_text_sha256": "ebe44d7772897390e27f7bec412fdcdf0efc294e4db157f8487c4cd8d4fabd55",
+        "candidate_text_lines": 66
+      },
+      {
+        "url": "https://raw.githubusercontent.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words/master/fr",
+        "candidate_text_sha256": "79763a705e08256b393952852bb63aa903f4485e0ef02f70735f5e50efff213c",
+        "candidate_text_lines": 91
+      },
+      {
+        "url": "https://raw.githubusercontent.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words/master/es",
+        "candidate_text_sha256": "073334261cc2e7c08339faefd2f19f9623e8240a0ac18fe2a26c368b897496ce",
+        "candidate_text_lines": 68
+      },
+      {
+        "url": "https://raw.githubusercontent.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words/master/ja",
+        "candidate_text_sha256": "f83c4d0843ea6474c17bf171edd72b616b3af403f8613f2cde1bd841faf6f316",
+        "candidate_text_lines": 180
+      },
+      {
+        "url": "https://raw.githubusercontent.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words/master/ko",
+        "candidate_text_sha256": "0dd4b74ffea6e3bb35d658e6d8262b53ee99281eaa48ecb515a2065bfcc7f69d",
+        "candidate_text_lines": 72
+      },
+      {
+        "url": "https://raw.githubusercontent.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words/master/ar",
+        "candidate_text_sha256": "23dbd9c55257bf2a4965f46664dc7eac04b61ff4eb3571e41f7e964c7c3ed96b",
+        "candidate_text_lines": 38
+      },
+      {
+        "url": "https://raw.githubusercontent.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words/master/pt",
+        "candidate_text_sha256": "05ef524b0bb7f83f87257f6ec4dabf70e16b8bb6930f769fb93deaf608ff196d",
+        "candidate_text_lines": 76
+      },
+      {
+        "url": "https://raw.githubusercontent.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words/master/it",
+        "candidate_text_sha256": "d413f41018d58aa79d2c4809d0161f29ffd5652c4dc34c5b7b9ade680ee5599a",
+        "candidate_text_lines": 168
+      },
+      {
+        "url": "https://raw.githubusercontent.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words/master/pl",
+        "candidate_text_sha256": "98cf824e3692255645c5a72d5913f26fd4f20930f725683b4c96bb312ca5d9b3",
+        "candidate_text_lines": 54
+      },
+      {
+        "url": "https://raw.githubusercontent.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words/master/ru",
+        "candidate_text_sha256": "2598adabd2b761733d72a68d8ee4fcc1d2c38f2f85b6ff489985c6ce1d93bf75",
+        "candidate_text_lines": 151
+      },
+      {
+        "url": "https://raw.githubusercontent.com/dsojevic/profanity-list/main/en.txt",
+        "candidate_text_sha256": "2eebcd97d34e45972b86f5631bc6d970aaed580cd9def3ce1ae4ee58e031a2c6",
+        "candidate_text_lines": 809
+      },
+      {
+        "url": "https://raw.githubusercontent.com/coffee-and-fun/google-profanity-words/main/data/en.txt",
+        "candidate_text_sha256": "1d0c75970f3b71a6775bc0303d2927467c44657fbb43e1c457c2e7a90ee4e723",
+        "candidate_text_lines": 964
+      }
+    ],
+    "localWordlists": [
+      {
+        "name": "words_alpha.txt",
+        "sha256": "3ed0c94610d8bcf7c11bbb49c56aa49c7234d32b66824df91f554169e572da48",
+        "normalization": "One candidate per line; strip surrounding whitespace and lowercase ASCII; no suffix expansion, substitutions, or multiword generation."
+      },
+      {
+        "name": "words.txt",
+        "sha256": "39a4ead879cc8283de87f2ec58e7b4b340d6caa724db1b52a91dccf2f273c5e7",
+        "normalization": "One candidate per line; strip surrounding whitespace and lowercase ASCII; no suffix expansion, substitutions, or multiword generation."
+      }
+    ],
+    "frequencyWords": {
+      "status": "completed-observed",
+      "commit": "525f9b560de45753a5ea01069454e72e9aa541c6",
+      "normalization": "Parse word plus trailing integer frequency. Retain original candidate and Python lowercase variant if distinct. No accent folding, transliteration, inflections or phrase generation. Each accepted candidate must match MD5(UTF8(phoenix + candidate)) exactly. Full game Unicode lowercasing equivalence is not claimed.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/hermitdave/FrequencyWords/525f9b560de45753a5ea01069454e72e9aa541c6/content/2018/ar/ar_50k.txt",
+          "sha256": "bbe98b4b92902b392bdefa2e555a108fdb42a5dd79d261674be5ab666229e19f"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hermitdave/FrequencyWords/525f9b560de45753a5ea01069454e72e9aa541c6/content/2018/de/de_50k.txt",
+          "sha256": "d9e50546fd7e8b6fe6542a2b33c51d1331092b2a3916ec09f80d97856068705b"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hermitdave/FrequencyWords/525f9b560de45753a5ea01069454e72e9aa541c6/content/2018/en/en_50k.txt",
+          "sha256": "5351ff405b1126ef555791dd4d9798a48e3e9a501a9fc481a9da957752cfb458"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hermitdave/FrequencyWords/525f9b560de45753a5ea01069454e72e9aa541c6/content/2018/es/es_50k.txt",
+          "sha256": "dcff3ad4316192f4dc4ff7d26e637c6ff314ef1ca0f3f720c5649018a71056c0"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hermitdave/FrequencyWords/525f9b560de45753a5ea01069454e72e9aa541c6/content/2018/fr/fr_50k.txt",
+          "sha256": "f81f7c570b6433764da99aa30f4dfb08d81c5926301377b709af23a13b1f9596"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hermitdave/FrequencyWords/525f9b560de45753a5ea01069454e72e9aa541c6/content/2018/it/it_50k.txt",
+          "sha256": "bb96cdcb56d28342c1e909db6b2525448b7767136b7e86a2ccc649a1be66fc19"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hermitdave/FrequencyWords/525f9b560de45753a5ea01069454e72e9aa541c6/content/2018/ko/ko_50k.txt",
+          "sha256": "8d00401b6728c8d6feeaa5455583c1a33408dd020aae4aa55609b25004d1d99d"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hermitdave/FrequencyWords/525f9b560de45753a5ea01069454e72e9aa541c6/content/2018/pl/pl_50k.txt",
+          "sha256": "50bf8d30d1ed4f5cedceb3e40e74d793ec6bec0f16d9f3dd0a2c9e313402e10f"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hermitdave/FrequencyWords/525f9b560de45753a5ea01069454e72e9aa541c6/content/2018/pt/pt_50k.txt",
+          "sha256": "f97704382f97273ff59488b1885e7ac90d20f81fd92e5fbad3e3ce43633f495c"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hermitdave/FrequencyWords/525f9b560de45753a5ea01069454e72e9aa541c6/content/2018/ru/ru_50k.txt",
+          "sha256": "6095f507cc167488ec66ada5a85ac50433503a08ad24a07c6eabdf54352c4e7f"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hermitdave/FrequencyWords/525f9b560de45753a5ea01069454e72e9aa541c6/content/2018/zh_cn/zh_cn_50k.txt",
+          "sha256": "25599e00347b893e55c3058a748819b3fe19403291cd12f7c03af128e7f3fe45"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hermitdave/FrequencyWords/525f9b560de45753a5ea01069454e72e9aa541c6/content/2018/zh_tw/zh_tw_50k.txt",
+          "sha256": "b3bfa426ebd05225b1963cd557ce844d52912c5534c08b40ebeaec8768f36034"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hermitdave/FrequencyWords/525f9b560de45753a5ea01069454e72e9aa541c6/content/2018/ar/ar_full.txt",
+          "sha256": "ebb36aeae78e609adc552b32ec91ff2490e1170f8b244d22eef9952d2096d610"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hermitdave/FrequencyWords/525f9b560de45753a5ea01069454e72e9aa541c6/content/2018/de/de_full.txt",
+          "sha256": "a5fc13f4efaaf70fd9226d11295fd3cd4c2264852ee1fad22c0abaf64acec8dc"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hermitdave/FrequencyWords/525f9b560de45753a5ea01069454e72e9aa541c6/content/2018/en/en_full.txt",
+          "sha256": "7fea67ab954e2c01df6c608c9826e594cf36f8823b3243554f88245fb75dc506"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hermitdave/FrequencyWords/525f9b560de45753a5ea01069454e72e9aa541c6/content/2018/es/es_full.txt",
+          "sha256": "b4794c425f3500c21a0ff9367175e36795a978c928a36670e9ad6ae206fb7728"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hermitdave/FrequencyWords/525f9b560de45753a5ea01069454e72e9aa541c6/content/2018/fr/fr_full.txt",
+          "sha256": "dda23c3025fc195b3a7996af26371dcf3abd1aa2cd7218dbbb7c92a49780ab0c"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hermitdave/FrequencyWords/525f9b560de45753a5ea01069454e72e9aa541c6/content/2018/it/it_full.txt",
+          "sha256": "b23b0c6a3f59c1da1c7caa667b9df5699e95323fee20a05f343c7d7dae73c4be"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hermitdave/FrequencyWords/525f9b560de45753a5ea01069454e72e9aa541c6/content/2018/ja/ja_full.txt",
+          "sha256": "581dd106a134ff9f2706e23cde9fe95cd24d96ead6357cd3bd3bba9e166a764e"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hermitdave/FrequencyWords/525f9b560de45753a5ea01069454e72e9aa541c6/content/2018/ko/ko_full.txt",
+          "sha256": "a6495622eb095d1d4cf6e934199a5cb674fbba7d8179525e273e9fcd0d4ac325"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hermitdave/FrequencyWords/525f9b560de45753a5ea01069454e72e9aa541c6/content/2018/pl/pl_full.txt",
+          "sha256": "8b69a097e502a32a42db6ca37a74781f66ddc4027fe5d66b6d98b6467abae3cf"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hermitdave/FrequencyWords/525f9b560de45753a5ea01069454e72e9aa541c6/content/2018/pt/pt_full.txt",
+          "sha256": "21ac5ba5840001d522f2a7b91cc7cd0b25d24a8dcea3ecf997277662859b8f2f"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hermitdave/FrequencyWords/525f9b560de45753a5ea01069454e72e9aa541c6/content/2018/ru/ru_full.txt",
+          "sha256": "32dfd94138aea2667ec455dcc8512029e39bd4b8ea70b09410d569b69d511a30"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hermitdave/FrequencyWords/525f9b560de45753a5ea01069454e72e9aa541c6/content/2018/zh_cn/zh_cn_full.txt",
+          "sha256": "0a34556e278008539273e07bda10baca9e2b9637cff2ff3ca9cd93782571abbd"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hermitdave/FrequencyWords/525f9b560de45753a5ea01069454e72e9aa541c6/content/2018/zh_tw/zh_tw_full.txt",
+          "sha256": "ed025d7acaddf4bbff9d6c257d3105c700e4b229747c694c4b097a6e3defea09"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hermitdave/FrequencyWords/525f9b560de45753a5ea01069454e72e9aa541c6/content/2016/ja/ja_full.txt",
+          "sha256": "b7e08c7f31abe1b04ddf92f876615a6de442a88002663229e4adafdf79497d48"
+        }
+      ]
+    }
+  },
+  "notCompletedInRecord": [
+    "Lowercase ASCII plus digits length 9 (proposed only).",
+    "Lowercase ASCII length 11; lowercase/digits/punctuation/space length 8 (proposed, expensive).",
+    "Kana six-codepoint envelope (prepared but unrun; only speed-tested).",
+    "Other wordlists, accent/phrase rules and byte alphabets outside documented spaces; check open issues before claiming work."
+  ],
+  "limitations": [
+    "--speed-only and known-word smoke runs do not establish search exhaustion.",
+    "Unicode masks enumerate UTF-8 byte products, not all words in a language; Hangul envelopes include invalid UTF-8 combinations, which the importer rejects.",
+    "Historical -d 1 is machine-specific. Mode 20 does not lowercase candidates. Optimized kernel length limits apply to bytes.",
+    "Hashcat session, restore, potfile and output paths are run-specific local state, not committed artifacts."
+  ]
+}

@@ -7,7 +7,7 @@
     "node": ">=24"
   },
   "scripts": {
-    "data:build": "python3 tools/build_data.py",
+    "data:build": "python3 tools/build_data.py && python3 tools/recovery_map.py",
     "predev": "npm run data:build",
     "dev": "vite",
     "typecheck": "tsc --noEmit",

@@ -1,0 +1,21 @@
+.method-section { max-width: 980px; margin-inline: auto; }
+.method-section > p { max-width: 65ch; color: var(--muted); }
+.hash-diagram { margin-block: 32px; padding: 28px; background: var(--surface); border-left: 2px solid var(--gold); }
+.hash-diagram h3 { margin: 0 0 20px; font-size: 1.3rem; }
+.hash-diagram h3:not(:first-child) { margin-top: 32px; }
+.hash-flow { display: grid; grid-template-columns: 1fr 24px 1.2fr 24px 1fr; align-items: center; gap: 12px; }
+.hash-step { display: grid; gap: 6px; min-width: 0; }
+.hash-step > span:last-child { font-size: .85rem; color: var(--muted); }
+.hash-value { font: clamp(1.15rem, 2.2vw, 1.6rem)/1.35 var(--serif); color: var(--text); overflow-wrap: anywhere; }
+.flow-arrow { color: var(--gold); text-align: center; font-size: 1.4rem; }
+.method-notes { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.method-notes h3 { margin-top: 0; }
+.method-notes p { max-width: 65ch; }
+.method-research { margin: 20px 0 0; }
+@media (max-width: 680px) {
+  .hash-diagram { padding: 22px; }
+  .hash-flow { grid-template-columns: 1fr; gap: 8px; }
+  .flow-arrow { justify-self: start; transform: rotate(90deg); }
+  .hash-value { font-size: 1.45rem; }
+  .method-notes { grid-template-columns: 1fr; gap: 20px; }
+}

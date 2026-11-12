@@ -1,20 +1,25 @@
 import './styles.css';
+import './methodology.css';
 import { checkName } from './matcher';
 import { mountRecovery } from './recovery';
-import type { Counts, Dataset, Locale, NameRequest, Span } from './contracts';
+import type { Counts, Dataset, Locale, Span } from './contracts';
+import { lookupDefinition, type DictionaryDefinition } from './dictionary';
 
 const locales: Locale[] = ['en-US', 'de-DE', 'es-ES', 'es-MX', 'fr-FR', 'it-IT', 'pl-PL', 'pt-BR', 'ar-AE', 'ja-JP', 'ko-KR', 'ru-RU', 'zh-CN', 'zh-TW'];
 const byId = <T extends HTMLElement>(id: string): T => document.getElementById(id) as T;
 const form = byId<HTMLFormElement>('name-form');
-const first = byId<HTMLInputElement>('first-name');
-const last = byId<HTMLInputElement>('last-name');
-const beast = byId<HTMLInputElement>('beast-name');
-const locale = byId<HTMLSelectElement>('checker-locale');
-const button = byId<HTMLButtonElement>('check-button');
+const nameInput = byId<HTMLInputElement>('name');
 const result = byId<HTMLDivElement>('result');
 const validation = byId<HTMLParagraphElement>('validation');
 const status = byId<HTMLParagraphElement>('load-status');
+const checkStatus = byId<HTMLParagraphElement>('check-status');
+const recoveryRoot = byId<HTMLDivElement>('recovery-content');
 let dataset: Dataset | undefined;
+let revision = 0;
+let checkTimer: number | undefined;
+let composing = false;
+let observedValue = nameInput.value;
+let definitionController: AbortController | undefined;
 
 function isCounts(value: unknown): value is Counts {
   if (typeof value !== 'object' || value === null || Array.isArray(value)) return false;
@@ -52,17 +57,14 @@ function validDataset(input: unknown): input is Dataset {
 function element<K extends keyof HTMLElementTagNameMap>(tag: K, text?: string): HTMLElementTagNameMap[K] {
   const node = document.createElement(tag); if (text !== undefined) node.textContent = text; return node;
 }
-function clearResult(): void { result.replaceChildren(); validation.textContent = ''; }
-function selectedKind(): 'character' | 'beast' { return (form.elements.namedItem('kind') as RadioNodeList).value === 'beast' ? 'beast' : 'character'; }
-function updateMode(): void {
-  const isBeast = selectedKind() === 'beast';
-  byId('character-fields').hidden = isBeast; byId('beast-fields').hidden = !isBeast;
-  first.required = !isBeast; beast.required = isBeast;
+function clearResult(): void {
+  result.replaceChildren(); delete result.dataset.verdict; validation.textContent = '';
+  nameInput.removeAttribute('aria-invalid');
+  checkStatus.textContent = '';
 }
-function highlighted(field: Span['field'], text: string, spans: Span[]): HTMLElement {
+function highlighted(text: string, spans: Span[]): HTMLElement {
   const line = element('p'); line.className = 'highlight-line';
-  line.append(element('strong', field === 'firstName' ? 'First name: ' : field === 'lastName' ? 'Last name: ' : 'Name: '));
-  const selected = spans.filter(span => span.field === field && span.start < span.end).sort((a, b) => a.start - b.start || a.end - b.end);
+  const selected = spans.filter(span => span.start < span.end).sort((a, b) => a.start - b.start || a.end - b.end);
   let cursor = 0;
   for (let i = 0; i < selected.length; i++) {
     const start = Math.max(0, Math.min(text.length, selected[i].start));
@@ -73,39 +75,118 @@ function highlighted(field: Span['field'], text: string, spans: Span[]): HTMLEle
   }
   line.append(document.createTextNode(text.slice(cursor))); return line;
 }
-form.addEventListener('input', clearResult);
-form.addEventListener('change', () => { clearResult(); updateMode(); });
-form.addEventListener('submit', event => {
-  event.preventDefault(); clearResult();
-  if (!dataset) return;
-  const kind = selectedKind();
-  const fields = kind === 'character' ? [first, last] : [beast];
-  const required = kind === 'character' ? first : beast;
-  if (!required.value.trim()) { validation.textContent = 'Enter a name in the required field.'; required.focus(); return; }
-  const tooLong = fields.find(field => field.value.length > 128);
-  if (tooLong) { validation.textContent = 'Each field must be at most 128 UTF-16 units for this tool.'; tooLong.focus(); return; }
-  const request: NameRequest = kind === 'character' ? { kind, firstName: first.value, lastName: last.value, locale: locale.value as Locale } : { kind, name: beast.value, locale: locale.value as Locale };
-  const checked = checkName(request, dataset.rows);
-  result.append(element('h3', checked.verdict === 'restricted' ? 'Restricted by the bundled list' : 'No restriction found in the bundled list'));
-  if (checked.unicodeApproximate) { const notice = element('p', 'Approximate Unicode check: native Unicode casing and indexing may differ, so this prediction is approximate.'); notice.className = 'notice'; result.append(notice); }
-  if (checked.verdict === 'no-match') {
-    result.append(element('p', checked.unicodeApproximate ? 'No bundled-list match was found in this approximate check; the game may use an updated online list or other naming rules.' : 'Likely passes this restriction check; the game may use an updated online list or other naming rules.'));
+function invalidateCheck(): void {
+  revision++;
+  clearTimeout(checkTimer);
+  checkTimer = undefined;
+  definitionController?.abort();
+  definitionController = undefined;
+  clearResult();
+}
+
+function scheduleCheck(): void {
+  const name = nameInput.value;
+  observedValue = name;
+  invalidateCheck();
+  if (composing || !name.trim()) return;
+  if (name.length > 128) {
+    validation.textContent = 'This name exceeds the tool’s 128 UTF-16 unit limit.';
+    nameInput.setAttribute('aria-invalid', 'true');
     return;
   }
-  const spans = checked.matches.flatMap(match => match.spans);
-  const highlights = element('div'); highlights.className = 'highlights';
-  if (request.kind === 'character') { highlights.append(highlighted('firstName', request.firstName, spans)); if (request.lastName) highlights.append(highlighted('lastName', request.lastName, spans)); }
-  else highlights.append(highlighted('name', request.name, spans));
-  result.append(highlights, element('p', 'Matching fragments:'));
-  const list = element('ol'); list.className = 'matches';
-  for (const match of checked.matches) {
-    const item = element('li');
-    item.append(element('strong', match.candidate || '(empty fragment)'), document.createTextNode(` — ${dataset.locales.find(l => l.code === match.locale)?.label ?? match.locale} (${match.locale}); ${match.alwaysCheck ? 'always checked' : 'locale-specific'}; ${match.rule}; hash `), element('code', match.hash));
-    if (match.recoveredWords.length) item.append(element('p', `Published candidate metadata: ${match.recoveredWords.join(', ')}`));
-    list.append(item);
+  if (!dataset) return;
+  const capturedRevision = revision;
+  checkTimer = window.setTimeout(() => renderCheck(name, capturedRevision), 250);
+}
+
+function renderCheck(name: string, capturedRevision: number): void {
+  if (capturedRevision !== revision || composing || nameInput.value !== name || !dataset) return;
+  checkTimer = undefined;
+  const checked = checkName(name, dataset.rows);
+  const definitionRows = new Map<string, HTMLLIElement>();
+  result.dataset.verdict = checked.unicodeApproximate ? 'approximate' : checked.verdict;
+  result.append(element('h2', checked.verdict === 'restricted' ? 'Matches found' : 'No matches found'));
+  if (checked.unicodeApproximate) {
+    const notice = element('p', 'Approximate check: the game may handle non-ASCII characters differently.');
+    notice.className = 'notice'; result.append(notice);
   }
-  result.append(list, element('p', 'The game may use an updated online list or other naming rules.'));
+  if (checked.verdict === 'restricted') {
+    const spans = checked.matches.flatMap(match => match.spans);
+    result.append(highlighted(name, spans), element('p', 'Matching text:'));
+    const list = element('ol'); list.className = 'matches';
+    for (const match of checked.matches) {
+      const item = element('li');
+      item.append(element('strong', match.candidate || '(empty fragment)'));
+      const language = element('span', dataset.locales.find(l => l.code === match.locale)?.label ?? match.locale);
+      language.className = 'match-language';
+      if (match.alwaysCheck) language.append(element('small', 'Applies in every language'));
+      item.append(language);
+      list.append(item);
+      const key = match.candidate.trim().toLowerCase();
+      if (key && !definitionRows.has(key)) definitionRows.set(key, item);
+    }
+    result.append(list, element('p', 'Matches may not apply to every language or naming context.'));
+  } else {
+    result.append(element('p', 'Nothing matched the built-in lists in any language.'));
+  }
+  checkStatus.textContent = checked.verdict === 'restricted'
+    ? `Matches found. ${checked.matches.length} matching fragment${checked.matches.length === 1 ? '' : 's'}.`
+    : 'No matches found.';
+  if (checked.unicodeApproximate) checkStatus.append(' Approximate check: the game may handle non-ASCII characters differently.');
+  if (definitionRows.size) {
+    definitionController = new AbortController();
+    void enrichMatches(capturedRevision, definitionRows, definitionController.signal);
+  }
+}
+
+function externalLink(text: string, url: string): HTMLAnchorElement {
+  const link = element('a', text);
+  link.href = url;
+  link.target = '_blank';
+  link.rel = 'noopener noreferrer';
+  return link;
+}
+
+function appendDefinition(row: HTMLLIElement, definition: DictionaryDefinition): void {
+  const gloss = element('p', `English definition: ${definition.text}`);
+  gloss.className = 'match-definition';
+  const credit = element('p');
+  credit.className = 'definition-credit';
+  if (definition.sourceUrl) credit.append(externalLink('Source', definition.sourceUrl), ' via ');
+  credit.append(externalLink('Dictionary API', 'https://dictionaryapi.dev/'));
+  if (definition.license) {
+    credit.append(' (');
+    credit.append(definition.license.url
+      ? externalLink(definition.license.name, definition.license.url)
+      : document.createTextNode(definition.license.name));
+    credit.append(')');
+  }
+  row.append(gloss, credit);
+}
+
+async function enrichMatches(capturedRevision: number, rows: Map<string, HTMLLIElement>, signal: AbortSignal): Promise<void> {
+  for (const [word, row] of rows) {
+    if (capturedRevision !== revision || signal.aborted) return;
+    const definition = await lookupDefinition(word, signal);
+    if (capturedRevision !== revision || signal.aborted) return;
+    if (definition && row.isConnected) appendDefinition(row, definition);
+  }
+}
+
+nameInput.addEventListener('input', scheduleCheck);
+nameInput.addEventListener('compositionstart', () => {
+  composing = true;
+  observedValue = nameInput.value;
+  invalidateCheck();
 });
+nameInput.addEventListener('compositionend', () => {
+  composing = false;
+  scheduleCheck();
+});
+nameInput.addEventListener('change', () => {
+  if (nameInput.value !== observedValue) scheduleCheck();
+});
+form.addEventListener('submit', event => event.preventDefault());
 
 async function start(): Promise<void> {
   try {
@@ -114,14 +195,15 @@ async function start(): Promise<void> {
     const data: unknown = await response.json();
     if (!validDataset(data)) throw new Error('Invalid dataset');
     dataset = data;
-    for (const entry of data.locales) { const option = element('option', entry.label); option.value = entry.code; locale.append(option); }
-    locale.value = 'en-US'; locale.disabled = false; button.disabled = false;
-    status.textContent = 'Restriction data loaded.';
-    mountRecovery(byId('recovery-content'), data);
+    status.textContent = '';
+    mountRecovery(recoveryRoot, data);
+    scheduleCheck();
   } catch {
-    dataset = undefined; locale.disabled = true; button.disabled = true;
+    dataset = undefined;
+    invalidateCheck();
     status.textContent = 'Unable to load restriction data. Reload to try again.';
-    byId('recovery-content').textContent = 'Unable to load restriction data. Reload to try again.';
+    status.classList.add('load-error');
+    recoveryRoot.textContent = 'Unable to load restriction data. Reload to try again.';
   }
 }
 void start();

@@ -39,13 +39,8 @@ export type Dataset = {
   latinScriptLocales: Locale[];
 };
 
-export type NameRequest =
-  | { kind: 'character'; firstName: string; lastName: string; locale: Locale }
-  | { kind: 'beast'; name: string; locale: Locale };
-
 /** UTF-16 offsets, with an exclusive end. */
 export type Span = {
-  field: 'firstName' | 'lastName' | 'name';
   start: number;
   end: number;
 };
@@ -55,7 +50,7 @@ export type NameMatch = {
   candidate: string;
   locale: Locale;
   alwaysCheck: boolean;
-  rule: 'full-name' | 'whole' | 'short-token' | 'substring';
+  rule: 'exact' | 'whole' | 'short-token' | 'substring';
   spans: Span[];
   recoveredWords: string[];
 };

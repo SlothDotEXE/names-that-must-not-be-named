@@ -13,7 +13,7 @@ import tempfile
 LOCALES = ('en-US', 'de-DE', 'es-ES', 'es-MX', 'fr-FR', 'it-IT', 'pl-PL', 'pt-BR', 'ar-AE', 'ja-JP', 'ko-KR', 'ru-RU', 'zh-CN', 'zh-TW')
 HASH_COLUMNS = ('row_index', 'hash', 'locale', 'always_check', 'asset_offset')
 RECOVERY_COLUMNS = ('row_index', 'word', 'hash', 'locale', 'always_check', 'asset_offset')
-INPUTS = ('restricted-word-hashes.csv', 'recovered-words.csv', 'language-segments/hashcat-new-matches.txt', 'language-segments/summary.json')
+INPUTS = ('restricted-word-hashes.csv', 'recovered-words.csv', 'locales.json')
 HEX_HASH = re.compile(r'[0-9a-f]{32}\Z')
 
 
@@ -101,31 +101,10 @@ def build_dataset(source_dir: Path, output_dir: Path) -> dict:
         if (index, locale, flag, offset) != (row['rowIndex'], row['locale'], row['alwaysCheck'], offsets[digest]):
             fail(INPUTS[1], line, 'metadata conflict')
         add(digest, record['word'], INPUTS[1], line)
-    for line, entry in enumerate(raw[INPUTS[2]].split(b'\n'), 1):
-        if entry.endswith(b'\r'):
-            entry = entry[:-1]
-        if not entry:
-            continue
-        parts = entry.split(b':', 2)
-        if len(parts) != 3:
-            fail(INPUTS[2], line, 'malformed hashcat line')
-        digest_bytes, salt, value = parts
-        try:
-            digest = digest_bytes.decode('ascii')
-            if not HEX_HASH.fullmatch(digest) or salt != b'phoenix':
-                fail(INPUTS[2], line, 'invalid digest or salt')
-            if value.startswith(b'$HEX['):
-                if not value.endswith(b']') or not re.fullmatch(b'(?:[0-9a-fA-F]{2})*', value[5:-1]):
-                    fail(INPUTS[2], line, 'invalid HEX wrapper')
-                value = bytes.fromhex(value[5:-1].decode('ascii'))
-            word = value.decode('utf-8')
-        except (UnicodeError, ValueError) as exc:
-            fail(INPUTS[2], line, f'invalid candidate encoding: {exc}')
-        add(digest, word, INPUTS[2], line)
     for row in rows:
         row['words'] = sorted(candidates[row['hash']])
     try:
-        summary = json.loads(raw[INPUTS[3]].decode('utf-8-sig'))
+        summary = json.loads(raw[INPUTS[2]].decode('utf-8-sig'))
         labels = {}
         for segment in summary['segments']:
             code = segment['segment']
@@ -137,7 +116,7 @@ def build_dataset(source_dir: Path, output_dir: Path) -> dict:
         if set(labels) != set(LOCALES) or not isinstance(latin, list) or len(latin) != len(set(latin)) or any(code not in LOCALES for code in latin):
             raise ValueError('invalid locale metadata')
     except (UnicodeError, ValueError, KeyError, TypeError) as exc:
-        raise ValueError(f'{INPUTS[3]}: invalid metadata: {exc}') from exc
+        raise ValueError(f'{INPUTS[2]}: invalid metadata: {exc}') from exc
     locale_counts = [dict(code=code, label=label, **counts([r for r in rows if r['locale'] == code])) for code, label in labels.items()]
     latin_rows = [r for r in rows if r['locale'] in latin]
     dataset = {'schemaVersion': 1, 'buildId': '26175237', 'snapshotId': snapshot, 'sourceDigests': digests, 'rows': rows, 'counts': {'all': counts(rows), 'latinScript': counts(latin_rows)}, 'locales': locale_counts, 'latinScriptLocales': latin}
