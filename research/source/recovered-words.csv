@@ -1,6 +1,8 @@
 row_index,word,hash,locale,always_check,asset_offset
+0,بنت حرام,03f7688cd39f314efa708c184c5c576a,ar-AE,False,320465
 1,خنيث,0406a77a09372765c48e72708c17e5f5,ar-AE,False,320542
 2,أمك,047f9448b571c8db8bc8b30cafce0383,ar-AE,False,320619
+4,ابن ال,072630e4aeb5c5fbdcd3da67101d34ee,ar-AE,False,320773
 5,قاتل,09a8df91f1d8a311d99b4ae7701caafc,ar-AE,False,320850
 6,مُفجِر,0b9be98fa3c1fdd80f872382a6784231,ar-AE,False,320927
 7,أيري,0c67f17264e365fef4a1a76c6515e73b,ar-AE,False,321004
@@ -23,6 +25,7 @@ row_index,word,hash,locale,always_check,asset_offset
 27,زب,35bc6048ad1081215862f43e09e02fbe,ar-AE,False,322544
 28,شرموطة,36845158871bde581bb05349b79b6224,ar-AE,False,322621
 29,بنيكك,3cd06be7e550c7a49ee104fedc33914d,ar-AE,False,322698
+30,أب الله,3d760ac0ea59fab4b62c509cdf2d0037,ar-AE,False,322775
 32,حاقد,4274f63c767b2754219de9eea2f8ea07,ar-AE,False,322929
 33,غحبة,478a9b6c182d8a181cc05c4c7acf7e86,ar-AE,False,323006
 34,العن,4c9948e72309c1dd0feee832874bd18a,ar-AE,False,323083
@@ -31,8 +34,10 @@ row_index,word,hash,locale,always_check,asset_offset
 37,شرموط,5084a241dc0d976c6fdfe6f8599794f2,ar-AE,False,323314
 39,يلعن,54d9a640b61af8edb3033a02b35262e5,ar-AE,False,323468
 40,إرهابي,550b8264a4c2b847120aeee97d06f53d,ar-AE,False,323545
+41,ابنالحرام,59529442eac52a09a2604ef5a5302181,ar-AE,False,323622
 42,زق,59729ed7f74e276ddd7fabf3d524e425,ar-AE,False,323699
 44,عاهرة,5b6c85da41d985d89bc90bc06e445445,ar-AE,False,323853
+45,أم الله,601ae1a1d0fec7d946ee18ddd4f7c91d,ar-AE,False,323930
 46,إلحس,62550cee49eebc6f15038a73ef19e7f3,ar-AE,False,324007
 47,كس,62d371b78b863c606dcd28413d43c0e5,ar-AE,False,324084
 48,أختالله,63fc3080a0f046180ca2141964de42d6,ar-AE,False,324161
@@ -50,9 +55,11 @@ row_index,word,hash,locale,always_check,asset_offset
 62,اير,7cfb894d6a797587e6b3a8a183c0d66e,ar-AE,False,325239
 63,قاتلة,80bc240bcf81dbab6d79ee054e2f6fb4,ar-AE,False,325316
 64,زبي,8618dfedb7cd580308dd21d96af87d81,ar-AE,False,325393
+66,أيري فيك,86a3c599d3e88cba34f2feda8e529213,ar-AE,False,325547
 67,حلعن,895923491287c0466b5b91a364a4452b,ar-AE,False,325624
 68,بنيك,8ac487d891e03c826dfd3d1d4275bb98,ar-AE,False,325701
 69,لوطي,8aeda5def5ceea97ab7be443e304e6aa,ar-AE,False,325778
+70,بنت الحرام,8be4b6bd711c1d3365bfd9da41d6fa16,ar-AE,False,325855
 71,خول,8c3d2545df1f0f2b412a4c6ceb7db8f3,ar-AE,False,325932
 72,حاقدة,8cdddd0679226330b57790ca24f6a971,ar-AE,False,326009
 73,خانق,8d359181f9b3658af169f062974a19da,ar-AE,False,326086
@@ -64,12 +71,14 @@ row_index,word,hash,locale,always_check,asset_offset
 79,عرص,9328708303b24e01821c3d6ea11e5430,ar-AE,False,326548
 80,بنتحرام,93b9f67883eb55c113425cd04ffdef77,ar-AE,False,326625
 81,هنيك,9787e215508e059a4a469b06d8a5ea47,ar-AE,False,326702
+82,اخت الله,996ad485aad589299def38efe7db0722,ar-AE,False,326779
 84,أبوك,9a477904ff62040f409bfff78e1aa9c0,ar-AE,False,326933
 85,شانقة,9d1029c0a82ec6916a423a12aa8a2ba1,ar-AE,False,327010
 86,أحبة,9df692bd9448b0d2dd2bb5b5114631aa,ar-AE,False,327087
 87,ايريفيك,a18edf0cbc4109082a86deb24826e0b9,ar-AE,False,327164
 88,خرى,a2e683f5c7de840fec286aed47f02032,ar-AE,False,327241
 89,قتل,a442e37ac741344692a15739b47815cc,ar-AE,False,327318
+90,أخت الله,a4b7ae2abf727d52a998553905d8d768,ar-AE,False,327395
 91,زنجي,a5a07d4187f6f207c9e2e00325787fd8,ar-AE,False,327472
 92,انيك,aaeb26c7c7ea28d915962810e4d06543,ar-AE,False,327549
 93,أبو,ad1147dec2efa0dd63835a233950d0e1,ar-AE,False,327626
@@ -84,6 +93,7 @@ row_index,word,hash,locale,always_check,asset_offset
 103,نغر,c585ff58439021a954a6a91dc1bc81ea,ar-AE,False,328396
 104,شنق,c5c7c6449c1ecf693ce0a1eb2bd47dc5,ar-AE,False,328473
 105,إلعن,c70065815441a9191331e2194ce31134,ar-AE,False,328550
+106,ايري فيك,ca54c9af6976e69550f6c578a478722b,ar-AE,False,328627
 109,منيوكة,ccfbb09084e30db1e1af6f05e0a231dc,ar-AE,False,328858
 110,شرموطا,cd04bbee7ab97030b5b49f66043e0026,ar-AE,False,328935
 111,خنق,ce79b6f7f4505997542eeae1f9227dae,ar-AE,False,329012
@@ -95,9 +105,12 @@ row_index,word,hash,locale,always_check,asset_offset
 117,بربك,dfe7b20bc385f80fa5db2b59c375709b,ar-AE,False,329474
 118,شرموطى,e368294437e5e56c7db0a8e8d36be060,ar-AE,False,329551
 119,الحس,e62d26be510e8bcf9ee74b38e6df66e4,ar-AE,False,329628
+122,ابن الحرام,ec69db7b7f69fe669f8a292bf68c116f,ar-AE,False,329859
 123,متناكة,ef2f61e0aa9ad092ecab9472c0ee7e1e,ar-AE,False,329936
 124,طيزي,f85896c70c03f862bb6e9bb61856ef34,ar-AE,False,330013
+125,قَوّاد,fb5bdb2b67316640fc0f6f7e2441afa0,ar-AE,False,330090
 126,شانق,ff0452f4d7617f49c1f16495675ab41e,ar-AE,False,330167
+127,بنتالحرام,ff9c1a5b6c5e014793361946b6519189,ar-AE,False,330244
 128,schützin,0251084acf061f7614c5d7bac55332e9,de-DE,False,330321
 129,punze,03fa09a6e3f15f660fb897a00b1c7ab4,de-DE,False,330398
 130,poloch,04ab7ffeeabebb6b51952630dcdee2e7,de-DE,False,330475
@@ -109,6 +122,7 @@ row_index,word,hash,locale,always_check,asset_offset
 136,schiß,0a089e326e1c20c65ce0444c8e5fbeb9,de-DE,False,330937
 137,depp,0a12d3777511a3b475ee43b1f37eed3c,de-DE,False,331014
 138,terroristin,0a6a8deb59437cb3a82cc682c4da92cd,de-DE,False,331091
+139,gruppenvergewaltigungen,0aef686304c3eecec9c6cae74ce232cc,de-DE,False,331168
 140,verstümmler,0c11f5fc85de34bf402a481c20726dc7,de-DE,False,331245
 141,killer,0c8cd96b0c0d5ccdf77c3b65b627bfbf,it-IT,False,331322
 142,penisse,0d31280bde77730d4e36022bfbeb94c7,de-DE,False,331399
@@ -131,6 +145,7 @@ row_index,word,hash,locale,always_check,asset_offset
 160,mohren,23847a173e52ce9b8a8f7f292e7090d3,de-DE,False,332785
 161,schlitzaugen,23a5d7f0e238bdd62ff4995302374dfd,de-DE,False,332862
 162,verdammt,24d4bf7bbb1e7c8e23dc7aff8c8e66ad,de-DE,False,332939
+163,niggerinnen,25f37131194f9734e889299db0a48927,de-DE,False,333016
 164,idioten,26ed6c379fa187bac19a4da8e827541d,de-DE,False,333093
 165,arschnase,27298b3ca6fa382d1860b5adcf2893e8,de-DE,False,333170
 166,schlitzauge,296e2962dd0412dc483f01f1f9753334,de-DE,False,333247
@@ -177,6 +192,7 @@ row_index,word,hash,locale,always_check,asset_offset
 208,arschlecken,532f6931bd89875240a6ae551b363d84,de-DE,False,336481
 209,masturbieren,532f71ae52b5956538c3052999124684,de-DE,False,336558
 210,titten,538d08fd34a63a6685d12957f3004a59,de-DE,False,336635
+211,katzelmacherin,53ee78d2f2fc78a74a86cf4fd360ad12,de-DE,False,336712
 212,neiderin,549af85e9b4974729641888c0eed001b,de-DE,False,336789
 213,lesben,554c5c5783fb5a13f9f44ed868c07ea7,de-DE,False,336866
 214,zicken,5685328f354fd76fc1905b01fc5e1d36,de-DE,False,336943
@@ -214,6 +230,7 @@ row_index,word,hash,locale,always_check,asset_offset
 247,bimbo,79db3edc5c463d55e31cdb46f663305e,de-DE,False,339484
 248,hater,7b1cbd6a5c17092b517aed629f5ed35c,pt-BR,False,339561
 249,analdildo,7f39e2a9c196348e28616205ca8ee353,de-DE,False,339638
+250,proletinnen,7fa3a13e6ebc79f03122939c13464426,de-DE,False,339715
 251,itaker,82001e4e88aafd1f4e711044d0c764c0,de-DE,False,339792
 252,bombenlegerin,833c0537acd5985b1e77eace79810ca7,de-DE,False,339869
 253,flittchen,83e295d3aa49de24cb041307075b71ef,de-DE,False,339946
@@ -223,6 +240,7 @@ row_index,word,hash,locale,always_check,asset_offset
 257,prostituierter,84699f73b71de5ee17d0273afc771e41,de-DE,False,340254
 258,blowjobs,8632bdfdfee927a5884af8ff94da7a6a,de-DE,False,340331
 259,mösen,8692933bbb9bab54973c1f7860cc77f7,de-DE,False,340408
+260,schwanzköpfe,8762997e86b7e25aa0e05181e5e4a297,de-DE,False,340485
 261,todesschütze,87e22007dccf23c9a8796e0c0d19b486,de-DE,False,340562
 262,spasti,87fb7793d48c43ef2584b56ba4e65156,de-DE,False,340639
 263,schnepfen,884e2ff718e9940c5b9b5d9e3adbe4fd,de-DE,False,340716
@@ -240,6 +258,7 @@ row_index,word,hash,locale,always_check,asset_offset
 276,schiffen,948b456bfdf35fff988d0ec9edb374b1,de-DE,False,341717
 277,huren,94938416c81b80b711f9fca0cc1fe4b6,de-DE,False,341794
 278,titte,952bf0117b943b4b185e65797c35fd82,de-DE,False,341871
+279,todesschützin,9704f6145e0f46a9657ac358fcecd71a,de-DE,False,341948
 281,japse,986c304b0866bca31279473f3c563c98,de-DE,False,342102
 282,arschgeigen,9936351d59e3a9b0ffc730a5965483ba,de-DE,False,342179
 283,luder,994a3a1bfd26f38f97085647395e152e,de-DE,False,342256
@@ -252,10 +271,12 @@ row_index,word,hash,locale,always_check,asset_offset
 290,pisserin,a1cdbefc388c27f2d2bf1a31d25225fd,de-DE,False,342795
 291,köpfer,a35d05a31914e25738a02c8ee3115f4e,de-DE,False,342872
 292,miststücke,a363c3c5ee97a02ec0a5c35913c39578,de-DE,False,342949
+293,pisserinnen,a3d1c0821b93dd80d52b4e102eb034d5,de-DE,False,343026
 294,dreckskerl,a42dc73fd98327175c871c2c4180a34c,de-DE,False,343103
 295,bastarde,a654f793626b8d87305a307819090b68,it-IT,False,343180
 296,bohnenfresser,a6819052166eacd0b0d1935b4f039e2e,de-DE,False,343257
 297,ornaniere,a7023c6217e72488ab93b965ada8d994,de-DE,False,343334
+298,saftnegerin,a797ac6003182f789f6941b64bdd77ad,de-DE,False,343411
 299,arschgeige,ab8a7c19b989a43bf4cc911456d1b1ee,de-DE,False,343488
 300,arisch,aeaef8ebc06f1cc2adf1131b0ff5386d,de-DE,False,343565
 303,hobeln,b407b98139de6f4ba7857853c600e004,de-DE,False,343796
@@ -264,6 +285,7 @@ row_index,word,hash,locale,always_check,asset_offset
 307,arschlecker,b8222f33f92376970b2b102d0056a6fe,de-DE,False,344104
 308,hurentochter,b8fb1e5fa42c4ba213594fbcc6c3ecea,de-DE,False,344181
 309,schlappschwänze,b91df4b02244ad69fda2625e9dd1c2fd,de-DE,False,344258
+310,katzlmacherin,b9b16a31f497803e11c3001ed3549d02,de-DE,False,344335
 311,blödmänner,ba3904318659284d0e2b8702a9cd0a5f,de-DE,False,344412
 312,giaur,be4292df8c02df1e907cfc71258130d7,de-DE,False,344489
 313,abwichsen,c2e648c2a062d5f7be1b5f46dd3d563e,de-DE,False,344566
@@ -277,12 +299,14 @@ row_index,word,hash,locale,always_check,asset_offset
 321,arschritze,ce09dd655c495ab23bcb6dc5343c1186,de-DE,False,345182
 322,schwanz,ce74fb6bc789dc1aec4c12200fa9a387,de-DE,False,345259
 323,brunzen,ceb6feb9c9ac6439f825b16867a4eb02,de-DE,False,345336
+324,reisfresserin,cf59da962c9086766cd0ed1062aebb9c,de-DE,False,345413
 325,tölpel,d0eba8f328122162cd5988c0ba63acc1,de-DE,False,345490
 326,spaghettifresserin,d1c4f3d17bc25965a3275eafc6c8542e,de-DE,False,345567
 327,schwachköpfe,d7de6552dab88b8dbc6a6e748db3acf1,de-DE,False,345644
 328,homos,d98c9fab4cf4ed5d0940765cffc526fd,de-DE,False,345721
 329,möse,d9f7303195b50db6dc6727d07fde2c50,de-DE,False,345798
 330,assi,da2e5d000b57f6c48f86499a116dca82,de-DE,False,345875
+331,köpferin,db1e105531b2dec1faa968875d018b5e,de-DE,False,345952
 332,pisse,df13b1a9fd3a7a03576891f616f55271,fr-FR,False,346029
 333,erwürgen,df2e1437349dd6803ea87727325bc79c,de-DE,False,346106
 334,dirnen,e0426df0d0d4cf6fe5afb9e7a3e795ac,de-DE,False,346183
@@ -304,6 +328,7 @@ row_index,word,hash,locale,always_check,asset_offset
 350,dildos,f3b6d9dbac3a6909df3a9172d9ec8727,de-DE,False,347415
 351,gringos,f3c89fc15dee72cc6f791492118bc122,de-DE,False,347492
 352,hängen,f4d0d43bffe18976344600a076c42aaa,de-DE,False,347569
+353,verstümmlerin,f4e437eaa8c532c44ca9e253e863911d,de-DE,False,347646
 354,sauhunde,f54269ea4a52172641eb5cf0f98a5f8f,de-DE,False,347723
 355,kanaker,f6f6d432939beae495640ea0ffb551f3,de-DE,False,347800
 356,itzig,f927a8976ed38f29d89f14b4770aab5a,de-DE,False,347877
@@ -441,6 +466,7 @@ row_index,word,hash,locale,always_check,asset_offset
 488,nutsack,13089ca2097e1b9ec0b122a66ab9278a,en-US,True,358041
 489,hobo,131164b2f578ad13083ec9c77b475d66,en-US,True,358118
 490,koonhunt,134e61fc30c926d3a3605e5bc61cc46d,en-US,True,358195
+491,madonnaputtana,1374a2552fa9892a78845a3dcbe9592a,en-US,True,358272
 492,preteen,1398db6bbe87aa26bfa8874954a49060,en-US,True,358349
 493,pu55y,13a58b03042dce5ecb55b915a971311b,en-US,True,358426
 494,j1g4bo,13b04fd4a6b184189986275b26660bdc,en-US,True,358503
@@ -1457,6 +1483,7 @@ row_index,word,hash,locale,always_check,asset_offset
 1510,rap1st,c6f3f94491a462b624cc74fba9d133fb,en-US,True,436735
 1511,cunnilingus,c76dc852d35373284405fc08dd5f29c9,en-US,True,436812
 1512,torukojo,c7880951496ec6fe9be9b0626881c1f6,en-US,True,436889
+1513,spermhoarder,c7de7bd400b9cc16a2de52e71f560eb5,en-US,True,436966
 1514,shirakko,c82f1a17373a9479c693b809968e6a28,en-US,True,437043
 1515,areola,c859d2128395ae0c7bf6215464ee2de6,en-US,True,437120
 1516,fotze,c8d110ebc607a87d78fb67513f814af3,en-US,True,437197
@@ -2025,6 +2052,7 @@ row_index,word,hash,locale,always_check,asset_offset
 2080,tetona,ffa5a39b8bcd464bb869597241ab901d,es-MX,False,480625
 2081,rameras,fff32f4bd7e5a7adc9059afcbe1cddef,es-MX,False,480702
 2082,guevones,00b940935344d3a80ce2797743a37b18,es-MX,False,480779
+2083,güevona,03e30c513a2f0408dbf07bbf9e4314ca,es-MX,False,480856
 2084,lamehuevos,0822256792d9b020d021a53c9bfa8d93,es-MX,False,480933
 2085,chimbo,0908c2056f463104eaf1f3b88b969f5f,es-MX,False,481010
 2086,pelotuda,0b65f745aa1366a51e85a2da0bd5f7fb,es-MX,False,481087
@@ -2051,6 +2079,7 @@ row_index,word,hash,locale,always_check,asset_offset
 2108,malparido,27bcba8df6defda956a8c7de92b50570,es-MX,False,482781
 2109,naca,2839e7f46b2d46ac9abf44a69a6d3f9e,es-MX,False,482858
 2110,weon,29157790aee6ba440c22fc300ea1157d,es-MX,False,482935
+2111,güevonas,2a3741ae347f79827fa85b3cb57af1af,es-MX,False,483012
 2112,chupaverga,2a4868f187ac6825b60c612cbde90219,es-MX,False,483089
 2113,guevos,2b698e9ab6fce6edd78cf87149ce7824,es-MX,False,483166
 2114,chaquetearse,315c3e6f0dbcfcde1041b58a6285eb18,es-MX,False,483243
@@ -2097,6 +2126,7 @@ row_index,word,hash,locale,always_check,asset_offset
 2157,boluda,a8da4f24d3831a6ab54b74a76016856d,es-MX,False,486554
 2158,güevón,a9962bd2db0fd7303be4c97447af8397,es-MX,False,486631
 2159,concha,ae56f39ed696082f6472a944206944df,es-MX,False,486708
+2160,mondá,ae69045886fc4c60c416082067d5e5f8,es-MX,False,486785
 2161,retrasada,af86719b7a765b8f3152ef7bbadf632f,es-MX,False,486862
 2162,cricas,b2ee6257ad34eda8de85b069ff8fd6cb,es-MX,False,486939
 2163,roscones,b3e938e72de2090d1ebaeb1edee13d02,es-MX,False,487016
@@ -2317,6 +2347,7 @@ row_index,word,hash,locale,always_check,asset_offset
 2380,mongole,dfe935c9ad6765b766db523b0eeb7702,fr-FR,False,503725
 2381,pédés,dfec4364cb696788a72339d217bb0de3,fr-FR,False,503802
 2382,keu,e0f6dada5f5ad44af1ff147c4acc4a29,fr-FR,False,503879
+2383,troudeballe,e378df1463a255091a31c022e7841d61,fr-FR,False,503956
 2384,pétasse,e3881ccb0bfba98c49c6e9af5a5be9a7,fr-FR,False,504033
 2385,couilles,e425fe64fed5054590ebb46ec640966a,fr-FR,False,504110
 2387,sperme,e4ec7326e889970c832967a03e292153,fr-FR,False,504264
@@ -2333,6 +2364,7 @@ row_index,word,hash,locale,always_check,asset_offset
 2398,branleurs,f3cda6dd8daa9db0b67b46c9da74aea6,fr-FR,False,505111
 2399,caguette,f590038d78a1adcdd7840b62b991b655,fr-FR,False,505188
 2400,chatte,f707dec05a5ffe5bf09a2137e5b2afa3,fr-FR,False,505265
+2401,trou de balle,f7933d4589a8bacff4be64fa266caa5e,fr-FR,False,505342
 2402,éjaculer,f8cc3df82cbaa93a34273cdb76440d89,fr-FR,False,505419
 2403,niquer,f8cc94ced2263f840bdd96d81eccbbab,fr-FR,False,505496
 2404,branleur,f9321d3914c44e5c9edb86a9e2d46b5a,fr-FR,False,505573
@@ -2529,12 +2561,14 @@ row_index,word,hash,locale,always_check,asset_offset
 2596,人夫,0060c555afbba3ac0b76f9fc038865c9,ja-JP,False,520357
 2597,ヒモイシャ,00900e9cda0a67c6c736de1023a24b53,ja-JP,False,520434
 2598,女子供,00bab3ccaff2ae01eff343e623213e30,ja-JP,False,520511
+2599,タッキュウビン,00c4d69934669d694de6048cc9099b94,ja-JP,False,520588
 2600,ループタイ,00d5ccb598cf4d2298dded49c4135f09,ja-JP,False,520665
 2601,スケ,00ff2d5e5da6fe2aeb5f892fa423003f,ja-JP,False,520742
 2602,女流,011ad708d379fe4b1844222a851fa6fc,ja-JP,False,520819
 2603,ヤバい,013645210a768e8dd24122ef37d6f4db,ja-JP,False,520896
 2604,平民,01545075f754ca55b6b95427ebac5fb8,ja-JP,False,520973
 2605,セイシンイジョウ,01940947bf74970779f4f158f5cf2a56,ja-JP,False,521050
+2606,ゼットショック,01976e69b40171af20bb01674bfe619d,ja-JP,False,521127
 2607,三韓征伐,01ef3201ac9924a162e8f26aa3427d8b,ja-JP,False,521204
 2608,土工,01fd3d63263f3ac32f0f3a34d60c40b9,ja-JP,False,521281
 2609,金タマ,0202e2b7aa1eecb4cd0cd6773bcdf9d3,ja-JP,False,521358
@@ -2545,6 +2579,7 @@ row_index,word,hash,locale,always_check,asset_offset
 2615,わんかっぷ,0346c7dc3b88bffe8dbae6c74e723e25,ja-JP,False,521820
 2616,明仁,034f8697aea8c8f95a44cda7d487e17b,ja-JP,False,521897
 2617,ゾウヤクフ,03bf8aa7e6a36114e67d0711dd0747db,ja-JP,False,521974
+2618,えっくすしょっく,040109b12ed49e307e03be64bd52bb4b,ja-JP,False,522051
 2619,トサツニン,041c87467c80ff26e6cbb8ee1c186702,ja-JP,False,522128
 2620,ぽっぽーや,04209653c3d5bb71a2059725761fbf05,ja-JP,False,522205
 2621,しんへいみん,0437ecdd133f55713c4f17490150ceb2,ja-JP,False,522282
@@ -2556,6 +2591,7 @@ row_index,word,hash,locale,always_check,asset_offset
 2627,キジルシ,04fba1da5b60c8c127e9ffaef34a4a9e,ja-JP,False,522744
 2628,チャンコロ,05089c4381941a045f254e2ce1ee0228,ja-JP,False,522821
 2629,さはりん,05875db8e9058198406e2656c77cc334,ja-JP,False,522898
+2630,ぴっぷえれきばん,05d0cff6257de70a96099e824d054c69,ja-JP,False,522975
 2631,パンスケ,05eec60eec940279badc13c851dd2a34,ja-JP,False,523052
 2632,ぼけろうじん,05f2ed1447396bd4936fefde21a4510d,ja-JP,False,523129
 2633,表日本,05f80e97fd10fd6ba4dfa45ec72bab4d,ja-JP,False,523206
@@ -2581,6 +2617,7 @@ row_index,word,hash,locale,always_check,asset_offset
 2653,ちゃんころ,0717882046beffff226c8d47c6839199,ja-JP,False,524746
 2654,あて馬,07403456aec56bd44323f0292e4825ed,ja-JP,False,524823
 2655,むすめをかたづける,078ec7df0e6b01e40c1b20d990334806,ja-JP,False,524900
+2656,脳タリン,07d82ec1d13679a6777bec2aaf173cda,ja-JP,False,524977
 2657,のす,07f4c8d7a8be217efdc672ccb140b60f,ja-JP,False,525054
 2658,明盲,085814fa90665436deb837755e1bac8e,ja-JP,False,525131
 2659,タバスコ,08656d701115f4e33046c6cc5ecb6df0,ja-JP,False,525208
@@ -2606,6 +2643,7 @@ row_index,word,hash,locale,always_check,asset_offset
 2679,くりねっくす,0a1676ea1bde6e1579d083460c356b8f,ja-JP,False,526748
 2680,キンジョウテンノウ,0a234a05c590d38681762aecffbe6bab,ja-JP,False,526825
 2681,身元調査,0a4d50c35b3d87aca815bff5b89e8707,ja-JP,False,526902
+2682,まじっくいんき,0a67971279d2a430290f90a14158ae89,ja-JP,False,526979
 2683,ガチャメ,0a8f32c11bb8df3594cfd61132da10f4,ja-JP,False,527056
 2684,代書屋,0abd0742dacc72d412a84eb44744a760,ja-JP,False,527133
 2685,盲人,0abf536d7573998c29cde088ebd81326,ja-JP,False,527210
@@ -2623,9 +2661,11 @@ row_index,word,hash,locale,always_check,asset_offset
 2697,イトヨウジ,0c48bf8b53cd23365f17e012ef994383,ja-JP,False,528134
 2698,馬喰,0c5765c13c1a220d11fbdbc3f21a9b9b,ja-JP,False,528211
 2700,シンナー,0cb2686cc081689f14d3381b44061e13,ja-JP,False,528365
+2701,キタチョウセンジン,0ceaaa5ed712d92ed969d9ec83055cc5,ja-JP,False,528442
 2702,オービス,0cf6c4a1eac0b19b54dab7fb97c4107e,ja-JP,False,528519
 2703,メイモンコウ,0d01f54ad23f1dfe63d835b484f3df7a,ja-JP,False,528596
 2704,やくちゅう,0d0fb7a3752ada2c8e725cd69e308a43,ja-JP,False,528673
+2705,じぇいしょっく,0d43dcf05d9b84f30858e523559efc8a,ja-JP,False,528750
 2706,ぽらろいど,0d4f4fdfbcdeaff9c9d6863915d3bf98,ja-JP,False,528827
 2707,アマ,0d7787092f2d5c572fe9740a105dc648,ja-JP,False,528904
 2708,ポコペン,0d8f239743591309a1a7ebc8d2320043,ja-JP,False,528981
@@ -2638,6 +2678,7 @@ row_index,word,hash,locale,always_check,asset_offset
 2715,じょきゅう,0f2e774e52d0c456f5a7b02cd69f5d5c,ja-JP,False,529520
 2716,坑夫,0f2f13b8e1def40d0955e8f815fe4ade,ja-JP,False,529597
 2717,越後の米つき,0f542f929353b9bf870ec1d49762887a,ja-JP,False,529674
+2718,ごーるでんうぃーく,0f5e684d1d1ada546772dcd31fb128b5,ja-JP,False,529751
 2719,新平民,0f794d9a60e099aa203041805fea0284,ja-JP,False,529828
 2720,過去帳,1008609f6b4f26d9361f6bbe3b320074,ja-JP,False,529905
 2721,くりーぷ,1024e6e259780e14c741164746af177c,ja-JP,False,529982
@@ -2647,6 +2688,7 @@ row_index,word,hash,locale,always_check,asset_offset
 2725,シナソバ,10e30b6c47d0534fcabd1fe305352ed7,ja-JP,False,530290
 2726,医者,10e449283941be4a4e0bba0e9e1b401e,ja-JP,False,530367
 2727,サラブレッド,1112343e63cb28300529411f2e8a1a07,ja-JP,False,530444
+2728,ジャパユキサン,115ce48084cb7ff131618d88ca7e732d,ja-JP,False,530521
 2729,ピアニカ,115dc8d167781a0d6a25058e2f1928ad,ja-JP,False,530598
 2731,カショウ,1194d8f4f9629cde70b3613f8b993796,ja-JP,False,530752
 2732,マタニカケル,11ff9374d5e855ef3cdfea5e9fee734f,ja-JP,False,530829
@@ -2690,6 +2732,8 @@ row_index,word,hash,locale,always_check,asset_offset
 2771,ポッポーヤ,169f733e98871dcef4399fe1745d5b66,ja-JP,False,533832
 2772,マジックテープ,16ad1857fc78efba9f792694f029ab7e,ja-JP,False,533909
 2773,原爆,16ec0a1dbdae7a9f25ce3c319c1bacc7,ja-JP,False,533986
+2774,りずむぼっくす,16fc1f6efff305e55873442029823e0f,ja-JP,False,534063
+2775,でぃーしょっく,1706eaa5166c6e138610ef4643ce556c,ja-JP,False,534140
 2776,せんずり,17113c70b6f24c4821438125dabea462,ja-JP,False,534217
 2777,狂う,173ffc5841307b92b7852bc8f83ec4bb,ja-JP,False,534294
 2778,ギッチョ,1746444631d0a2989e5c4371e34eeab6,ja-JP,False,534371
@@ -2697,16 +2741,21 @@ row_index,word,hash,locale,always_check,asset_offset
 2780,でぶ,177a9b34e1cdebb22b14b287369eee00,ja-JP,False,534525
 2781,いあんぷ,17af61379720eece6765b7a7d73a689e,ja-JP,False,534602
 2782,家柄,17bdf555f7fa90cba01804e20142614f,ja-JP,False,534679
+2783,おなべおんな,17cf095cb76bbf697cd745cfa7771a65,ja-JP,False,534756
+2784,セイシンイジョウシャ,17f7b19c6d294b995033a1b1780cc231,ja-JP,False,534833
 2785,ヤク中,1803593c9079435b47f5ddb32e1e3eb0,ja-JP,False,534910
 2786,オボレジヌ,1842a060d38dfc60b3e2d26f1af9c9ed,ja-JP,False,534987
 2787,よめにやる,1846a99496b71960f3d6271422d4a2de,ja-JP,False,535064
+2788,えぬしょっく,1858308a0fa7910c42724b473b4c2408,ja-JP,False,535141
 2789,りょうし,187b42b231a57d5577c5c47d83c6aa79,ja-JP,False,535218
 2790,むこをとる,188bb2233e26f1a6266ea64a3d3d5edd,ja-JP,False,535295
 2791,近目,18a65a37a505576b9efeb309ac3ea465,ja-JP,False,535372
 2792,きじるし,18a7b5038865cab7b9ad16f0f7ca3c05,ja-JP,False,535449
 2793,シノウコウショウ,18c820250c736817ed762409396b12ca,ja-JP,False,535526
 2794,ぱくる,18db39ad819cb13f8da5971f704625bb,ja-JP,False,535603
+2795,ふりーだいやる,18ea0e1e93ffdf345b300da39c121bf5,ja-JP,False,535680
 2796,あま,190d74641e28455f8dbf303cac7609ac,ja-JP,False,535757
+2797,あーるしょっく,190fa0f8ad11ede119a24b38e8f35662,ja-JP,False,535834
 2798,キャタピラー,198c944105284fc54213a06d269a841d,ja-JP,False,535911
 2799,ゴアテックス,198e668ccd55a9a0da4b44f4d73e8006,ja-JP,False,535988
 2800,あんま,19911276c5ac67d089e566e7f313991e,ja-JP,False,536065
@@ -2742,6 +2791,7 @@ row_index,word,hash,locale,always_check,asset_offset
 2831,ブ男,1cfb3443c06013282cca9ac572369d33,ja-JP,False,538452
 2832,天皇,1d015040f0f222d154c15a197142567f,ja-JP,False,538529
 2833,すけ,1d0972432ff1cb2dd6761bdbdf73f834,ja-JP,False,538606
+2834,エーショック,1d10c3b58b817846063234b33ff6ff13,ja-JP,False,538683
 2835,未亡人,1db3e8cb0aa5f7eb44d14589170d8d82,ja-JP,False,538760
 2836,カタオヤ,1dda890342b66f80068e12661c558d29,ja-JP,False,538837
 2837,みいちゃんはあちゃん,1dee10eecfe81c9501e88eb0c47a537a,ja-JP,False,538914
@@ -2820,6 +2870,7 @@ row_index,word,hash,locale,always_check,asset_offset
 2912,ポッポ屋,28426276232e61e0322cf9e901694e51,ja-JP,False,544689
 2913,帰化人,28a8fab4097b9457d84d304649e55401,ja-JP,False,544766
 2914,紐医者,28c23a44b9f206e8930a9bcc4c72f0c6,ja-JP,False,544843
+2915,るーびっくきゅーぶ,28e8304b094cb3ad01a00df3de84c513,ja-JP,False,544920
 2916,私刑者,28eaa5159669ff0092bb65ac563f92ad,zh-TW,False,544997
 2917,カクセイザイ,291b78ecf9a9d366292b6f65fc4f7f12,ja-JP,False,545074
 2918,よつ,295f6e72bdd2849c4127bb18f9aa9cf1,ja-JP,False,545151
@@ -2830,6 +2881,7 @@ row_index,word,hash,locale,always_check,asset_offset
 2923,アメコウ,2a71cbd84e2c2656193cdc31df9312ab,ja-JP,False,545536
 2924,トクシュブラク,2a8d3b45ed4b35c812f1ab147baa9b5d,ja-JP,False,545613
 2925,ツレゴ,2aba38e3804e1ada63e94fc355157627,ja-JP,False,545690
+2926,ぶいしょっく,2ad6980c3b562d95dff6520a63c36fb5,ja-JP,False,545767
 2927,パクる,2ae5262824323be2586a21d04722481d,ja-JP,False,545844
 2928,しなそば,2b1e347b64b4aa206047bcd515935c5b,ja-JP,False,545921
 2929,うつ,2b238dd44524841183dc3e0204ad9c90,ja-JP,False,545998
@@ -2861,6 +2913,7 @@ row_index,word,hash,locale,always_check,asset_offset
 2955,へき地,2e529983886dc8d0776e0cfda5456564,ja-JP,False,548000
 2956,くんに,2e52e26913c3cfd6c582aa7f57aed116,ja-JP,False,548077
 2957,垂れ流し,2e7bf4c3978d642b50698097786ce14f,ja-JP,False,548154
+2958,ディーショック,2e846b56f03bf95f6c2dff8f0a50f33e,ja-JP,False,548231
 2959,小僧,2f1e36b3688baca99b23f40fb95cb535,ja-JP,False,548308
 2960,てんかん,2f535d96e53745200a9d60c32f1a7ab6,ja-JP,False,548385
 2962,ひゃくしょう,2f66ea2d85301ef130e65f78ed38794c,ja-JP,False,548539
@@ -2880,6 +2933,7 @@ row_index,word,hash,locale,always_check,asset_offset
 2976,首切り,314e3a947000bc0937b10851b9b1b6fd,ja-JP,False,549617
 2977,スミチオン,315120afc81e6c682b290c812ec7a022,ja-JP,False,549694
 2978,きがくるう,317b70cce34cfed1665aa6050b68d225,ja-JP,False,549771
+2979,汲みとり屋,318077577d4060788706a7803bb43a09,ja-JP,False,549848
 2980,リズムボックス,31bee0c0c73b518bb457a4654ac93cac,ja-JP,False,549925
 2981,ホクセン,32012f22ad7dd02ab133fa2f098610c9,ja-JP,False,550002
 2982,ミブン,3220cd1ce9f6b9fe369a690b270d69e4,ja-JP,False,550079
@@ -2887,17 +2941,20 @@ row_index,word,hash,locale,always_check,asset_offset
 2984,線路工夫,3252bd72f7a84659f932c3770d63c20b,ja-JP,False,550233
 2985,きち,3254e9d25a565e71f802c9d476484294,ja-JP,False,550310
 2986,三つ口,3259298bd60615dcceb24403735289bc,ja-JP,False,550387
+2987,でんきぶらん,326bf0135e2156258acad9648c252714,ja-JP,False,550464
 2988,セイサイ,3275e57f7a1cea19f542e69db8ff47e0,ja-JP,False,550541
 2989,レントゲン技師,328b9482be649621be1e38760e40d925,ja-JP,False,550618
 2990,じきみやけ,328d4b380caee8ac355b00bee142af20,ja-JP,False,550695
 2991,カタテオチ,32e060220372d2c1efd7b3aa8489a06f,ja-JP,False,550772
 2992,四つ足,32f594149f4e087880e0f4af8fc43ab4,ja-JP,False,550849
 2993,いちゃもん,3312e9a746d98e66ae7fa872b7d66fb5,ja-JP,False,550926
+2994,ニチロセンエキ,332143e8a979a80a95af8adb2005e706,ja-JP,False,551003
 2995,へんしん,33fe784c5768bfb043eb16ebb029e8cf,ja-JP,False,551080
 2996,こうたいごう,3400fd2c1cabd0cdfda72ce12b38ee1d,ja-JP,False,551157
 2997,養老院,34210c640a211f430094c3b49ca06567,ja-JP,False,551234
 2998,大麻,343f17e8f06fc9e770950514380d90a0,ja-JP,False,551311
 2999,ヨセバ,34594d523b0766591a3db72f6e3beb97,ja-JP,False,551388
+3000,ふりーまけっと,34717668d9a034f0186f0faca8cef4ed,ja-JP,False,551465
 3001,ろうあ,3477d7e9f1eb25919cb1941690ac086e,ja-JP,False,551542
 3002,ダッチマン,34948861bf01109d8fece0e6343b3c70,ja-JP,False,551619
 3003,色盲,34b85ae755a8051bf1a364896fcba4b1,ja-JP,False,551696
@@ -2911,6 +2968,7 @@ row_index,word,hash,locale,always_check,asset_offset
 3012,しーちきん,36ae583f121413453cdcd9fa23583ed8,ja-JP,False,552389
 3013,玉袋筋太郎,36dc12bcbdb99789b9b1edb318cb4b9a,ja-JP,False,552466
 3014,エスキモー,36f3c138f73a6634c4c0c9b29f72445c,ja-JP,False,552543
+3015,えーしょっく,3745a8a32e41181e0a940870b513d359,ja-JP,False,552620
 3016,ストリート・ガール,3793aa51740f352ff80d4cc8b9fd9f47,ja-JP,False,552697
 3017,いんば,37a31f7b2c23b93af8a2617325d08438,ja-JP,False,552774
 3018,オナベ,38182a905802f6fb637c60001b3d249f,ja-JP,False,552851
@@ -2935,6 +2993,7 @@ row_index,word,hash,locale,always_check,asset_offset
 3037,四つ,3a6d4d7e75e8e5869acfab22c73c6740,ja-JP,False,554314
 3038,イカサマ,3a6d80a62a1623f2ad5e24860beaa64f,ja-JP,False,554391
 3039,ジヘイショウジ,3a847b18007eb93ef05f0e02063877f2,ja-JP,False,554468
+3040,ボウリョクダンクミイン,3a964b50a731f40711e8b4cbaacb7c36,ja-JP,False,554545
 3041,絞め殺す,3aa4cfb7a0325a1d14613987f95cc169,ja-JP,False,554622
 3042,ノビ,3ae3fd5ccf0cae5e6d56b2f4e3051352,ja-JP,False,554699
 3043,ばすくりん,3af296565443f6ad5ba7f51f8183ab56,ja-JP,False,554776
@@ -2955,6 +3014,7 @@ row_index,word,hash,locale,always_check,asset_offset
 3059,ひもいしゃ,3e13fb04939b5e648414f72d80a803a9,ja-JP,False,556008
 3060,ウォシュレット,3e2f787f4a86588716471e7a0d47974b,ja-JP,False,556085
 3061,ショッコウ,3e670b541d9b9a74ec5d4debf5b7775a,ja-JP,False,556162
+3062,てとらぽっど,3e78b76870a06ad9dbe5fa4dcfb72feb,ja-JP,False,556239
 3063,アイヌ,3e8992601ba8f45811340755af93b6a8,ja-JP,False,556316
 3064,かわきり,3e8ab31674c302c82e362c7208afb824,ja-JP,False,556393
 3065,ちゃくめろ,3e9c052bfe61e8cf1d4be44a6aeba899,ja-JP,False,556470
@@ -3014,6 +3074,7 @@ row_index,word,hash,locale,always_check,asset_offset
 3121,フグ,457d0452677b92517bc59cfffd7b013f,ja-JP,False,560782
 3122,アイスノン,460cc127b76f3901f6b3837e3bedf9d2,ja-JP,False,560859
 3123,じゃぱゆきさん,46346b82b5dd62352941132252af4377,ja-JP,False,560936
+3124,さらんらっぷ,464eaf9259c4adbe74aff3ae293fbf8d,ja-JP,False,561013
 3125,モウアイ,4650786d63f436f463af858be1a4e60d,ja-JP,False,561090
 3126,射撃者,466a13e267f8a575acab385a778857b1,ja-JP,False,561167
 3127,いーさねっと,46d2994a27e106a22f0e833a4ef3e84c,ja-JP,False,561244
@@ -3025,6 +3086,7 @@ row_index,word,hash,locale,always_check,asset_offset
 3133,支那料理,47d72f4fa9d5b23fb4f2822f9cab4249,ja-JP,False,561706
 3134,テンボウ,47e51d3addafaa2ec654f80cafd78ec6,ja-JP,False,561783
 3135,父兄,47ee37e3c40c86c7e07d750a9983e874,ja-JP,False,561860
+3136,しっかろーる,47fa4afb1e38b7c98d8bfb64a31f4e08,ja-JP,False,561937
 3137,のうふ,4805e65aa1fa5769ff82930560c1884b,ja-JP,False,562014
 3138,かたおや,48437ce38688f710b1b678d1a39d7520,ja-JP,False,562091
 3139,養護,488fa7513e8371d6b68d0b5ac1091752,ja-JP,False,562168
@@ -3102,17 +3164,21 @@ row_index,word,hash,locale,always_check,asset_offset
 3214,かたうで,51f6e9e1ab20b9457ff9a8c8858a26e9,ja-JP,False,567943
 3215,はいじん,51ff38549524eacac7b482951459c62d,ja-JP,False,568020
 3216,部落民,52116afbacdb3202fa836fdf858147aa,ja-JP,False,568097
+3217,ピーショック,523d33d10cd6037b7ec1379cb8451c93,ja-JP,False,568174
 3218,ヤクチュウ,52752344c810507fb36abcb33fbc45eb,ja-JP,False,568251
 3219,たばすこ,528832856471e392cb9c71817641b4de,ja-JP,False,568328
+3220,ハンディカム,52920ecdb8db480f50301435b57c9815,ja-JP,False,568405
 3221,ムース,529afcdb857f4df7412f738831abfae7,ja-JP,False,568482
 3222,ヨシヒト,52ebc1eba417796263ceba8a651400c7,ja-JP,False,568559
 3223,ショウリンジ,52f8b03684a7234b8284e3e12c7f6855,ja-JP,False,568636
 3224,チュウキョウ,5354e02df1066a33ab8b48945ddd02f8,ja-JP,False,568713
+3225,ピップエレキバン,5385fdb8e89550d33fb255bd91b785ac,ja-JP,False,568790
 3226,じゃっぷ,538b89009a4f450bec4921e6f45303f5,ja-JP,False,568867
 3227,猫糞,53931092cc5b20e7042cad4b4b51f857,ja-JP,False,568944
 3228,オマワリ,5464443b1f9e3da160b565e287c13f03,ja-JP,False,569021
 3229,移民,54650c08a7c796fae905ac40606ff927,ja-JP,False,569098
 3230,股に掛ける,54a72727ac058c8ec7207b9763d96e64,ja-JP,False,569175
+3231,ローラーブレード,54d2fa232479618050d3b55d69485038,ja-JP,False,569252
 3232,きんじょう,54f6eb78fe3b45fa0ef938655476c7a6,ja-JP,False,569329
 3233,さんごくじん,550094156dc7eb09002ce918e2ef105b,ja-JP,False,569406
 3234,狂女,551ce49746a263ef4d3f490a8fc49dcf,ja-JP,False,569483
@@ -3136,6 +3202,8 @@ row_index,word,hash,locale,always_check,asset_offset
 3252,片手落ち,582254b3c53b583eb0cd537c08519cc9,ja-JP,False,570869
 3253,ドケンヤ,583a30ec05404cf09f042c5c589b13e9,ja-JP,False,570946
 3254,いきおくれ,584f0f036626d5e3de10ca54a39311b9,ja-JP,False,571023
+3255,エフショック,58b66ffec1a1bf1e8b434b1a80046017,ja-JP,False,571100
+3256,びーしょっく,58c6de68758f8a6ded0e27428013fd84,ja-JP,False,571177
 3257,こうごう,58d261f2ca2e7af10aced9baf5f106cd,ja-JP,False,571254
 3258,賎民,58d91c5558f73f2c3641c217b3e5abe6,ja-JP,False,571331
 3259,はっきょうする,590180320869256891973ab448997e57,ja-JP,False,571408
@@ -3143,6 +3211,7 @@ row_index,word,hash,locale,always_check,asset_offset
 3261,チカメ,591858b57d309360ec622946117ca11a,ja-JP,False,571562
 3262,ワンカップ,59683ae7aa98fa172ca5c0a516f3089d,ja-JP,False,571639
 3263,タコ部屋,59746fee742514d6930bbe9604c25bb6,ja-JP,False,571716
+3264,あろんあるふぁ,59840887a9d599524ceaf6e64e626550,ja-JP,False,571793
 3265,ふぁんた,5994ceb4194578c6434088f81c1c3dc0,ja-JP,False,571870
 3266,みかいこく,59a34ab14dd68a1601579c976821a6a6,ja-JP,False,571947
 3267,ジュウイ,59a52385687c225435aa9833c35ff869,ja-JP,False,572024
@@ -3151,6 +3220,7 @@ row_index,word,hash,locale,always_check,asset_offset
 3270,ぱとらいと,59e9d783265bb42635323757c0b172cd,ja-JP,False,572255
 3271,センジンブラク,59f8a178257441c3a1b44ef72914eab4,ja-JP,False,572332
 3272,かんぬし,5a17f1506c8389329a8ff2bc2543c98b,ja-JP,False,572409
+3273,エックスショック,5a63520f02cfe3857fe48d62b9d0c4c9,ja-JP,False,572486
 3274,かんごし,5a74405b6167f366aab5d8d01b492612,ja-JP,False,572563
 3275,ロウバ,5a8470a89596fda218bfd3c062ecce43,ja-JP,False,572640
 3276,フリスビー,5a89f5a0bd98bb92688ccce966eb82ae,ja-JP,False,572717
@@ -3208,6 +3278,7 @@ row_index,word,hash,locale,always_check,asset_offset
 3329,ペチャパイ,6199d05df0bec8bfb640e3fae86d9e07,ja-JP,False,576798
 3330,盲愛する,62017879dea73c22f6e71d98d6c75507,ja-JP,False,576875
 3331,いしや,6217e06e7984c8d7257df338e960683d,ja-JP,False,576952
+3332,じぇっとすきー,62269975f0ca79f244cda41e35318146,ja-JP,False,577029
 3333,ちゃくうた,623d0e808ef803b857b65b790a2ede99,ja-JP,False,577106
 3334,じょちゅう,624094da3b8d32962b5f51d98b102728,ja-JP,False,577183
 3335,溺れ死ぬ,626b73bdc0c8d16f71a4294e7148888e,ja-JP,False,577260
@@ -3224,6 +3295,7 @@ row_index,word,hash,locale,always_check,asset_offset
 3347,シュガーカット,63ea106b281715333606082baa77d0b1,ja-JP,False,578184
 3348,暴力団組員,64029ae94b5b5c1c9b6b6fbe7a9cb00b,ja-JP,False,578261
 3350,すいふ,645f9e15bf329be4bb3b83c6b9d7378f,ja-JP,False,578415
+3351,チョウセンドウラン,647baeeea002e7a48716e2c43f883ede,ja-JP,False,578492
 3352,びっこ,648c2cebe3001cbbc4f32a30e4ec3fb2,ja-JP,False,578569
 3353,朝鮮征伐,64c41ec93d8462d33a5b48a03fdb0f9f,ja-JP,False,578646
 3354,ちくしょう,64e9de626d9aaaf0449aa5fb3d5d6afb,ja-JP,False,578723
@@ -3237,14 +3309,18 @@ row_index,word,hash,locale,always_check,asset_offset
 3362,いんちき,664e5c0123d76da7d21bd3951bb424b3,ja-JP,False,579339
 3363,ケーショック,66bbdadc8bcc53ec48789851d0af2786,ja-JP,False,579416
 3364,いしこう,66caca868965bdeeb0af6bd3d805a5f1,ja-JP,False,579493
+3365,エムショック,67172353374053c5ce3aafa24bf592dd,ja-JP,False,579570
 3368,工夫,67a809fa88d6c07d1871dc9e4a36b51f,ja-JP,False,579801
 3369,ミカイハツコク,67c49672b6e9a7193961034493c5e7ee,ja-JP,False,579878
 3370,デッチ,67d41d694ccfc6d5bf502a73b60e1ec1,ja-JP,False,579955
 3371,片足,684e036ca2622c6d863771fcd4796777,ja-JP,False,580032
 3372,虚仮,686bbd9570021d4699e3d7b8ec7ce2b7,ja-JP,False,580109
 3373,くず屋,687e8a11e02e04a65ed3587836ef5245,ja-JP,False,580186
+3374,えれくとーん,68a59fcf8d4ed0b4e4cc7e00130cc109,ja-JP,False,580263
+3375,ニッシンセンエキ,68dad201596bbf986e3bb296a486ad54,ja-JP,False,580340
 3377,ぱんぱん,68f20b090ac2b98361cd5df8c81f91ca,ja-JP,False,580494
 3379,労務者,69270c1e397c9546fa4d88fd3bbc34b0,ja-JP,False,580648
+3380,うぃーくりーまんしょん,695ee0205cf6d52ea0b01041a7c936da,ja-JP,False,580725
 3381,せんろこうふ,699c2778b9da4da6bcdc4f5555381b41,ja-JP,False,580802
 3382,カタハイ,699c31edadaec7bae94dc4ca91306f0c,ja-JP,False,580879
 3383,パンケーキ,69c64412c584934ef9844989a78681c2,ja-JP,False,580956
@@ -3262,6 +3338,7 @@ row_index,word,hash,locale,always_check,asset_offset
 3396,ポリバケツ,6af38de08992825fbf80230104842baa,ja-JP,False,581957
 3397,ちゅうきょう,6b144196e50f3fb27c3241905002b22d,ja-JP,False,582034
 3398,イキオクレ,6b3cbbf6b1e1cf75bcf5572afb3abd83,ja-JP,False,582111
+3399,スイソバクダン,6b56aaea51bc92ba8a2def4a522d8ed4,ja-JP,False,582188
 3400,チャリンコ,6b5869b8feda98d9071054ba108c5d53,ja-JP,False,582265
 3401,カタメ,6b5edb7285ada99c8c106f21ae722a0d,ja-JP,False,582342
 3402,キカジン,6b6f7c1bcc0a0a85c772d0da1979f2b7,ja-JP,False,582419
@@ -3269,6 +3346,7 @@ row_index,word,hash,locale,always_check,asset_offset
 3404,こうしつ,6ba0026bf57191606f5ccb10edede829,ja-JP,False,582573
 3405,どけんや,6ba6afd3890af5812fb65d57cc747e7e,ja-JP,False,582650
 3406,ナイチ,6bd49aa61f251987ec56c2c7bb25e423,ja-JP,False,582727
+3407,カメノコタワシ,6bf06bd72a26e63539f33926566e8b10,ja-JP,False,582804
 3408,でじかめ,6bf981073456ff20720558fb51193071,ja-JP,False,582881
 3409,だいとうあせんそう,6c539564b180ffbff0345dc17c96908b,ja-JP,False,582958
 3410,バイタ,6c6e3fc6cef4cea8c11c293502c07e42,ja-JP,False,583035
@@ -3282,6 +3360,7 @@ row_index,word,hash,locale,always_check,asset_offset
 3418,貧農,6dfdeabb699c24e3d3fa877a243fb197,ja-JP,False,583651
 3419,メッカチ,6e71ad4a990896ba9fd016fbbf6ed657,ja-JP,False,583728
 3420,ブタゴロシ,6e728668d1b8dda3c2df9c4140ceec2c,ja-JP,False,583805
+3421,ユーショック,6ea38746b297c09343dc9353c4bf2ee1,ja-JP,False,583882
 3422,テオチ,6eaceaa3c828058fe45196af66cc7fa5,ja-JP,False,583959
 3423,藪睨み,6ec2f5dd288e8025ebcf76ad03ed195f,ja-JP,False,584036
 3424,ホセンコウフ,6ee1917b8a62e446e84ea07d3bc3f08c,ja-JP,False,584113
@@ -3314,9 +3393,12 @@ row_index,word,hash,locale,always_check,asset_offset
 3451,あしをあらう,71a08882ee90f1a6ba399c413d7a3c18,ja-JP,False,586192
 3452,シンノウヒ,71e81e9c625bd5432b4572a36f1c1f7d,ja-JP,False,586269
 3453,ヨツツジ,71fd8140e700a477e9743656f3d928db,ja-JP,False,586346
+3454,なんぶのしゃけのはなまがり,724be24ffa71c0e0c730b5f6800efdc2,ja-JP,False,586423
+3455,エルショック,72770937926dd094445c4918b053acbc,ja-JP,False,586500
 3456,しこって,729703a38864634cd72c4f6391df116d,ja-JP,False,586577
 3458,パトライト,729dc7d059a9e742347ef9001a562b41,ja-JP,False,586731
 3459,クラリーノ,72cadc7314eb6eab41a85283671450d5,ja-JP,False,586808
+3460,ダブリューショック,72eb55d78d23cf27760451d5318c6489,ja-JP,False,586885
 3461,カコチョウ,731b6bb50b82e2658bbd6e3bd9f622ed,ja-JP,False,586962
 3462,エアロバイク,73487dcfe849decb06fe2f691d3aca3d,ja-JP,False,587039
 3463,跛,736cd6351233c4c506bc05a5cf741b7d,ja-JP,False,587116
@@ -3326,6 +3408,7 @@ row_index,word,hash,locale,always_check,asset_offset
 3467,あらめん,740018ce13d5af2f92d4ea8701ec91de,ja-JP,False,587424
 3468,ノウタリン,74095ae13de7a0b18deec27fd0ca7840,ja-JP,False,587501
 3469,しゃぶちゅう,7416d1df797dc53353cc5fa8f8f58963,ja-JP,False,587578
+3470,わいしょっく,74449cdbaa7c1ff51c5b364b3aa3455d,ja-JP,False,587655
 3471,テイノウ,745bf40627d5f6f72e9df2aa7ed71f3f,ja-JP,False,587732
 3472,くーりー,745fcf0eb9ef20ec0cebde6f2b93e48c,ja-JP,False,587809
 3473,しーしょっく,748c2a305434fcc3fe581e3f9659c8f3,ja-JP,False,587886
@@ -3374,12 +3457,15 @@ row_index,word,hash,locale,always_check,asset_offset
 3519,ぷちぷち,7bbc2e30cc1902f5db60f2173ce588bc,ja-JP,False,591428
 3520,トコヤ,7bfa2a5bce01df1e66fc01f33b13b60f,ja-JP,False,591505
 3521,拡張員,7c297f60ebabb6d0d079e86f5d2b67a3,ja-JP,False,591582
+3522,はいびじょん,7c4a2631f43bcfa16450d3b82b67f8ec,ja-JP,False,591659
 3523,とやまのさんすけ,7c8007df0a762e771faafe81088ff57e,ja-JP,False,591736
 3524,内地,7c8c120568e27f36f11d7093667a4cef,ja-JP,False,591813
 3525,むつひと,7d36b0607660ae5450ecfc5e3910a4e7,ja-JP,False,591890
 3526,シラッコ,7d49a8cc050717a59c779d59d0249396,ja-JP,False,591967
+3527,アロンアルファ,7d5a1a7ffd7c3850e8cc6596efcd613a,ja-JP,False,592044
 3528,お里が知れる,7d99a1bc76b0751de15d4a769d726b05,ja-JP,False,592121
 3529,うんこ,7dbb205c7b26aee8c40f1a2292ffe599,ja-JP,False,592198
+3530,きゅーしょっく,7dc7b466f5784f36533692575dee1c8c,ja-JP,False,592275
 3531,キチガイニハモノ,7e010cb7ca8ba51275a030583f9e01a2,ja-JP,False,592352
 3532,漁夫,7e3c1b4550b58a4a79b2132f7f161947,ja-JP,False,592429
 3533,不治の病,7e63df7a2a2b69382152b845703e08b8,ja-JP,False,592506
@@ -3396,15 +3482,19 @@ row_index,word,hash,locale,always_check,asset_offset
 3545,タレナガシ,8064a7250de198dced6a11c387063ec1,ja-JP,False,593430
 3546,せんじん,807b67ed0d1ce129efa7843cbfc08d40,ja-JP,False,593507
 3547,ペイ患,8080a94011bc4e6d32644a5979e2c6c3,ja-JP,False,593584
+3549,えすしょっく,80c055799a3edbe4a45a81221e921519,ja-JP,False,593738
 3550,モウジン,80c6bdf8ccae39a5b4205ea6449482c9,ja-JP,False,593815
 3552,ブラインドタッチ,81436412e879b7d700064e2435a4e1ea,ja-JP,False,593969
 3553,よせば,8146a6571178942e4062356eb6b50cbb,ja-JP,False,594046
 3554,精神分裂病,8159892a5ba709ccd49854ef7c13a5e9,ja-JP,False,594123
+3555,キョウシンシャ,815e45df46bedd3ce27cae7947dd079b,ja-JP,False,594200
 3557,ハーフ,81a7007b2a0ef357e9bfe4478b5428a5,ja-JP,False,594354
 3558,ドヤ,81bb4c88ccc5c5cb4add3bd5d68c2fdb,ja-JP,False,594431
 3559,どや街,81e43e982ee94d0258029b9bd07b0b3c,ja-JP,False,594508
 3560,筍医者,8200af639c683597ccc0c54b0581331d,ja-JP,False,594585
 3561,イナカ,8233374ff965d872531473add2850ef5,ja-JP,False,594662
+3562,う゛ぁせりん,823d2f8e3ee038398a2f2607760ea9ea,ja-JP,False,594739
+3563,上方の才六,8247c4c81867c677682ed11b5d623e70,ja-JP,False,594816
 3564,デジカメ,8254fcc026d628c9aaf2128c06946403,ja-JP,False,594893
 3565,キョウジョ,825d1446a1093fb14d45ec1e3998576e,ja-JP,False,594970
 3566,げいにん,825eb2eedaad6ed0fa911ae5fc688d06,ja-JP,False,595047
@@ -3425,6 +3515,7 @@ row_index,word,hash,locale,always_check,asset_offset
 3581,かたあし,84d9dedc3f92eafa72cbd42993cc6ad8,ja-JP,False,596202
 3582,ふろうじ,84dfe040b965c7fdb130964c291ca3d5,ja-JP,False,596279
 3583,トクシュガッキュウ,853b198d18629f23ba4f3128718a9b8d,ja-JP,False,596356
+3584,はんでぃかむ,8547386b2b547d1721345e226704e6e6,ja-JP,False,596433
 3585,バカデモチョンデモ,857ab88455166408f258129c69b4c41d,ja-JP,False,596510
 3586,毛唐,858626fb5cdd3286385b6b772c2019ac,ja-JP,False,596587
 3587,またにかける,859f93c738c15de50dc256fbfd4f63de,ja-JP,False,596664
@@ -3435,12 +3526,14 @@ row_index,word,hash,locale,always_check,asset_offset
 3592,まじょっこ,867c8df520f8e561eb4f59a560efcbc7,ja-JP,False,597049
 3594,ニコヨン,86aa833c88695da5d8b5ef01b79682a9,ja-JP,False,597203
 3595,痴呆症,86b81d7b41ee55e98f6b85cbff8a5a65,ja-JP,False,597280
+3597,えるしょっく,86f57e644a8e8f8a3643041eba56fc39,ja-JP,False,597434
 3598,ぶいしねま,8724cff62bd5c482a0536b885972784d,ja-JP,False,597511
 3599,ふろうしゃ,872678622b5b99149373502dd681e80d,ja-JP,False,597588
 3600,ぱーまや,872efbad8e315920b22bc1596ec5fa4a,ja-JP,False,597665
 3601,たたき,873c99996c502fb2cc7be252c9541fd3,ja-JP,False,597742
 3602,摂政,8743621a5d558f34867cb696e3d6dcdd,ja-JP,False,597819
 3603,かったい,876ba1e49de8a527028452096a871fcd,ja-JP,False,597896
+3604,きゅーあーるこーど,8777e5fac4d94b1c80fdd290be9eacc1,ja-JP,False,597973
 3605,雑役夫,87809011c61c5f11d084345e1ab0ff97,ja-JP,False,598050
 3606,めめしい,878587e7e29e08579e4d1a850952c541,ja-JP,False,598127
 3607,農夫,87956f04257244eae32c3a72eb86c139,ja-JP,False,598204
@@ -3480,6 +3573,7 @@ row_index,word,hash,locale,always_check,asset_offset
 3641,クリネックス,8b855d0aca7904d0d266a464bd34b2b7,ja-JP,False,600822
 3642,とくしゅがっこう,8bc08581dbbeafd74c76845f89b82530,ja-JP,False,600899
 3643,てれか,8bcfacd98adb4ea6255d781d03c82915,ja-JP,False,600976
+3644,ビーショック,8c866f52ec4cfeda7b9169552bb79a7d,ja-JP,False,601053
 3645,カンパリ,8ca3071128ac86cb3c8bad765bc9da77,ja-JP,False,601130
 3646,さらぶれっど,8ca57a06fa104e59669ba5fab729576e,ja-JP,False,601207
 3647,ブツ,8cc463a4f7905fb28657e717ebaf69b6,ja-JP,False,601284
@@ -3503,6 +3597,7 @@ row_index,word,hash,locale,always_check,asset_offset
 3666,皇太子妃,8ef0f0651c8eafd5c714bb18fbecc84f,ja-JP,False,602747
 3667,ポッポー屋,8fd5a16e0a2d3ca1ae6cb9d5edb98858,ja-JP,False,602824
 3668,きけい,8fd9987891111ae144d5fbe8a8e3bde2,ja-JP,False,602901
+3669,ゆーふぉーきゃっちゃー,8fe1ea3b01f8f4d50db07519121918f4,ja-JP,False,602978
 3670,あいすのん,8fe715b76530f35eb604f1bcc37fa061,ja-JP,False,603055
 3671,セイドレイ,9010c4878b38a978df5b2a151b8ab55e,ja-JP,False,603132
 3672,マジック,9016b5c75528b74f25a53e0c76f1fd97,ja-JP,False,603209
@@ -3562,16 +3657,19 @@ row_index,word,hash,locale,always_check,asset_offset
 3728,ネコババ,970875047986257b9f81c8de4afb3a11,ja-JP,False,607521
 3729,シュウセンヤ,972b80efb1f6d1578df2793defecb622,ja-JP,False,607598
 3730,ミモトチョウサ,9730c529c662a61ff67594f9780752af,ja-JP,False,607675
+3731,ナンブノシャケノハナマガリ,97df1f8b02fdf7e1b50dd1652639259f,ja-JP,False,607752
 3732,ケブラー,97f7aef87119269f16f4ab96b165901e,ja-JP,False,607829
 3733,ぶらくみん,981952e487710afe9bcf94ebfd55b00d,ja-JP,False,607906
 3734,アジノモト,9854d3a291ac4f7def280ccdd294ec12,ja-JP,False,607983
 3735,女の腐ったような,987cd2bf4fca856544ad276c76f8041b,ja-JP,False,608060
 3736,ドカタ,9887610344f05316301f5c108171eeee,ja-JP,False,608137
+3737,チョウセンジヘン,98885863f134662f18a8ae2e6194cf47,ja-JP,False,608214
 3738,くるって,98ae8e88b4593e1cec7bf7ce374162ec,ja-JP,False,608291
 3739,ウツルンデス,98b4fa929d975ac6bc49d867080b45b2,ja-JP,False,608368
 3740,ペイカン,98e3bdddc2880f97559eb0e00f7b39dc,ja-JP,False,608445
 3742,ゲーセン,993e3936ecd3e862c1ed5f1b2701edea,ja-JP,False,608599
 3743,朝鮮事変,99604ba9b9676cb87251d0527512d82a,ja-JP,False,608676
+3744,オサトガシレル,99ad9e69694a269b4a536b029ed83ed1,ja-JP,False,608753
 3745,親方,99b2eac3c10db8596b3cee96bb6bb154,ja-JP,False,608830
 3746,発狂する,99bd5fd50f06c268c9b025f98cb574aa,ja-JP,False,608907
 3747,ショジョサク,99c3a8eb130a9117e354042001a3a281,ja-JP,False,608984
@@ -3594,10 +3692,12 @@ row_index,word,hash,locale,always_check,asset_offset
 3765,いせこじき,9c336e134f243480da6256a9fff7ef87,ja-JP,False,610370
 3766,すべりどめ,9c5f5e09ffce0999530fb6301fd6531b,ja-JP,False,610447
 3767,しこる,9c73fafafa768bbb5b9dca408e9fea68,ja-JP,False,610524
+3768,ミイチャンハアチャン,9c7b8d2284b8105d92bbc4eee774a815,ja-JP,False,610601
 3769,しなちく,9c81ede53dc72f354dfbbc52d4a58a9c,ja-JP,False,610678
 3770,テフロン,9c99c542fb214cd333bda12bc7d8ac1d,ja-JP,False,610755
 3771,他力本願,9c9e877c7ae4e968c2308a1d873d7343,ja-JP,False,610832
 3772,じょう,9ca24d75284d1b346adc5c6cf07d4c8c,ja-JP,False,610909
+3773,ネタキリロウジン,9ca91332018f63169f376a82b17de70b,ja-JP,False,610986
 3774,メクラウチ,9cd3431b01744539aebbc0a45d8d2a4f,ja-JP,False,611063
 3775,ソウギヤ,9cdae2fea7370946bb256d903fadfb7d,ja-JP,False,611140
 3777,お巡り,9d74caf3789bbce4474ec64952ab6fd7,ja-JP,False,611294
@@ -3617,10 +3717,12 @@ row_index,word,hash,locale,always_check,asset_offset
 3792,ふみきりばん,9f76dd6d2cd06626a6eaf30935d6e63f,ja-JP,False,612449
 3793,フグシャ,9f911f2ce4a6abb078467fbe0377eadf,ja-JP,False,612526
 3794,ヒバク,9fcf99c7da3c28f080af821c607ff0ea,ja-JP,False,612603
+3795,ティーショック,9fd510a89eeb12141ea19d2c73d2072c,ja-JP,False,612680
 3796,片目,9ff365ffd1b9df27783dc346ff3e0102,ja-JP,False,612757
 3797,カク,a092b8a95a3a211deac0de3a18eb9862,ja-JP,False,612834
 3798,ぶるーまうんてん,a0a0f3e3c50d29ee90017d727fe421a7,ja-JP,False,612911
 3799,あいしょっく,a0ad9e9a963fa0b244a1100590d6c953,ja-JP,False,612988
+3800,えふしょっく,a0c560fe88e0704916c2a52b7ea3ade3,ja-JP,False,613065
 3801,ぺいちゅう,a0d1aa77bf08f7e6d8ca20b2d2ae58f0,ja-JP,False,613142
 3802,えでぃたー,a0d66ec25db2c3a69ffb9e66c8c36565,ja-JP,False,613219
 3803,カルピス,a0dec091f137cb9d8256ec88e5b77d61,ja-JP,False,613296
@@ -3648,6 +3750,7 @@ row_index,word,hash,locale,always_check,asset_offset
 3825,かんあつし,a4040dc67ca27da9ac1fba811c752a17,ja-JP,False,614990
 3826,トサツジョウ,a4095b8fc82ee4a0ecc7343841c6c2c3,ja-JP,False,615067
 3827,石屋,a41eb6fa856ecc614ab965d359baf233,ja-JP,False,615144
+3828,ショウリンジケンポウ,a429fc9c09c489f309c25d1c83cf513a,ja-JP,False,615221
 3829,こうしんこく,a43e86e19e324e76e1bfc7eb5e55d46c,ja-JP,False,615298
 3830,チャクウタ,a45b8d0a0df8396c254fc25f435dbe10,ja-JP,False,615375
 3831,たりきほんがん,a493a5b24ffa25dbb058111d897a2b8c,ja-JP,False,615452
@@ -3692,8 +3795,10 @@ row_index,word,hash,locale,always_check,asset_offset
 3872,オチコボレ,ab335186b11388f9817ba76f9c4e42f7,ja-JP,False,618609
 3873,床屋,ab3792e7a0ca5dcff1b93a1d0179c22d,ja-JP,False,618686
 3874,スウドク,ab97e22262d09701d902e9dde42da044,ja-JP,False,618763
+3875,くりーんひーたー,abba01d6f18492ad01e2c4b1cb4b443d,ja-JP,False,618840
 3876,フロ屋,ac08f13a18c7bc3e4557eabb24be1d01,ja-JP,False,618917
 3877,おんなのくさったような,ac09d8fc59fb318521a61301fcb602e2,ja-JP,False,618994
+3878,チュウニチセンソウ,ac27567e9dd8963f3d6e5dcf7a3bd426,ja-JP,False,619071
 3879,ガシャポン,ac46817dad8f15e3b01a71183cd68c8c,ja-JP,False,619148
 3880,ジャップ,ac48ef4c16f74a9cd8ec6dc68b6a2b11,ja-JP,False,619225
 3881,ちょうせんどうらん,ac6fec5c05de7e3533a9a3086075b40f,ja-JP,False,619302
@@ -3740,6 +3845,7 @@ row_index,word,hash,locale,always_check,asset_offset
 3923,センジン,b2aaa72b35dac6321892c2f585cfe1c4,ja-JP,False,622536
 3924,アシキリ,b2d6d37d6ed32201488739262a339772,ja-JP,False,622613
 3925,いじょうしゃ,b2e2bb3448ea789c8a4ce89973b98001,ja-JP,False,622690
+3926,ブイショック,b2e95e118e842523803fe49191cdf153,ja-JP,False,622767
 3927,おとしまえ,b3a94b94c9ee366d1ef788b1676e50b6,ja-JP,False,622844
 3928,ころし,b3ae4d495a4ba8661d820ff8018615b1,ja-JP,False,622921
 3929,レントゲンギシ,b3b06a82b83a15a62fc582cf2dc145e9,ja-JP,False,622998
@@ -3762,6 +3868,7 @@ row_index,word,hash,locale,always_check,asset_offset
 3950,台湾ハゲ,b67163f0b25dd83790225e4f3ca97733,ja-JP,False,624615
 3951,寄り目,b68868bf3e060934f54f04ffcdb18637,ja-JP,False,624692
 3953,たれながす,b6c6528a9658a8231cb351a0a3e84d7f,ja-JP,False,624846
+3954,えいちしょっく,b6c7fbacd44d4db01516334390dec7ca,ja-JP,False,624923
 3955,コーク,b6d3975f0bdfba7c977d93e6c9244401,ja-JP,False,625000
 3956,ざぎん,b6ed222f3b71b100717da72cdf84f1fe,ja-JP,False,625077
 3957,たいま,b6ff97810aec86c4c4b80f7dedd8c706,ja-JP,False,625154
@@ -3774,13 +3881,16 @@ row_index,word,hash,locale,always_check,asset_offset
 3965,カクチョウダン,b8473ab57e7a819753e41d9ff4bf9225,ja-JP,False,625770
 3967,クレパス,b8a6a24cbf78b9b42e02c9a5662d40eb,ja-JP,False,625924
 3968,めっかち,b8cf370428afda561e7f7d6ea4307245,ja-JP,False,626001
+3969,えむしょっく,b8f905c104d60511268731a5c1f90d69,ja-JP,False,626078
 3971,がいじん,b900b0b9b3a6b31090db7ed98e3a59c7,ja-JP,False,626232
 3972,いたまえ,b969ac3aa7e29395f58fbcaf240ba740,ja-JP,False,626309
 3973,ヘキチ,b97ff016936926b0199ae02192c4ad66,ja-JP,False,626386
 3974,毛並,b996edbc09bec4ad4e03a04b12d75033,ja-JP,False,626463
+3975,ろーらーぶれーど,b9be11cdb90fcd002284ce08e18a8541,ja-JP,False,626540
 3976,スイバク,b9f9dff438480ace7dd07b14214f2616,ja-JP,False,626617
 3977,パンポケイ,ba5868cfc11769eb90975d80583368e9,ja-JP,False,626694
 3978,テンサイトキョウジンハカミヒトエ,ba59026d5fae745e8bfda7269c3f4d8a,ja-JP,False,626771
+3979,チョウセンジン,ba5b7c5fbafcbb41e85e6601f0fa82e8,ja-JP,False,626848
 3981,ワイファイ,bac2e20cad8f245b14cbb5814f0f5c36,ja-JP,False,627002
 3982,がちゃめ,bacab1bb5cb4b25eca04b39384dd0f38,ja-JP,False,627079
 3983,ジャリ,baf9c229e2a7b529f18af570dfb5f40e,ja-JP,False,627156
@@ -3795,6 +3905,7 @@ row_index,word,hash,locale,always_check,asset_offset
 3992,ゲンナマ,bbbc839bd1158339f546a81b92724ea1,ja-JP,False,627849
 3993,サンカンセイバツ,bbf03c2d1de0d8552f430540403a07fe,ja-JP,False,627926
 3994,自閉症児,bc18fa0a6dc08a9c13e49c958fc3a3f7,ja-JP,False,628003
+3995,うぉしゅれっと,bc3315d1d05bd3bc7dff27aa9afb1aaa,ja-JP,False,628080
 3996,踏切番,bc35979242242b1f651e8836b17220ae,ja-JP,False,628157
 3997,シナジヘン,bc51c2bf7ddc4169e5e8b2328c63c930,ja-JP,False,628234
 3998,オチウドブラク,bc9ebd4800d8d777f52782d301aae41e,ja-JP,False,628311
@@ -3805,11 +3916,13 @@ row_index,word,hash,locale,always_check,asset_offset
 4004,日清戦役,bd3305143d73d9fab8c37f0dce8d12db,ja-JP,False,628773
 4005,娼婦,bd55b63de2f856e0d4b7aba8e06281e0,ja-JP,False,628850
 4006,ガップリヨツ,bd688a201ad93decd30d50dc72e3966d,ja-JP,False,628927
+4007,カミガタノザイロク,bd7e667c62d2d7178dd223e45dd36a06,ja-JP,False,629004
 4008,ヨウロウイン,bd86cf262580cf8b15e7fb930d44bd53,ja-JP,False,629081
 4009,心障者,bd8d2461884899195279f76cfd2a18f6,ja-JP,False,629158
 4010,マエツキ,bda593365df3fe7b550e65e17622db78,ja-JP,False,629235
 4011,ヤー様,bdd2a55ddf78c59e96ca8199915e2a6a,ja-JP,False,629312
 4012,ごうびょう,bde5aee1b4196fb66f3b70e81844b721,ja-JP,False,629389
+4013,エヌショック,be317f122b1653a780a8d26b2b9fa0f8,ja-JP,False,629466
 4014,ニンプ,be53bcd0671a290367076a8c10902fb3,ja-JP,False,629543
 4015,たいわんはげ,be6eb4124bb85c5bcb25ca710f50f3fa,ja-JP,False,629620
 4016,パクル,beb3c69027e1b680fc8ae5b3a2b86594,ja-JP,False,629697
@@ -3823,6 +3936,7 @@ row_index,word,hash,locale,always_check,asset_offset
 4024,シンショウ,bf8af0493b6974b4191f0f1ca5dbce80,ja-JP,False,630313
 4025,パン助,bf91d197f99f9b059fc8e6260ef1ae63,ja-JP,False,630390
 4026,カラーコーン,bf9edf59bcfe6f8ddc967a37d43f12c2,ja-JP,False,630467
+4027,ほっとすぽっと,bfae5514113e61b4bba3186face28a90,ja-JP,False,630544
 4028,レズ,bfe0b16fee32d1003bf9458453b81ba1,ja-JP,False,630621
 4029,カンアツシ,bfff3479e4ce5ea6a51681c5ef9078ec,ja-JP,False,630698
 4030,潜水夫,c01dd237b1b13a40198c3d58fa5c3908,ja-JP,False,630775
@@ -3836,8 +3950,10 @@ row_index,word,hash,locale,always_check,asset_offset
 4038,トヤマノサンスケ,c0f334515753969966b7c6a75e7fc27a,ja-JP,False,631391
 4039,いえがら,c0fb735efce1de01cbf1a20e240f92bd,ja-JP,False,631468
 4040,ジャグジー,c155ca4820ba48458d812a085876d11b,ja-JP,False,631545
+4041,ウジヨリソダチ,c183beb41cd9ddae90b9a05d64271f8b,ja-JP,False,631622
 4042,みやけ,c18c2d46237569b1b3fcab519a28511e,ja-JP,False,631699
 4043,サンゴクジン,c1bb1d9b24cb84431a934833aba4c5ae,ja-JP,False,631776
+4044,ゴキブリホイホイ,c1dd58ee1e93b051891ddbcde82f750b,ja-JP,False,631853
 4045,掃除婦,c1eb0691ef2dcfe4c0a51d7ae9cedd5b,ja-JP,False,631930
 4046,心障,c206724556c5029f1828c68943fb8040,ja-JP,False,632007
 4047,クミトリヤ,c210917079c06cf0b1212b08099a2dba,ja-JP,False,632084
@@ -3855,6 +3971,7 @@ row_index,word,hash,locale,always_check,asset_offset
 4059,じょこう,c411ebb14396203e93ba3cbd4b252ee3,ja-JP,False,633008
 4060,コロシ,c412e8b5e508155f51aa1e43cd627a15,ja-JP,False,633085
 4061,盲滅法,c43a2e7bcf2a8ebba27ad46da05b1c49,ja-JP,False,633162
+4062,きゃたぴらー,c457113421ab2b7aad5ce1fc2af4af90,ja-JP,False,633239
 4063,まやく,c4f7d9053bc5bcaa742bc8bf5d6a4aa9,ja-JP,False,633316
 4064,イジョウシャ,c50d1133b4e24158adaf953f75b19674,ja-JP,False,633393
 4065,もうあい,c52279b08a73313175a77ffe5fe24544,ja-JP,False,633470
@@ -3875,6 +3992,7 @@ row_index,word,hash,locale,always_check,asset_offset
 4081,ガチャガチャ,c7d3e3b8f9c4c2e5223149768e3c7061,ja-JP,False,634702
 4082,じへいしょうじ,c82902c2ccbf764da28f1de5a4b62670,ja-JP,False,634779
 4083,デブ,c82c8b405392da00ea96dbe105d0068e,ja-JP,False,634856
+4084,てぃーしょっく,c83491364fb3197545d7c488b7df0f0b,ja-JP,False,634933
 4085,断頭,c83acd1af9dfafa39ac84b86cbc07ca8,ja-JP,False,635010
 4086,タレナガス,c840b8f3cf636321e950164259f85b8f,ja-JP,False,635087
 4087,蛸部屋,c84e4bb1dcea1254585579c30d61e16e,ja-JP,False,635164
@@ -3885,6 +4003,7 @@ row_index,word,hash,locale,always_check,asset_offset
 4092,非人,c8f8b08a1f0fe24a811e1cdeb11e1959,ja-JP,False,635549
 4093,とらんぽりん,c95d68758412d46dc5d575480ff66042,ja-JP,False,635626
 4094,でかせぎ,c95ee0995ecd3b32ee9580ea620a3fc8,ja-JP,False,635703
+4095,しゅがーかっと,c987f293bb4bfa9c2af1e73f946e1805,ja-JP,False,635780
 4096,けとう,c98f1dca02c4289b20374d0383bd1bb1,ja-JP,False,635857
 4097,イタマエ,c9ada1bb71e0c223d773b6be81d11277,ja-JP,False,635934
 4100,健全なる精神は健全なる身体に宿る,c9f3a6e8be7765483b0814d5accff057,ja-JP,False,636165
@@ -3912,6 +4031,7 @@ row_index,word,hash,locale,always_check,asset_offset
 4123,えすきもー,ccb368e1a13d96c64f0e63146a6843fd,ja-JP,False,637936
 4124,しんしょうじ,ccb783712c820f6cbe8e954846bbbb0b,ja-JP,False,638013
 4125,えいず,ccdf8dcf8eb8fd85c7a8212dacbfb9d1,ja-JP,False,638090
+4126,だぶりゅーしょっく,cce4bf01c59c6d0fd1a656d92b2b91ed,ja-JP,False,638167
 4127,たれながし,ccee14fbb00468c0a214616053ccf9c0,ja-JP,False,638244
 4128,マジックインキ,cd07f2f3f2f9d7e8071d04decb96576c,ja-JP,False,638321
 4129,ブルーマウンテン,cd2e27f4569b9c9fb664b0a7ca619e6b,ja-JP,False,638398
@@ -3923,6 +4043,7 @@ row_index,word,hash,locale,always_check,asset_offset
 4135,ゴウビョウ,cdd90604ca1b52f5fd08c63cd95aa545,ja-JP,False,638860
 4136,野放し,ce06efc8e2b8eccf16d93ef22649b4e7,ja-JP,False,638937
 4137,ぐんもう,ce0e4784c5547c0446130341945497c5,ja-JP,False,639014
+4138,ゲンシバクダン,ce49fe7f698708edcc66b10cc400c601,ja-JP,False,639091
 4139,ふろや,ce5fdba9d5d8af546e4274b6163d7b89,ja-JP,False,639168
 4140,くらくしょん,ce6a565803fcab434196b69a62f78dbd,ja-JP,False,639245
 4141,はくち,cea55367f594d3a5dbcdbbc38228474f,ja-JP,False,639322
@@ -3939,6 +4060,7 @@ row_index,word,hash,locale,always_check,asset_offset
 4152,殺人鬼,d0128c9f9091f02d054a8c211e68cba5,ja-JP,False,640169
 4153,ロウムシャ,d062b48f7de3ebb270d9ec0f381e4140,ja-JP,False,640246
 4154,ガイチ,d07ec97ec96413c4cf93ea17063adbde,ja-JP,False,640323
+4155,えあろばいく,d08581f64f8d5e70f428dfd0c2695a98,ja-JP,False,640400
 4156,ちんこ,d097f04a2dcf987726911e57350b3d49,ja-JP,False,640477
 4157,土左衛門,d0a6721ba365a0e466b8b28371f0e157,ja-JP,False,640554
 4158,カワキリ,d0f003203aa53c1b9dca30eecfb7cb31,ja-JP,False,640631
@@ -3948,6 +4070,7 @@ row_index,word,hash,locale,always_check,asset_offset
 4162,キグルイ,d12e159a2b0633c6c5fa0afd9fcb3656,ja-JP,False,640939
 4163,おーびす,d1357e559a759c535a3f00f90a48ce52,ja-JP,False,641016
 4164,ぶたごろし,d1a7a60edc67f475e71041590494b519,ja-JP,False,641093
+4165,エイチショック,d1c1f9f2d63ddac07eb4082e651a888c,ja-JP,False,641170
 4166,イシャ,d22ec84ac52b99e14afbf3699634d825,ja-JP,False,641247
 4167,不具者,d2395253c6eeb2941e0e2d544fad20e7,ja-JP,False,641324
 4168,がちゃ目,d2b32941739231ee6b1b6859eebe1487,ja-JP,False,641401
@@ -3962,9 +4085,11 @@ row_index,word,hash,locale,always_check,asset_offset
 4177,こーく,d3fc58d00bdadf7253f6f8840eae49d8,ja-JP,False,642094
 4178,尻拭い,d43340a50ba7fe8b1092c136338f7d6f,ja-JP,False,642171
 4179,ジョウ,d4f450b1b8ff2237cd2d18cf58d49b6f,ja-JP,False,642248
+4180,ぜっとしょっく,d5426e084e4bf8a521fc6969972829d2,ja-JP,False,642325
 4181,イシヤ,d59a6660972a35929f85a394fa8f25f3,ja-JP,False,642402
 4182,サヨク,d5bcf3667e123f0f4661b218c18347ac,ja-JP,False,642479
 4183,キョウキ,d5c4f9b7b9a9c6b120e53d32b6d90c00,ja-JP,False,642556
+4184,かみがたのざいろく,d5cc8c5c57420887ee26f9dce595c842,ja-JP,False,642633
 4185,おおわらわ,d6215865a2b1506ac5699d5ed5ad7bcb,ja-JP,False,642710
 4186,せっくす,d6423f67b1237aeec519d0e0d0318a9a,ja-JP,False,642787
 4187,保母,d655e20659881be498a38a19e66f3231,ja-JP,False,642864
@@ -3983,6 +4108,7 @@ row_index,word,hash,locale,always_check,asset_offset
 4201,ごうかん,d793542a49997e771fe7d1514d1a64e3,ja-JP,False,643942
 4202,よつつじ,d7a5fcea6d9322697246a6e55a753297,ja-JP,False,644019
 4203,白痴,d7c46d7259d84f400a2c729694624ea1,zh-TW,False,644096
+4204,ごきぶりほいほい,d7d6fcd1415e813e37a45971f2eb24ad,ja-JP,False,644173
 4205,将棋倒しになる,d7e12581c99ce7e464be349ed4301648,ja-JP,False,644250
 4206,あたまがおかしい,d8495245cc5404467beaec979f46b2f7,ja-JP,False,644327
 4207,ポッポヤ,d868d4c6d061b2f5ac34bc7f9feb9d16,ja-JP,False,644404
@@ -4031,13 +4157,16 @@ row_index,word,hash,locale,always_check,asset_offset
 4252,ジョサンプ,de88aa06d4bd233dbde05ab70f8e87f0,ja-JP,False,647869
 4253,内親王,de9feb0372779e505e3a560e189b23d2,ja-JP,False,647946
 4254,どやがい,debae00c70f1a1c5d357084bf850c26e,ja-JP,False,648023
+4255,ワイショック,dece87ac79ba0977367f5a5f266c33dc,ja-JP,False,648100
 4256,のうたりん,def4742836185b4e689f42dbf8f835a5,ja-JP,False,648177
 4257,きょうじょ,df01efa44db06c8ee415bf327b25411d,ja-JP,False,648254
+4258,ニッカジヘン,df04cdd1aa5fc8b4994473c68f4626c4,ja-JP,False,648331
 4259,嬢,df1b87ad3669da87a52473c5d7e2c392,ja-JP,False,648408
 4260,げんしばくだん,df25205486586b0a94d9ececb579f1b9,ja-JP,False,648485
 4261,てんぼう,df2f0e17b00f3ee02ab38097a76e20f7,ja-JP,False,648562
 4262,てふろん,df3de52c159cc8272fd57e15e096426c,ja-JP,False,648639
 4263,ケットウ,df677806b48a63b009fc160b3bee7b5b,ja-JP,False,648716
+4264,アールショック,df923a0a4d15f672bd6edebd07a5f0c2,ja-JP,False,648793
 4265,やばい,dfa4129adb6634f54d5d1c0e2ab07fa5,ja-JP,False,648870
 4266,イジメ,dfa5c72cb1be9744301e6ca6597b7e20,ja-JP,False,648947
 4267,ナンブノサケノハナマガリ,dff204b469c1dd0824a1329aec4e559a,ja-JP,False,649024
@@ -4062,6 +4191,7 @@ row_index,word,hash,locale,always_check,asset_offset
 4287,とくしゅがっきゅう,e2bb4899af7a7f6a877ace40aadc8a7b,ja-JP,False,650564
 4288,シンノウ,e3250d923fddf467fafc63fa569ecf23,ja-JP,False,650641
 4289,しんしょう,e332c64afa14c1012e68a920ef12e893,ja-JP,False,650718
+4290,まじっくてーぷ,e339a647361ade9c68251a9822f01a63,ja-JP,False,650795
 4291,ブタ箱,e389504230b6385d297ba1c0b8761bf3,ja-JP,False,650872
 4292,ニンソク,e3c001d7848db7310f49c0dcb1814b19,ja-JP,False,650949
 4293,首を刎ねる,e3d97caa37bacf13263567f516a85a00,ja-JP,False,651026
@@ -4096,6 +4226,7 @@ row_index,word,hash,locale,always_check,asset_offset
 4324,ぽりたらい,e7c6b2d75989a1fabaf6dbcffa3f052a,ja-JP,False,653413
 4325,確信犯,e7db81692b24d90f0c915ed5fb7fd2f3,ja-JP,False,653490
 4326,おわい屋,e7fedce93663146882bddbf43dfdbc69,ja-JP,False,653567
+4327,ダイトウアセンソウ,e81edf1fe25b9805e5d4c7caed5a3422,ja-JP,False,653644
 4328,肌色,e821f9ba10dcdef9efa4e1350f639142,ja-JP,False,653721
 4329,しゃぶ,e85a52adaaff665c10b38c782065cbc2,ja-JP,False,653798
 4330,スベリドメ,e877f96b17c82020c56d955e2aae3982,ja-JP,False,653875
@@ -4146,10 +4277,12 @@ row_index,word,hash,locale,always_check,asset_offset
 4375,魚屋,ee2d11e8bad09c5635fee3c9ab7a3418,ja-JP,False,657340
 4376,みつこし,ee7efd58c7d4bd6a933e463aa153524c,ja-JP,False,657417
 4377,エイズ,eeb80f4dac2793ba67b14ece0e9d7433,ja-JP,False,657494
+4379,ニッカセンソウ,eeddabac53e2c5e4eb5329d52616d8db,ja-JP,False,657648
 4380,神主,eeece34f794934b97f7c169130081b2e,ja-JP,False,657725
 4381,しらこ,ef041ccf39c2dcfcb7c7ba46fe8b7b49,ja-JP,False,657802
 4382,番太,ef0bcb6ec085d9a966ab4e5bcc0829f6,ja-JP,False,657879
 4383,もうあいする,ef51493ba6b33e76be86bffb29915686,ja-JP,False,657956
+4384,オナベオンナ,ef56b617dce28296b0bf76ccfd3df30d,ja-JP,False,658033
 4385,そうぎや,ef940e96f5cd5ff66a35ceed1f6072b8,ja-JP,False,658110
 4386,しょうふ,ef95b43303a1a7ded1bc8cf6dfbd96d2,ja-JP,False,658187
 4387,クーリー,efc79595d5d6df0b850baf4ba2f1cfca,ja-JP,False,658264
@@ -4164,6 +4297,7 @@ row_index,word,hash,locale,always_check,asset_offset
 4396,葬儀屋,f0c2445563e4a253af79bca69101608d,ja-JP,False,658957
 4397,藪医者,f0c4c8202702bc4fb16c268cf65643b3,ja-JP,False,659034
 4398,ちかめ,f0ce144c4c1f5ac2c0e2e32a224db92a,ja-JP,False,659111
+4399,エスショック,f105ffb11f2619d065a3822c260bf107,ja-JP,False,659188
 4400,すらむ,f14a90e3a97242749b27e863c29b6c27,ja-JP,False,659265
 4401,ハントウジン,f173a45ff6f45aabeb9bf8debe8e871b,ja-JP,False,659342
 4402,おわいや,f1af51ac72500d1456ce2e39f3c17b27,ja-JP,False,659419
@@ -4196,6 +4330,7 @@ row_index,word,hash,locale,always_check,asset_offset
 4431,コジイン,f5837351f84a1a4a05e625185d4fb92b,ja-JP,False,661652
 4432,ヒロヒト,f583e69397eb9ac3e0eaa7d47f42c1bc,ja-JP,False,661729
 4434,未開人,f5a72cc971d4e93e8c198c92b4eca6be,ja-JP,False,661883
+4435,けーしょっく,f5aba82e6d8bfa1d26bdccdc97297945,ja-JP,False,661960
 4436,くろこう,f5be2e786f93e0a3bba8ddec16531fa0,ja-JP,False,662037
 4437,看護婦,f5c905f1f28bfbaed5426308f7d9a7ec,ja-JP,False,662114
 4438,アラメン,f5da1b47d1a65d32fe8960d466287859,ja-JP,False,662191
@@ -4210,16 +4345,20 @@ row_index,word,hash,locale,always_check,asset_offset
 4447,出戻り,f76736d5f97dcb9f7b7e358ff10e6d2e,ja-JP,False,662884
 4448,ヨツアシ,f773ecaebfccb520c5c9582ae555e2df,ja-JP,False,662961
 4449,しょうりんじ,f7e8e39410540012a0a23062a7d73bfc,ja-JP,False,663038
+4450,きっくぼーど,f7f74a9e188d3451e015363eca35781b,ja-JP,False,663115
 4451,ブイシネマ,f80beb153eab48c9966f01b2cba6d5ce,ja-JP,False,663192
 4452,シャブチュウ,f8623f0a6d121659b46ca2ec1be29c59,ja-JP,False,663269
 4453,精神異常,f875c71251a34c2aef61d947dc19b0a0,ja-JP,False,663346
+4454,ゆーしょっく,f876a302a002aa46b0dfd8b1c35e3d18,ja-JP,False,663423
 4455,爆弾魔,f890c1d48e934ac71652ed3103c5e4cd,ja-JP,False,663500
 4456,どさ回り,f89217cba24e961fded7dbfb99780077,ja-JP,False,663577
+4457,アタマガオカシイ,f8a4dfe83aad8c7ab0d2d3569fc09268,ja-JP,False,663654
 4458,ばいしゅんふ,f8c855bc6f2c0628088c229e6f681649,ja-JP,False,663731
 4459,すみちおん,f8d9ba2789de0724ba2e4f2a974ed16b,ja-JP,False,663808
 4460,ブス,f8f90a59f3b10d0766570e7b745a7a97,ja-JP,False,663885
 4461,セイハク,f95cdc805331501fc2179dde5cdaa8a3,ja-JP,False,663962
 4462,レゴ,f96424056c3e018d48d3415c74aea39f,ja-JP,False,664039
+4463,すとりーとがーる,f98152aab63d0e75ee6bada825792eb4,ja-JP,False,664116
 4464,クルウ,f9fd701fbe0a86088678048bf99a1e57,ja-JP,False,664193
 4465,ぱんぽけい,fa07b3afc996c31a05f8fd1d3486d5f5,ja-JP,False,664270
 4466,パーマ屋,fa2f0249aeda3a403bd09c10be4ce5c2,ja-JP,False,664347
@@ -4239,15 +4378,19 @@ row_index,word,hash,locale,always_check,asset_offset
 4480,寝たきり老人,fbb37194aa871fb29296316e45d03ac8,ja-JP,False,665425
 4481,カクチョウイン,fbdbd67a0adb4e359d3d539913328ff5,ja-JP,False,665502
 4482,ニンチショウ,fbf1e13f013c1f88ce0fc0cefb67bfa2,ja-JP,False,665579
+4483,あくあらんぐ,fbfe13df474bd2864d13e794a6cb63df,ja-JP,False,665656
 4484,せいしんぶんれつびょう,fc079c68f678acc5fa8d62fe6a6bfdd5,ja-JP,False,665733
 4485,キュウジ,fc2b4cbb8ed8810bf14cdee8b625e772,ja-JP,False,665810
 4486,群盲象をなでる,fc51e8a8c49a575ea1081917b066c634,ja-JP,False,665887
+4487,ぴーしょっく,fc5c1eb35b7bd589da345aae13f20cf9,ja-JP,False,665964
 4488,クリーンヒーター,fc62acd85647a0e20a65c6707f5d699c,ja-JP,False,666041
 4489,親王,fd0a8465500e4adedd01276b7fab13d2,ja-JP,False,666118
 4490,ホットスポット,fd1238cd76fc5f8aa9372a5d76150eb9,ja-JP,False,666195
+4491,キューショック,fd14171df07e19bfe53794ba170df356,ja-JP,False,666272
 4492,エチゴノコメツキ,fd4572b1f5911b43d727e4c6ca6de8e0,ja-JP,False,666349
 4493,ハシタメ,fd838b1985ddb7746b781308f0db35d9,ja-JP,False,666426
 4494,ハイジン,fd8dad7073b41616dfba84dcf1d92485,ja-JP,False,666503
+4495,ジェイショック,fda239c8661be48c889843dae5f630cf,ja-JP,False,666580
 4496,脳たりん,fe1d2ce217228164ca6c009fb8051888,ja-JP,False,666657
 4497,おやかた,fe69decf33f43fd6af65c330c313f6ea,ja-JP,False,666734
 4498,ファンタ,fe832990e002654f1d57170951619e02,ja-JP,False,666811
@@ -4271,10 +4414,13 @@ row_index,word,hash,locale,always_check,asset_offset
 4516,보즤,0300bbe3943877df89d89e3e8c5530dc,ko-KR,False,668197
 4517,씨발년,034f898fc317ce4d351cc4de3c49b3d1,ko-KR,False,668274
 4518,미친세끼,0505fa476def2a629b350b585de20872,ko-KR,False,668351
+4519,느그에비,050ebbb030f1f005b5664ad4311bfcac,ko-KR,False,668428
 4520,조찐,05bb1fa42d4a6e65f4ad644b450597d6,ko-KR,False,668505
 4521,보ㅈㅣ,074a0eea401800fc3f6cfb5f3064a556,ko-KR,False,668582
 4522,씨발놈,0977c3c67d2f7f77bd9be89dcaf3b0ef,ko-KR,False,668659
+4524,ㅅㅣ발넘,0d0e818af0eaa2105d63678fe93362fc,ko-KR,False,668813
 4525,개새끼,0d950445c30761c47accccf1f6b4d39e,ko-KR,False,668890
+4526,걸레같은 년,0eb0d30f0ca9fe4b094999fbd379440a,ko-KR,False,668967
 4527,jaji,0eb3fa3ca14f932d0b3ba4cda5da3b97,ko-KR,False,669044
 4528,븅신,100ef06d93cd91a6ff072da2fc7f0a6f,ko-KR,False,669121
 4529,쉬밸,10b8d24264c247d4e5f239a1dccb1871,ko-KR,False,669198
@@ -4318,9 +4464,11 @@ row_index,word,hash,locale,always_check,asset_offset
 4568,ㅅㅣ팔,36b0bca9e8b4e8546a5ca7c17410785d,ko-KR,False,672201
 4569,김치녀,376751f230f56084a401fc5df21a3b73,ko-KR,False,672278
 4570,땡추,38314c9b5e094d8eec5b99ee5c0b945a,ko-KR,False,672355
+4571,자ㅈㅣ,38b7c2f373db1971af72e0d809f6201a,ko-KR,False,672432
 4572,미친넘,3aa4984a1398629e56eb96512cdebd72,ko-KR,False,672509
 4573,똘아이,3b72aa6c495ef80fbdb5b6020c4bab89,ko-KR,False,672586
 4574,쥐랄,3be95359bea734eef60a72535b4f8bc9,ko-KR,False,672663
+4575,ㅅㅣ팔넘,3cb340ea7d2ca84007c3fe973ba5e9bf,ko-KR,False,672740
 4576,씹치,3f0c32b63aa270403675be2adc287dd2,ko-KR,False,672817
 4577,죳까라,3f8c1ee54de6a4feb90cae738919a5dd,ko-KR,False,672894
 4578,조질래,3fa8a2023a26490bf855c789c95329d7,ko-KR,False,672971
@@ -4355,6 +4503,7 @@ row_index,word,hash,locale,always_check,asset_offset
 4611,화양년,618f3d83da6a9a28e99ac37aedf89aa4,ko-KR,False,675512
 4612,병쉰,622bb52af5ae7818e7f919922c334306,ko-KR,False,675589
 4613,죳까,62552004fe6c19712dc18bc703ee40a9,ko-KR,False,675666
+4614,ㅅㅣ팔놈,6308f2cad46a35d8ad349ecf0cc5ac3d,ko-KR,False,675743
 4615,창녀,67cad88ce7dbba4bc15b402a2cd5faa9,ko-KR,False,675820
 4616,썅넘,696d8ff51374c21410d6abc0c5a62bb0,ko-KR,False,675897
 4617,죳까는,6a1545ae97349dd51e3385de3ae007bb,ko-KR,False,675974
@@ -4388,6 +4537,7 @@ row_index,word,hash,locale,always_check,asset_offset
 4645,썅놈,7b28b971fe911db8ddb0df2043f3ae39,ko-KR,False,678130
 4646,개젖,7c0d3ea02ca8eb89b16fea2c1e88bbb4,ko-KR,False,678207
 4647,늬미,7dc74c4583e7e1aa93980dc5997ed644,ko-KR,False,678284
+4648,ㅅㅣ발뇬,7e3e5977393f55ceb231cc24627eea48,ko-KR,False,678361
 4649,썅뇬,7e536f618466e6768b038bd91b8d4143,ko-KR,False,678438
 4650,좆까라,8063c1c1ab6b58b141f3c1ca2feadf4c,ko-KR,False,678515
 4651,지랄,818877f0354b17d132e77668e445ec3c,ko-KR,False,678592
@@ -4414,6 +4564,7 @@ row_index,word,hash,locale,always_check,asset_offset
 4672,느개비,98da3f7cdeb182d3da47ec84e262427b,ko-KR,False,680209
 4673,찐따,99e5bb5bf31f1bc8152ab9ee816853dd,ko-KR,False,680286
 4674,지미랄,9a3f313db9cc913c8b37e3fda4de0123,ko-KR,False,680363
+4675,ㅅㅣ팔뇬,9af7844a4b4e0539b45371712bb93110,ko-KR,False,680440
 4676,빡유,9b31f2ed163fd0b53f851b225650c59e,ko-KR,False,680517
 4677,보지씹,9b417f45db69a37ece37d9bb90527d4c,ko-KR,False,680594
 4678,성노예,9cb7986ac474eb3258a6d62990ba9bfd,ko-KR,False,680671
@@ -4453,6 +4604,7 @@ row_index,word,hash,locale,always_check,asset_offset
 4713,개쑈,bc414210fbd856e68d58e826316f808d,ko-KR,False,683366
 4714,개쇗,bd5b508350e5fea54636cb7899a6bb30,ko-KR,False,683443
 4715,테러범,be175df25aa12e718078a9fbc0bf0a97,ko-KR,False,683520
+4716,ㅅㅣ발놈,be1da8a256b399e8bc2d9b3afe9ed900,ko-KR,False,683597
 4717,존나,bf7d02ff86d3f354546754a5809434f0,ko-KR,False,683674
 4718,게새끼,bf9030820f1940b668d7390fa7d6cc19,ko-KR,False,683751
 4719,개새,c1627f3a2b00ca9ba3d112847cecf55d,ko-KR,False,683828
@@ -4470,6 +4622,7 @@ row_index,word,hash,locale,always_check,asset_offset
 4732,창뇬,c9c8dda5ed1bb15bf3bedd4ab110f18c,ko-KR,False,684829
 4733,미틴넘,ca1b7e3f53cd9814829adfb0bca668c5,ko-KR,False,684906
 4734,사격수,cac29be430e39c4a8c91d8809ec76806,ko-KR,False,684983
+4735,씹쓰레기,cb32bf0c946a6da811dd3d9f7cbaa5c2,ko-KR,False,685060
 4736,좃나,ccca5e200b5a2a47b79d9a4442565609,ko-KR,False,685137
 4737,후빨,cd03cef5d009a8fd3032a5d727568684,ko-KR,False,685214
 4738,개좆,cd4ebde27a9dac528703ab4dd68c0d02,ko-KR,False,685291
@@ -4489,6 +4642,7 @@ row_index,word,hash,locale,always_check,asset_offset
 4752,도라이,dca1e6fde309a2276be32867fa43d3fd,ko-KR,False,686369
 4753,게또라이,de0226aea8f40ad7346f2def48574583,ko-KR,False,686446
 4754,쌍뇬,de3933cd6a2bd4cc92a2e98928e8cc04,ko-KR,False,686523
+4755,ㅅㅣ팔년,e34698651b3d697dc31cc3728b615d02,ko-KR,False,686600
 4756,캐놈,e3c2616116f71ff55e2280d9eba935cc,ko-KR,False,686677
 4757,샹뇬,e46a899d5ad41a5d7a639c79259ccebe,ko-KR,False,686754
 4758,개아들,e4e02493b107ef3c6c43d3ffd7c5f41c,ko-KR,False,686831
@@ -4501,6 +4655,7 @@ row_index,word,hash,locale,always_check,asset_offset
 4765,개뇬,ed19dc5aa736c558745dd82fd0278578,ko-KR,False,687370
 4766,캐시키,ed3d428b8148940ab6def3213c9d172f,ko-KR,False,687447
 4767,좆도,ed64a75119a1c2da92f885b291e37c56,ko-KR,False,687524
+4768,ㅅㅣ발년,edaee4bb02b5b5fb5aa55a94c684538d,ko-KR,False,687601
 4769,혐오자,ee0bd4d7378ae1f4c3886ecbea659e80,ko-KR,False,687678
 4770,땡중,f1725931c4715edcabcef8f24bd8773a,ko-KR,False,687755
 4771,뽀지,f1f2620d9e84e7b412eecb353f758af7,ko-KR,False,687832
@@ -4959,6 +5114,7 @@ row_index,word,hash,locale,always_check,asset_offset
 5225,pierdlu,a6e65eef3de72fdd9c7667e0925c723d,pl-PL,False,722790
 5226,przepierdalający,a72566a5d3afc9d6486123346e9ecf22,pl-PL,False,722867
 5227,żydzi,a7b3828634e1e26034166d4f57a091da,pl-PL,False,722944
+5228,dekapitatorka,a8ce1ecc38b088ebad4bf055c542c448,pl-PL,False,723021
 5229,pierdolnac,a8dc43b667767e7e1e1fbfede87aec75,pl-PL,False,723098
 5230,bzyknąć,a90cb5801fa1a1d5b54dea348494658d,pl-PL,False,723175
 5231,hejter,aa3060f9b2389d507dd053ab8209c6df,pl-PL,False,723252
@@ -5186,6 +5342,7 @@ row_index,word,hash,locale,always_check,asset_offset
 5456,chibis,042b70ddcbad6905936b4dd175666ea1,pt-BR,False,740577
 5457,ingnorantes,0488caa5cc6524351545c5ace7bf7df6,pt-BR,False,740654
 5458,otaria,04e7f8f26f4a176a2c2a82abd48b7eaa,pt-BR,False,740731
+5459,pedófulos,04eb3f5fd4ba7644dd08d793636831cf,pt-BR,False,740808
 5460,bucetona,056cdc7626f042efc1dad8f668bd2497,pt-BR,False,740885
 5461,piru,06257653ff574919d1f0269f721715fe,pt-BR,False,740962
 5462,peidos,06de6915c2efdb97317a17e597a0e52c,pt-BR,False,741039
@@ -5226,6 +5383,7 @@ row_index,word,hash,locale,always_check,asset_offset
 5497,bocetao,10f81ade8634293fa232137282fecf5b,pt-BR,False,743734
 5498,mamas,110d415e96220b1ca32331c985436531,pt-BR,False,743811
 5499,feioza,11d43a88f443e419a54f341ab5d041ad,pt-BR,False,743888
+5500,punhetão,12ad83ec7a40537480781a74c69a2b3b,pt-BR,False,743965
 5501,bundão,133d18c2a65d867070735fbb060fa211,pt-BR,False,744042
 5502,cuz+da,14a8c80f30cec0db6175aaba2fbbfa21,pt-BR,False,744119
 5503,bestoes,14ec9ba6a311794ee93f2e8378fbeddd,pt-BR,False,744196
@@ -5270,6 +5428,7 @@ row_index,word,hash,locale,always_check,asset_offset
 5543,punhetera,2552f26df5fb80e29a1fc6205370c7f6,pt-BR,False,747276
 5544,maconheira,25ff9fb65a9de24c916978d500307c2a,pt-BR,False,747353
 5545,mocreas,265af5e7fd55081de4b21f31525ce87d,pt-BR,False,747430
+5546,cunhões,26996ff5bb115da376bc54a5fdd1ad7d,pt-BR,False,747507
 5547,fedida,26d08ca1f6b294d7efcc35fc11f3d3bd,pt-BR,False,747584
 5548,casseta,2784a020bea78dce58be23204d1c8afb,pt-BR,False,747661
 5549,veadoes,284461bcff69e0fbcd26b41386621af8,pt-BR,False,747738
@@ -5308,10 +5467,12 @@ row_index,word,hash,locale,always_check,asset_offset
 5582,cuzão,35959755e2f371c8c2ef5c8cc2e41e57,pt-BR,False,750279
 5583,mondrongo,35affb5e180770556ec4cd7da3caff04,pt-BR,False,750356
 5584,cassetudos,35b50684afaed0ae47a85a8b85035682,pt-BR,False,750433
+5585,bestão,36bdd7c63bb5c94046552917c89b6b7b,pt-BR,False,750510
 5586,furada,36d9fa62796842edf6065ec6a258070b,pt-BR,False,750587
 5587,bossetao,3740768af7b1a7c5b2f82da964e0f00a,pt-BR,False,750664
 5588,burras,377763b6f696faaeebebab0f82e8e045,pt-BR,False,750741
 5589,cunhoes,37b4af9fe412532b2c8843718edaca00,pt-BR,False,750818
+5590,fudeção,37bcd800285eddfc1874e0d646637576,pt-BR,False,750895
 5591,nojento,37e52ca5ed0b8cc80e51171ef27b4a32,pt-BR,False,750972
 5592,gays,380524d8a1a8692b7bf88128e40790a4,pt-BR,False,751049
 5593,pintão,380628f11f33ddc38c039608c6c84996,pt-BR,False,751126
@@ -5346,6 +5507,7 @@ row_index,word,hash,locale,always_check,asset_offset
 5622,gostosonas,451cf9f9cc2f2042cb47dfdeee551e93,pt-BR,False,753359
 5623,mijadeiras,45386be40acd3ba8cf454d5398dcbdcc,pt-BR,False,753436
 5624,japas,45637e6830a2cbe7cb1b08c8c3aecbd5,pt-BR,False,753513
+5625,bucetão,45646a8c115657c2ab31ab7afab8b065,pt-BR,False,753590
 5626,piranha,457793502043b90155859334eea89f4a,pt-BR,False,753667
 5627,rabasso,457bddc2d563f88b0701da413aae078a,pt-BR,False,753744
 5628,vagabundo,46153da3b4022026f2209e4ebc2dbf3d,pt-BR,False,753821
@@ -5360,6 +5522,7 @@ row_index,word,hash,locale,always_check,asset_offset
 5637,chibundos,48fa01be9b4983ca5ab30b4ffb927ae3,pt-BR,False,754514
 5638,cruscredo,49098d5f774762a5ccc02c2921ef4109,pt-BR,False,754591
 5639,xanas,493d5676dc28d9c090bd215a3aceaa20,pt-BR,False,754668
+5640,fudeçao,493ff6f2329cd11eefb842b49817326e,pt-BR,False,754745
 5641,bossetona,49527c585f32da2e8288f106443ff5d0,pt-BR,False,754822
 5642,xibundos,49a3a71da39866d18d5e328c6edfeca5,pt-BR,False,754899
 5643,tarados,4a44b7d3eb4408e2228991cde8d87749,pt-BR,False,754976
@@ -5409,6 +5572,7 @@ row_index,word,hash,locale,always_check,asset_offset
 5687,sapatão,580ad9af39632abbbd56f53edbf3177c,pt-BR,False,758364
 5688,nogeira,58ca056c6cd9bb57197011f8511f4864,pt-BR,False,758441
 5689,punheteras,58d75567f8e6cf68cac761fd14dbcde5,pt-BR,False,758518
+5690,bussetão,58e64a831033089e55f195ce67a5e133,pt-BR,False,758595
 5691,ridículos,5943e246430c603c97576f9f5762d8ac,pt-BR,False,758672
 5692,pinta,59873e76597a700ffd981cc085301e5a,pt-BR,False,758749
 5693,manguaça,5a19155db26fbf2cb4275e0a3a3f5d94,pt-BR,False,758826
@@ -5418,6 +5582,7 @@ row_index,word,hash,locale,always_check,asset_offset
 5697,bocetas,5b0e494f323df6fab14d84d10841b133,pt-BR,False,759134
 5698,iscrotas,5bf5f61e1e158f2a338bf588ed345e5c,pt-BR,False,759211
 5699,viado,5c1b9c652b13b4457d938dd184d2cc78,pt-BR,False,759288
+5700,viadões,5c38a35831c6499d964c7a20ca86c0df,pt-BR,False,759365
 5701,debiloides,5c755191cefa44a7067d6f18c69b83fe,pt-BR,False,759442
 5702,xereca,5cc7bcce76f1be68fb4070328b8ec253,pt-BR,False,759519
 5703,diabos,5cdc6b60a249ab0d1a54c50f70107ea5,pt-BR,False,759596
@@ -5539,6 +5704,7 @@ row_index,word,hash,locale,always_check,asset_offset
 5819,rachados,86c5d063cb03558ab463593415d29176,pt-BR,False,768528
 5820,xecuda,8710ade37ee5a825312317d34fccb79f,pt-BR,False,768605
 5821,decepar,872403f1e392bc332b0e0494df452970,pt-BR,False,768682
+5822,bestões,87b1d778edc07c213a5699204aafcab4,pt-BR,False,768759
 5823,p1ca,8914cc137c1b2e157cac85e1897ae591,pt-BR,False,768836
 5824,f0do,897eb6769d35ff4a3f2f0cbf3f1a8789,pt-BR,False,768913
 5825,gostosona,8987e068bd06b7cf68370c7a4620d431,pt-BR,False,768990
@@ -5570,12 +5736,14 @@ row_index,word,hash,locale,always_check,asset_offset
 5851,cachorro,90976ea2d90a736d20752db47ba9143b,pt-BR,False,770992
 5852,sacana,90c4df194c5c3c6617c6a6682820cbae,pt-BR,False,771069
 5853,viadinho,90e4ff5175d012682e919ed9a15808a6,pt-BR,False,771146
+5854,rabaço,90e69e67a8d351d4beafbc9803183d9a,pt-BR,False,771223
 5855,corno,90f3d2f1d39f42606b5d995b5fd0e47c,pt-BR,False,771300
 5856,boazuda,9313a0c620ae8a2db132a091fe2bd7d0,pt-BR,False,771377
 5857,machonas,937b41fb9d9988c237fd4bca0e8cd257,pt-BR,False,771454
 5858,bossetonas,93cc91b3a877a9081f23c1b4aa87916e,pt-BR,False,771531
 5859,trouxas,93d3e779953886235cda4d2dc06ef28b,pt-BR,False,771608
 5860,tesao,94717a5ad7ae21858fa100e98da8e968,pt-BR,False,771685
+5861,bossetão,947bcc6cd493790e357bec6a25acf3a0,pt-BR,False,771762
 5862,ladras,94ac729e5cb77988890c6dcacc062485,pt-BR,False,771839
 5863,foda,94bcf29c1646d2ef4f8f3db26b1144e0,pt-BR,False,771916
 5864,droga,94d8e5b4b184a91fdb80adde0ddcd011,pt-BR,False,771993
@@ -5592,12 +5760,14 @@ row_index,word,hash,locale,always_check,asset_offset
 5875,bebado,98e51e20836d1f32252a28cecc876611,pt-BR,False,772840
 5876,degolar,9925ab854529dbbaea69119244914f42,pt-BR,False,772917
 5877,canalha,99b6f9addf7baf8b708162beda775ae3,pt-BR,False,772994
+5878,gostozão,99da3e00fb977ca0e7e68f6029421fa8,pt-BR,False,773071
 5879,machorra,99f996988e44e4ff48c5804599752f1f,pt-BR,False,773148
 5880,fedido,9a45d67269ad001add0a40fa85a1bf57,pt-BR,False,773225
 5881,cocaina,9b7a5e5a55b12ca19fcaee29bed2c7f7,pt-BR,False,773302
 5882,fodidos,9c0692e8cbcddad88a5b5ea94b8f30ab,pt-BR,False,773379
 5883,estupidas,9d6609cbda392a38301f7569fd0cdb81,pt-BR,False,773456
 5884,ridiculas,9d97a266cc725c2feff489a1dca41c5e,pt-BR,False,773533
+5885,veadão,9e08aedff93e21767229e8caf0430379,pt-BR,False,773610
 5886,cretina,9eb9b03aa483c08711c19cde9dd821bf,pt-BR,False,773687
 5887,rachadinhos,9ec5da8c2b30207c98cfad812e606113,pt-BR,False,773764
 5888,imbecil,9ede87649a3c34d9b700747cc2b30097,pt-BR,False,773841
@@ -5665,6 +5835,7 @@ row_index,word,hash,locale,always_check,asset_offset
 5950,xoxotas,b323bf6805f2eec00cf3804244a828e6,pt-BR,False,778615
 5951,otarios,b492afb9b0e4afe25c2b882195dcf167,pt-BR,False,778692
 5952,punheta,b4b0eb33ae53d050bf772dfc50c24419,pt-BR,False,778769
+5953,cunhão,b55fdf732ee7b96eadeae6629d1cacaa,pt-BR,False,778846
 5954,cus+do,b5832c479a99ddad36dedb73a070cab4,pt-BR,False,778923
 5955,estúpidos,b5c33180e09fb90b76e1a7b891f81e89,pt-BR,False,779000
 5956,homosexuais,b5f40029cb22066c22b2656393d8fbef,pt-BR,False,779077
@@ -5809,15 +5980,18 @@ row_index,word,hash,locale,always_check,asset_offset
 6095,cassete,ecfbd0b44bda4879e07c653ee7fd51b8,pt-BR,False,789780
 6096,sapatões,edd57e7db02e38b53e70d1a1198b539a,pt-BR,False,789857
 6097,gostosoes,ee2e6fdb4459c85cb9a33dcf0132c441,pt-BR,False,789934
+6098,pedófulo,ee752bcde463964e946b1258ffd07736,pt-BR,False,790011
 6099,nojeiras,ef15821c3823eff5fef978a8ae99ac0f,pt-BR,False,790088
 6100,boasudas,ef84fc13c64d9297cc42717f09400256,pt-BR,False,790165
 6101,cachorros,efa463cf1e4cb2c3cae6409e251846fb,pt-BR,False,790242
 6102,babacas,f0cce48e9a4a776138adb18cec923775,pt-BR,False,790319
+6103,bocetão,f0d9ebe6cc09871ddb16074b4237b500,pt-BR,False,790396
 6104,cruz-credo,f17af1075b0cccfc1b7cfc34b100ceb0,pt-BR,False,790473
 6105,bixinha,f2107db6b8079bdd9a46e1f97ffd4c23,pt-BR,False,790550
 6106,safados,f2362b1234420f1199d3a42880e3b4b6,pt-BR,False,790627
 6107,trolhas,f266b1bfe6408a72709846b01696dc9c,pt-BR,False,790704
 6108,peitos,f2e4d7c68400656cacc2fefdedd657c2,pt-BR,False,790781
+6109,cusões,f31f535399a3757e351d2fd4b8b59d5d,pt-BR,False,790858
 6110,curalho,f378e0ce8cc8139122a6a00937d4e9b0,pt-BR,False,790935
 6111,ridícula,f3b06c9fc5920828c33e8f3faf526c24,pt-BR,False,791012
 6112,fudecao,f3fa010146abffc29593913e307b4715,pt-BR,False,791089
@@ -5845,6 +6019,7 @@ row_index,word,hash,locale,always_check,asset_offset
 6134,prostibulos,f8d7374b7a6c90ab300eaf473d36a761,pt-BR,False,792783
 6135,estuprar,f907a3606a5a2889d8bb91012e741ad7,pt-BR,False,792860
 6136,leproso,f9738a094ed5accecdb39ed1d5014276,pt-BR,False,792937
+6137,fudecão,f977184433e4e8339ce3c04341e4828c,pt-BR,False,793014
 6138,veadinho,f982f5b363ec239bf37dc08c83344c3c,pt-BR,False,793091
 6139,crus-credo,f98a70053e63bec647b2d1ce3b660ad6,pt-BR,False,793168
 6140,esperma,f9a3bac17cd116fcc8383ddd8c27896e,pt-BR,False,793245
@@ -5852,6 +6027,8 @@ row_index,word,hash,locale,always_check,asset_offset
 6142,estrupar,fa5ec671558e49ee4a6e7bf9cb8e864b,pt-BR,False,793399
 6143,pervertidos,fa91c32abee0c174e82b98c633168caa,pt-BR,False,793476
 6144,demônios,fba584379da7f2286860d9de0ba36fad,pt-BR,False,793553
+6145,veadões,fc5220372ced4301f0a2b9e5738aa51a,pt-BR,False,793630
+6146,gostozões,fc572c3077531a88985e1a947556790f,pt-BR,False,793707
 6147,punhetona,fc87ac10960ae0bb5b28ef355be2c39a,pt-BR,False,793784
 6148,ridicula,fcb62d1270c17e506bc8904a54291a9a,pt-BR,False,793861
 6149,mocreia,fd889145ca4aecfc75dc839de1363594,pt-BR,False,793938
@@ -5897,6 +6074,7 @@ row_index,word,hash,locale,always_check,asset_offset
 6190,сволочь,09f5418044b58e23799d9c18881b1b0f,ru-RU,False,797095
 6191,сика,0a0b7eaa68868215ace65b1f3bf07318,ru-RU,False,797172
 6192,хайло,0a2a6ee47b5cba67c3eb931ec371fefe,ru-RU,False,797249
+6193,хуелюбивая,0a35b0ff8a57a7b92e9a03d199ac304a,ru-RU,False,797326
 6194,хуедрыга,0a37f5c5a55e2c47de249013b5c822ad,ru-RU,False,797403
 6195,дохуякаться,0a6b48463e15e0339b3220537b10e3b3,ru-RU,False,797480
 6196,говно,0a7cefd9f8244303dbd4954342b014a9,ru-RU,False,797557
@@ -6143,6 +6321,7 @@ row_index,word,hash,locale,always_check,asset_offset
 6444,допиздяхать,4584d81625f83863a4533abb9850a985,ru-RU,False,816653
 6445,вхуякивание,458789ff7081501a11803835e61ac743,ru-RU,False,816730
 6446,мудила,45a8821c0acce4524de261d0bef6b54b,ru-RU,False,816807
+6447,пиздопроушина,45b4ec9139c28c8604634cc0f06fa60b,ru-RU,False,816884
 6448,упиздюхивать,45d43b97330ad2f6c33b80b357decc5a,ru-RU,False,816961
 6449,допиздошиваться,45f472228540a578cdd71799b1ebb773,ru-RU,False,817038
 6450,выебенивать,462cb3ecdd02f96cb38f7c4709a7b6a1,ru-RU,False,817115
@@ -6258,6 +6437,7 @@ row_index,word,hash,locale,always_check,asset_offset
 6563,выдрачивать,6805ebb1e69b4a44a74a0de40bb6091d,ru-RU,False,825816
 6564,въебенить,681c14773ca2bb1e3541576218cc23d6,ru-RU,False,825893
 6565,выпиздюливаться,684855268dc8c5c9188cfa0825458ce9,ru-RU,False,825970
+6566,заебцово,68c7d1d36642805f38c4c23e7129fa91,ru-RU,False,826047
 6567,стрелок,68e298892bb064bc06cfbdb85741a492,ru-RU,False,826124
 6568,выпиздярить,68fd518b3729b49e424c82752743847c,ru-RU,False,826201
 6569,вымандюриться,69756e90b79487ea15e91d4c191e4fe2,ru-RU,False,826278
@@ -6668,6 +6848,7 @@ row_index,word,hash,locale,always_check,asset_offset
 6982,дотрахать,c8c16e2e30d57e54f3512e6d92051722,ru-RU,False,858079
 6983,заебать,c9016d1e3b2779716fe8e1657563b897,ru-RU,False,858156
 6984,выпиздошивать,c91d0af3684564ad49507ae2c03d3569,ru-RU,False,858233
+6985,хуяслице,c960a1226cedbc54607e2f012d3e3edd,ru-RU,False,858310
 6986,допиздовывать,c97d5a2d86cf766cfe73f685363d5906,ru-RU,False,858387
 6987,чмень,c9f1974c259c4d94be041783248b2483,ru-RU,False,858464
 6988,обезглавливать,ca165962644129e41c28426bd10797a2,ru-RU,False,858541
@@ -6889,6 +7070,7 @@ row_index,word,hash,locale,always_check,asset_offset
 7209,爆菊花,04d77ade7f0581cd50b9a44472ccd1bd,zh-CN,False,875558
 7210,哈棒,062fb020b20905e7fd9afbef234b44ea,zh-CN,False,875635
 7211,白皮猪,066a704ba53d0a243cc4dee16bfc739f,zh-CN,False,875712
+7212,肏你妈的屄,07e2715ccd5121644685e76891b55b86,zh-CN,False,875789
 7213,根部,0808d97f50d7d7d685bfff543bef4daa,zh-CN,False,875866
 7215,淫女,091860cbf182503fe0f71803bd1d7860,zh-CN,False,876020
 7216,王八,09563589f134e60d506243dc96a0e23c,zh-TW,False,876097
@@ -6950,6 +7132,7 @@ row_index,word,hash,locale,always_check,asset_offset
 7276,深喉,410a3e0ce2f69eb56734c0049ccc7977,zh-TW,False,880717
 7277,润滑油,411d70627c8d9449e3df56676edbe0f5,zh-CN,False,880794
 7278,怂货,414bc1fe669214cae9bba8e7a72a1782,zh-CN,False,880871
+7280,去你奶奶的,43b3b0be9c54165c04e469171fe3f45b,zh-CN,False,881025
 7281,手淫,44f84859a54a5f47b0015d0bb91c28ae,zh-TW,False,881102
 7282,潮吹,453c693b8f6142999d9bb243945fadb5,zh-TW,False,881179
 7283,投弹手,46268466bd596fb721b88fe155cd0a19,zh-CN,False,881256
@@ -6989,6 +7172,7 @@ row_index,word,hash,locale,always_check,asset_offset
 7320,三八,6addd806badfe0f126101191288ac52a,zh-CN,False,884105
 7321,废物,6b8148c7b9714cd3ac9711668f43f301,zh-CN,False,884182
 7322,馒头,6ba84fc26ed1e185145e41c75cb7112c,zh-CN,False,884259
+7323,他妈巴子,6c08c11dd1cc63df60b4dd22820e8a13,zh-CN,False,884336
 7324,杀手,6c991cb763fc7769a0071fe40bb7954e,zh-CN,False,884413
 7325,口交,6d5b91ce316240d9729cd6764f95d6b4,zh-TW,False,884490
 7326,人渣,6d8b4a7c4914c73d56d044dda2c967c7,zh-TW,False,884567
@@ -7009,12 +7193,15 @@ row_index,word,hash,locale,always_check,asset_offset
 7341,蛙蛙,7a75220b2388c4cb387160dbd73ec34d,zh-TW,False,885722
 7342,屄,7c831530690ecff6aa76fb7f1244145f,zh-TW,False,885799
 7343,棒棒糖,7d06e8c0173695d5a9d5e46f76b49e3b,zh-TW,False,885876
+7344,高丽棒子,7e9fb0c4b359eff0df346cf6de1dfdff,zh-CN,False,885953
+7345,不是东西,7fa3085c9e4c30a6577fc76f7726da55,zh-CN,False,886030
 7346,鸡姦,7fd9893c8b60ab8fa0b1dfcffbfebb2f,zh-CN,False,886107
 7347,同性恋,8107c0354bda77d3cb7bba900f7a1b9c,zh-CN,False,886184
 7350,贱,81bc8e89964ce907173a129aae1d84f1,zh-CN,False,886415
 7351,娼妓,82bb41914a5db6c559c3765d99c4118e,zh-CN,False,886492
 7352,绞死,8322c157a19f52936182641fb7feb0b1,zh-CN,False,886569
 7353,打炮,83ce72821f3cecb09077f0301ed50d43,zh-TW,False,886646
+7354,阴户口交,83f54ccecdcdc2f6102478ba603e85fd,zh-CN,False,886723
 7355,滚,84a5ca53505a162bd0b85e921de43f84,zh-CN,False,886800
 7356,后庭,84e1f4af24b4a780f66232fd55900995,zh-CN,False,886877
 7357,奸杀,851a727be48972e2b76001cb3144b6af,zh-CN,False,886954
@@ -7024,6 +7211,7 @@ row_index,word,hash,locale,always_check,asset_offset
 7361,脑残,8970cc67d33700faf24ad1b518cca61a,zh-CN,False,887262
 7362,按摩棒,8bd4318bc5988d4d532e4b4bf5b3d886,zh-TW,False,887339
 7363,贱货,8d136cfcdb16877ca57019d77e19d483,zh-CN,False,887416
+7364,滚你妈屄,8d5b69d2e8edb6fdf5b97ff9e8d68835,zh-CN,False,887493
 7365,臭屄,8f0dd7ff293560a709b85985814c3b2a,zh-CN,False,887570
 7366,犯贱,8f1a939d11637f9599f506506ecf5101,zh-CN,False,887647
 7367,私刑,9162ade99f7c397f326fb2106a7da286,zh-TW,False,887724
@@ -7039,6 +7227,7 @@ row_index,word,hash,locale,always_check,asset_offset
 7377,老嫖,974649581370376905ff0a5875aac6c0,zh-CN,False,888494
 7378,足交,97b349f056c12257c9034a54f10d852b,zh-TW,False,888571
 7379,你妈逼,97eec055daefcc1ca8dab90bf2ab8771,zh-CN,False,888648
+7380,操你大爷的,98ccc6685f08985fdb9b31a5798df95b,zh-CN,False,888725
 7381,性侵,9a592ae0ecb7869a2b2d2f767155df5e,zh-TW,False,888802
 7382,伪军,9aa18664c075d5ed8757d6b097a3364b,zh-CN,False,888879
 7383,胯下物,9b1dbcb3cf2765a0a922599a786eb42b,zh-CN,False,888956

@@ -6,7 +6,7 @@ The checker already uses every hash. Cracking adds readable words to the recover
 
 The [README heatmap](../README.md) shows **imported** results. Run `npm run data:build` for current counts and remaining targets in `public/data/language-segments/summary.json`.
 
-The [coverage ledger](coverage.json) keeps masks, flags, target checksums and dictionary versions in one place. As of **15 November 2026**, **7,265 hashes have verified recoveries and 349 remain**. The latest import added 1,246 recoveries. All verified results in the ledger have been imported. Saved matches alone do not prove exhaustive traversal.
+The [coverage ledger](coverage.json) keeps masks, flags, target checksums and dictionary versions in one place. As of **15 November 2026**, **7,454 hashes have verified recoveries and 160 remain**. The two latest imports added 1,246 and 189 recoveries. All verified results in the ledger have been imported. Saved matches alone do not prove exhaustive traversal.
 
 | Search | Scope | Recorded coverage |
 | --- | --- | --- |
@@ -21,6 +21,7 @@ The [coverage ledger](coverage.json) keeps masks, flags, target checksums and di
 | Multilingual dictionaries, seed variants and compounds | All-locales unresolved subsets, up to 1,595 targets | Retained logs confirm each recorded candidate list exhausted. The last Hunspell list used a bounded set with partial Korean and Italian affix coverage |
 | Targeted six-character kana and four-character Hangul and Han searches | All-locales unresolved subsets, 507 or 354 targets | Retained logs confirm the recorded masks, combinations and hybrids exhausted. These added 24 distinct recoveries beyond the dictionary and variant passes |
 | Selected nine-character ASCII searches | All-locales unresolved subset, 422 targets | Retained logs confirm both the 59-prefix hybrid and restricted-alphabet mask exhausted, with zero matches |
+| Expanded kana, Han and Hangul searches, dictionaries and phrase variants | All-locales unresolved subsets, up to 349 targets | Retained logs confirm 28 searches exhausted their recorded candidate spaces. The combined output added 189 distinct recoveries |
 
 The Latin-script group includes English, German, both Spanish lists, French, Italian, Polish and Brazilian Portuguese. It overlaps those individual exports. Every coverage claim applies only to its recorded target snapshot: a completed Latin-only search says nothing about targets outside that input. Locale does **not** prove a word's alphabet. Unicode lengths above count repeated byte-pattern units, not arbitrary Unicode characters; the ledger contains the exact masks.
 
