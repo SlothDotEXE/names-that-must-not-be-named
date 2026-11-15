@@ -1,10 +1,10 @@
 {
-  "recordedAtUtc": "2026-11-12T22:58:03.637843+00:00",
+  "recordedAtUtc": "2026-11-15T17:08:12+00:00",
   "buildId": "26175237",
   "hashMode": 20,
   "salt": "phoenix",
   "hashcatVersion": "7.1.2",
-  "scopeNote": "All verified recoveries in the reconciled research snapshot are imported. Scope names describe the locale pool; coverage applies only to each run's exact target snapshot, not every original hash. Exhausting a Latin-only search does not establish coverage for other locales. A locale is not proof of candidate script.",
+  "scopeNote": "All recorded verified recoveries are imported. Scope names describe the locale pool. Each run covers its recorded target snapshot and candidate space. A locale is not proof of candidate script.",
   "evidenceNote": "This is a portable summary of the maintainer's external research ledger, not a copy of its private workspace. Historical evidence is identified by digest, not by local filename. The priority queue's retained session log records all seven masks exhausted; its verified results are merged.",
   "reconciliation": {
     "sourceLedgerSha256": "ca8f4182433b050e5414bbaf53ebeedd3ee803ac584e3fc5eaed8386d0c348fe",
@@ -12,7 +12,8 @@
     "recoveredHashes": 6019,
     "remainingHashes": 1595,
     "newlyImportedHashes": 2940,
-    "pendingMergeSessions": []
+    "pendingMergeSessions": [],
+    "asOfUtc": "2026-11-12T22:58:03.637843+00:00"
   },
   "initialEnumeration": {
     "status": "recorded-complete",
@@ -345,9 +346,9 @@
     }
   },
   "notCompletedInRecord": [
-    "Lowercase ASCII plus digits length 9 (proposed only).",
+    "Full lowercase ASCII plus digits length 9. The 15 November runs cover selected prefixes and a restricted alphabet.",
     "Lowercase ASCII length 11; lowercase/digits/punctuation/space length 8 (proposed, expensive).",
-    "Kana six-codepoint envelope (prepared but unrun; only speed-tested).",
+    "Full six-unit kana byte envelope. The 15 November runs cover narrower masks, selected prefixes and suffixes, and frequency-ranked alphabets.",
     "Other wordlists, accent/phrase rules and byte alphabets outside documented spaces; check open issues before claiming work."
   ],
   "limitations": [
@@ -355,5 +356,479 @@
     "Unicode masks enumerate UTF-8 byte products, not all words in a language; Hangul envelopes include invalid UTF-8 combinations, which the importer rejects.",
     "Historical -d 1 is machine-specific. Mode 20 does not lowercase candidates. Optimized kernel length limits apply to bytes.",
     "Hashcat session, restore, potfile and output paths are run-specific local state, not committed artifacts."
-  ]
+  ],
+  "latestImport": {
+    "baseCommit": "f3c9fce35726fb84c1a559ff572d8e2f65de2594",
+    "inputDatasetSnapshotId": "d3ef6fc20e29deba89f6dbbbc5bedb6a65ec4494dcb71b1b5f95d1c3caa0e6d7",
+    "outputDatasetSnapshotId": "d488b6b53c85eccd7e3a1b6fa21f0fd1d68ba32d797a10ec841ff49d438a7662",
+    "scope": "all",
+    "hashcatVersion": "6.2.6",
+    "computeBackend": "PoCL 6.0 CPU OpenCL",
+    "totalHashes": 7614,
+    "recoveredHashes": 7265,
+    "remainingHashes": 349,
+    "newlyImportedHashes": 1246,
+    "newlyImportedByLocale": {
+      "ar-AE": 1,
+      "de-DE": 4,
+      "en-US": 97,
+      "es-ES": 1,
+      "es-MX": 1,
+      "it-IT": 2,
+      "ja-JP": 436,
+      "ko-KR": 17,
+      "pl-PL": 72,
+      "pt-BR": 11,
+      "ru-RU": 600,
+      "zh-CN": 4
+    },
+    "newlyImportedByMethod": {
+      "dictionaries": 1177,
+      "seedVariantsAndCompounds": 45,
+      "unicodeBruteForceAndHybrids": 24
+    },
+    "evidence": "Counts per pass overlap. The method totals credit each distinct hash to the first matching method in the listed order. The final union was independently rehashed and accepted by the importer. Log and wordlist digests identify local evidence.",
+    "targets": {
+      "initial": {
+        "sha256": "8a62641c2ed98c1b3724b7073933092a5e2ac5df476db3b61ef56383e002ea18",
+        "count": 1595
+      },
+      "afterDictionaries": {
+        "sha256": "1e60e74ce67c5d2aaa41ae9510a417f55e75c368bd4324062d4bc9a9b4aee95c",
+        "count": 507
+      },
+      "afterVariants": {
+        "sha256": "949735f554682239cd6992ae9c3a366138d33f297fcf71ba3709132a73e4a9b4",
+        "count": 422
+      },
+      "afterCompoundsAndAdditionalDictionaries": {
+        "sha256": "33654daa3a02c8b9ab9cbacd2382c0a6028d85dda1db01d93e3069317e2a19cd",
+        "count": 376
+      },
+      "afterInitialUnicodePasses": {
+        "sha256": "e29419708914f6e795555514e950d3d8fe92259678d31f031f2520dd8557a771",
+        "count": 354
+      }
+    },
+    "dictionarySources": [
+      {
+        "url": "https://github.com/4troDev/profanity.csv",
+        "commit": "402f12c87cc4b06cbdd9577824a4a4cb8af6b38b"
+      },
+      {
+        "url": "https://github.com/AccelByte/profanity-filter-go",
+        "commit": "cf243c67e6737f909a27966df90ec328c092714e"
+      },
+      {
+        "url": "https://github.com/readme-SVG/Banned-words",
+        "commit": "1f18a58e8b63848d24c324672520c4a86a01bbe9"
+      },
+      {
+        "url": "https://github.com/bars38/Russian_ban_words",
+        "commit": "59079c3fa77012ca11201b713421aa7ce0f01913"
+      },
+      {
+        "url": "https://gist.github.com/DavidxDGM/d081a4297f37a90f11b53e81eb6d657d",
+        "commit": "631636565581892da8b601700a22a567019c99db"
+      },
+      {
+        "url": "https://gist.github.com/Endermanbugzjfc/875b62e63971fce55cec0b7ecb0b2734",
+        "commit": "1f6ec0d67675ddafd41a9f40872ff6ed77874025"
+      },
+      {
+        "url": "https://gist.github.com/Gamesaw-Drew/d17cfb23e7f1203dc1c534d55cfced0f",
+        "commit": "88d924e0e20c5d36fea18448fafdc005c8df279a"
+      },
+      {
+        "url": "https://gist.github.com/ZStrikeGit/b597aebdf8f7d0ef74a2cbc278a3a099",
+        "commit": "008a2129ae3340c12e3ac96d06f4b665b772dadd"
+      },
+      {
+        "url": "https://github.com/doublems/korean-bad-words",
+        "commit": "96d6ce489b64fcf258cd4c25b9a1b3a62b0f5558"
+      },
+      {
+        "url": "https://github.com/hlog2e/bad_word_list",
+        "commit": "f708a66376992cdcf83cbb11a258c4ab4588b2ae"
+      },
+      {
+        "url": "https://github.com/mifunetoshiro/kanjium",
+        "commit": "9ebca4589565c696e7c39e089e2e928ad65f678c"
+      },
+      {
+        "url": "https://github.com/lisuugi/korean-profanity-filter",
+        "commit": "4447832fa1f39ca589a42bdf7ef33b2fb5cb1b65"
+      },
+      {
+        "url": "https://github.com/mlnavigator/russian-bad-words",
+        "commit": "bda758f3bd63afaa76fb1e2220edfc16a98329fe"
+      },
+      {
+        "url": "https://github.com/abcboy101/badword",
+        "commit": "1a76c29d53f2f6e98c23b6849215e99801c4224b"
+      },
+      {
+        "url": "https://github.com/rominf/profanity-filter",
+        "commit": "1af0ecd873e867ed7a385c3f4b3466d30c3c60e9"
+      },
+      {
+        "url": "https://gist.github.com/shokai/3066551",
+        "commit": "c98657bb31b908e000340091803bd0b728d8ec5c"
+      },
+      {
+        "url": "https://github.com/VaneProject/bad-word-filtering",
+        "commit": "8000f5592c8dbb94a2c392a1554943ef284e4afc"
+      },
+      {
+        "url": "https://monoroch.net/kinshi/housouKinshiYougo.xml",
+        "sha256": "b5f8cf5146e206599b0669fd3d34e63414e8a7082fe24fe93badb3a617fd82d7"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/Aussiemon/Darktide-Source-Code/master/scripts/managers/localization/forbidden_words.lua",
+        "sha256": "2f77a67af65cd78422f2ba755cd40820c076d73fe4d0734deeddcdc19e1cf614"
+      },
+      {
+        "url": "https://arexplorer.zeroy.com/_s_c_r___profane_filter_8c_source.html",
+        "sha256": "8d963054837d246ee2303b4a6293e98c7242129278b000ae693be2cbc6e024f4"
+      },
+      {
+        "url": "https://github.com/scriptin/jmdict-simplified/releases/download/3.6.2%2B20260406125001/jmdict-examples-eng-3.6.2+20260406125001.json.tgz",
+        "sha256": "2c4be6ecc6ac433280ef3783820fd10ddc2263def932148a14ebff5275d3feff"
+      },
+      {
+        "url": "https://github.com/scriptin/jmdict-simplified/releases/download/3.6.2%2B20260406125001/jmnedict-all-3.6.2+20260406125001.json.tgz",
+        "sha256": "2c9271b64fa8a86da9f2a7528accde76448eedbef377e4a10cbecbd07c1c64a9"
+      },
+      {
+        "url": "https://sjp.pl/sl/odmiany/sjp-odm-20261101.zip",
+        "sha256": "d1837a8b9a44107694f57c04e4564e3baa0135f86f74c00786d71902e4ae99ad"
+      },
+      {
+        "url": "https://deb.debian.org/debian/",
+        "packages": [
+          {
+            "archive": "hunspell-ar_3.5.2014-11-08-5_all.deb",
+            "sha256": "69fec4fd9100d8f6b0c9c8b46a4ad50d8d60825034cf0d364af176bc5167cbf8"
+          },
+          {
+            "archive": "hunspell-de-de-frami_1:25.2.3-1_all.deb",
+            "sha256": "a9e1e04eff625e0a34ad60c97f696cbf97fd7ae246a04917bf0a1280ff5082f7"
+          },
+          {
+            "archive": "hunspell-de-de_20161207-15_all.deb",
+            "sha256": "9e7facff7aeda8b7cb973ab70a58335e5e02d96050fd8c8d72246263903b7895"
+          },
+          {
+            "archive": "hunspell-es_1:25.2.3-1_all.deb",
+            "sha256": "47d81d5d888c206c62305331e75ca4789d830070c9e6374af6ae9e77295b24cf"
+          },
+          {
+            "archive": "hunspell-fr-comprehensive_1:7.0-3_all.deb",
+            "sha256": "e51b3ada395f9f11a34b6cd961c5230d3d7ff17a92886c230953113c16f1a6cd"
+          },
+          {
+            "archive": "hunspell-it_1:25.2.3-1_all.deb",
+            "sha256": "4e6c1fe2b8ce78e6b63b1de4a5cb09fb8648224601f59cefe1bb1681bc99fe71"
+          },
+          {
+            "archive": "hunspell-ko_0.7.94-2_all.deb",
+            "sha256": "ce91a7fb8a717b3191faa9c4a3266ae91b94982c3c519e570ced6c50d5856b4d"
+          }
+        ]
+      }
+    ],
+    "runs": [
+      {
+        "id": "multilingual-dictionaries",
+        "targets": "initial",
+        "status": "exhausted-retained-log",
+        "flags": "-m 20 -a 0",
+        "candidateAttempts": 692712,
+        "rejectedCandidates": 0,
+        "verifiedResultCount": 1088,
+        "sessionLogSha256": "b1a5f3f3ea6bb4cc3ba9b6a6a1970ee0814744aedbe4fbaae809490aeefeef88",
+        "sourceGroups": [
+          "Russian profanity lists",
+          "Japanese broadcast terms and linked readings",
+          "JMdict",
+          "Kanjium",
+          "public game filter lists",
+          "multilingual profanity lists",
+          "Nintendo export text",
+          "generated kana variants"
+        ],
+        "candidateGeneration": "Preserve raw and trimmed lines, lowercase and casefold, NFC/NFD/NFKC, and generate targeted Japanese reading, kana, spelling and deletion variants.",
+        "candidateFileSha256": "10b98fde6de7ee79de79cba0ccdc336c636e6ca124c08bef567be3b03671e2f0",
+        "outputSha256": "43698fdfec4487a1bf9cc96d26e199035e22b1c69da9a06f6376566dda3336e0"
+      },
+      {
+        "id": "seed-variants",
+        "targets": "initial",
+        "status": "exhausted-retained-log",
+        "flags": "-m 20 -a 0",
+        "candidateAttempts": 6443458,
+        "rejectedCandidates": 0,
+        "verifiedResultCount": 197,
+        "sessionLogSha256": "a4fd6651560d68efcdaad552c43da2d681d39141ebb54688e97cc90815903555",
+        "candidateGeneration": "Derive locale-specific inflections, spelling and accent variants, leetspeak, punctuation and affixes from previously verified words. Deduplicate and remove the original seeds.",
+        "candidateFileSha256": "8aeddc524e839fb17afc0992ca6036c44d5770716b802fa7f8d612a029d512c5",
+        "outputSha256": "934cf66e566804b648154299c49ac80537de49acd62566caf19f934e9cd1f43d"
+      },
+      {
+        "id": "additional-dictionaries",
+        "targets": "afterDictionaries",
+        "status": "exhausted-retained-log",
+        "flags": "-m 20 -a 0",
+        "candidateAttempts": 7920128,
+        "rejectedCandidates": 0,
+        "verifiedResultCount": 86,
+        "sessionLogSha256": "23e2f110c2103ce22c5442ec99c714db7058f37e1fbd5f7fac7dfc840b1a3924",
+        "sourceGroups": [
+          "SJP",
+          "JMnedict",
+          "additional Nintendo match lists",
+          "Korean profanity lists",
+          "AccelByte dictionaries"
+        ],
+        "candidateGeneration": "Expand SJP inflected forms and fold Polish accents, include JMnedict spellings and kana variants, normalize game-filter and Korean lists, and exclude exact candidates from the first dictionary pass.",
+        "candidateFileSha256": "a122259e08b38c0ff99c97a07e634b927cff5499ef7abec437238d211fa09a4c",
+        "outputSha256": "ef2b54e23fbb602184fdf9c6298b6d458715d92172c1d6c223b0328a6d6f58c6"
+      },
+      {
+        "id": "same-locale-compounds",
+        "targets": "afterVariants",
+        "status": "exhausted-retained-log",
+        "flags": "-m 20 -a 0",
+        "candidateAttempts": 21327045,
+        "rejectedCandidates": 0,
+        "verifiedResultCount": 5,
+        "sessionLogSha256": "9edbe0bdf71c7644d780a196d1d2445ae8ca59ea1f665e244fd2a45c259d35bc",
+        "candidateGeneration": "Combine same-locale recovered terms with no separator, a space, or a hyphen.",
+        "candidateFileSha256": "b9deb29e756321ed4ce256ab67b226232b87f668ce59e81c4e44bf9d73d17364",
+        "outputSha256": "735dbbc3620ff5e1ecd14cff1f6bb9ee7a18c0e4dad573792325e3c067334774"
+      },
+      {
+        "id": "bounded-hunspell",
+        "targets": "afterCompoundsAndAdditionalDictionaries",
+        "status": "exhausted-retained-log",
+        "flags": "-m 20 -a 0",
+        "candidateAttempts": 14925653,
+        "rejectedCandidates": 0,
+        "verifiedResultCount": 3,
+        "sessionLogSha256": "30c72098f73b71c34a13ad53af899768f02195db60ccbaa390c241d0d95e851e",
+        "candidateGeneration": "Base entries and generated inflections from Debian Hunspell dictionaries, with Unicode normalization, accent folding and German transliterations.",
+        "coverageLimit": "Exhaustion applies to the retained prefix. It includes Arabic, German, Spanish and French, plus Korean and Italian base forms and partial affix expansion. Portuguese and Russian dictionary generation fell beyond the retained prefix.",
+        "candidateFileSha256": "1c97fd6ecc45fb9053df045724cbe634b93376c1d39ca1dae1234eb51866b25e",
+        "outputSha256": "6eb6407f6da0369b78a5326c5d9548d01a7801d2d6a5c617c1fa83ec5a9a749f"
+      },
+      {
+        "id": "short-ascii",
+        "targets": "afterVariants",
+        "status": "exhausted-retained-log",
+        "flags": "-m 20 -a 3 -O",
+        "candidateAttempts": 392382412,
+        "rejectedCandidates": 0,
+        "verifiedResultCount": 0,
+        "sessionLogSha256": "c45d429509e406c1ff4acf707008699371f1fae5c023f412020532cc345f08ea",
+        "masks": [
+          "?l?d?s,?1",
+          "?l?d?s,?1?1",
+          "?l?d?s,?1?1?1",
+          "?l?d?s,?1?1?1?1",
+          "?l?d,?1?1?1?1?1",
+          "?l?l?l?l?l?l"
+        ],
+        "maskSha256": "98112e3fff942a8a6feb5e1528249b4aec14846de8ad9f6ec97d9767f44b5504",
+        "completedMasks": 6,
+        "attemptsByMask": [
+          69,
+          4761,
+          328509,
+          22667121,
+          60466176,
+          308915776
+        ]
+      },
+      {
+        "id": "ascii-nine-prefix-hybrid",
+        "targets": "afterVariants",
+        "status": "exhausted-retained-log",
+        "flags": "-m 20 -a 6 -O",
+        "candidateAttempts": 3567504384,
+        "rejectedCandidates": 0,
+        "verifiedResultCount": 0,
+        "sessionLogSha256": "e6d407cbdf10edd8d8ff529f67074e805008c06e276dd208e4fe9273527bbfaa",
+        "candidateGeneration": "59 selected four-character prefixes from known entries.",
+        "customCharsets": {
+          "1": "?l?d"
+        },
+        "mask": "?1?1?1?1?1",
+        "candidateFileSha256": "ec32e1c732582c86c2cdb7b0614f3d6a58ef4b2889569866d1e432da2978cf53"
+      },
+      {
+        "id": "ascii-nine-restricted-alphabet",
+        "targets": "afterVariants",
+        "status": "exhausted-retained-log",
+        "flags": "-m 20 -a 3 -O",
+        "candidateAttempts": 5159780352,
+        "rejectedCandidates": 0,
+        "verifiedResultCount": 0,
+        "sessionLogSha256": "24e61ff1ab16fb3be970dc3328f1056e4611ccf8114830391687ffe96be4d658",
+        "customCharsets": {
+          "1": "aeinorst0134"
+        },
+        "mask": "?1?1?1?1?1?1?1?1?1"
+      },
+      {
+        "id": "kana-six-narrow-byte-masks",
+        "targets": "afterDictionaries",
+        "status": "exhausted-retained-log",
+        "flags": "-m 20 -a 3 -O --hex-charset",
+        "candidateAttempts": 102036672,
+        "rejectedCandidates": 0,
+        "verifiedResultCount": 0,
+        "sessionLogSha256": "4b3d5e42a36628719639d919559d0b87e451f75ed84ae8a552f709d6a41753a5",
+        "masks": [
+          "e3,81,8684978fa18b98938d9f99aea39bab8aa4a8,?1?2?3?1?2?3?1?2?3?1?2?3?1?2?3?1?2?3",
+          "e3,83,b381a7aa8388a9a4ab9e90958ea3ada184a2,?1?2?3?1?2?3?1?2?3?1?2?3?1?2?3?1?2?3",
+          "e3,82,a6a4b7afabb3b8adbfb9a2aabbb5b1acb4a8,?1?2?3?1?2?3?1?2?3?1?2?3?1?2?3?1?2?3"
+        ],
+        "maskSha256": "7521f12ecbf7fe68ecdf2dae88ff5078f62859777cbce31b845399982509d4e7",
+        "completedMasks": 3,
+        "attemptsByMask": [
+          34012224,
+          34012224,
+          34012224
+        ]
+      },
+      {
+        "id": "kana-six-prefix-hybrid",
+        "targets": "afterDictionaries",
+        "status": "exhausted-retained-log",
+        "flags": "-m 20 -a 6 -O --hex-charset",
+        "candidateAttempts": 905969664,
+        "rejectedCandidates": 0,
+        "verifiedResultCount": 3,
+        "sessionLogSha256": "3a51a90301ff8c2b91428757f419c99e0d811f382eef5ce2fcf3d8a73ae9185f",
+        "candidateGeneration": "128 frequent three-kana prefixes from the previously verified Japanese entries plus the first dictionary recoveries, ranked by count with sorted-word insertion order for ties.",
+        "customCharsets": {
+          "1": "e3",
+          "2": "818283",
+          "3": "808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebf"
+        },
+        "mask": "?1?2?3?1?2?3?1?2?3",
+        "candidateFileSha256": "8ec82139e829bf7109e7693692c327375409bffca7b0910cfe640dac0531909f",
+        "outputSha256": "410ba9bc677022bdd589ddc93f6a4714c1bc9a894ad36ffad5cd574a477fab11"
+      },
+      {
+        "id": "kana-six-suffix-hybrid",
+        "targets": "afterDictionaries",
+        "status": "exhausted-retained-log",
+        "flags": "-m 20 -a 7 -O --hex-charset",
+        "candidateAttempts": 905969664,
+        "rejectedCandidates": 0,
+        "verifiedResultCount": 6,
+        "sessionLogSha256": "137b556ee8b3e81f1df9f1ed055aa6a06da2142643d0b590ff5a0a9358b3c8f1",
+        "candidateGeneration": "128 frequent three-kana suffixes from the previously verified Japanese entries plus the first dictionary recoveries, ranked by count with sorted-word insertion order for ties.",
+        "customCharsets": {
+          "1": "e3",
+          "2": "818283",
+          "3": "808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebf"
+        },
+        "mask": "?1?2?3?1?2?3?1?2?3",
+        "candidateFileSha256": "a96ab1bfc6cf15467afd934af21af6631ba1d1458ee156ef7be2aceb4bf40c7d",
+        "outputSha256": "b179fb2c051315555df64f5ff0f99c4c04eeb81a25126dd0648e810886ad6fc5"
+      },
+      {
+        "id": "hangul-four",
+        "targets": "afterDictionaries",
+        "status": "exhausted-retained-log",
+        "flags": "-m 20 -a 1 -O",
+        "candidateAttempts": 100000000,
+        "rejectedCandidates": 0,
+        "verifiedResultCount": 4,
+        "sessionLogSha256": "6a9707062d41e0ba2247be842d6809ceb10e74e0be98fad8992c5991cf2032a8",
+        "alphabet": "개년게시놈뇬지넘미까발좆팔씨랄보나끼씹창죳라새살쉬좃이썅레범친자캐리니도질신상샹쌍조세스키기후광녀구마느다래추틴병쥐빠큐인양는화늠때부불알색아족같교치땡똘즤빡유뽀사수성폭옘오찐존좁갈강간꺄또샠섺셐쇅쇗",
+        "length": 4,
+        "candidateGeneration": "Pass the same ordered Cartesian product of 2 characters as both input dictionaries.",
+        "candidateFileSha256": "a146638131acdb277fe4037f17fed409374a935e9bc2e1631301d2f55167fdfd",
+        "outputSha256": "b5bd2b35afc4272491e9b46e14b3e9be58b66f5bd9b0b5b5060c3068b391d574"
+      },
+      {
+        "id": "han-four",
+        "targets": "afterDictionaries",
+        "status": "exhausted-retained-log",
+        "flags": "-m 20 -a 1 -O",
+        "candidateAttempts": 100000000,
+        "rejectedCandidates": 0,
+        "verifiedResultCount": 3,
+        "sessionLogSha256": "7e98892ec334d79bccf2ccfd67f44d71f79968b48e5503d40ebb257d7f181591",
+        "alphabet": "人子屋者殺女你盲夫手日交狂大爆部皇小病医三妈死性片落首那贱不屄逼老工鮮太支馬奶足精神射障気滑目中国民共乳二本的児王切婦淫棒奸杀屁物打阿鬼色舔鸡地公助男口八戦力媽低娘母身親朝台蛙后土娼暴毛蛋四百下具头房",
+        "length": 4,
+        "candidateGeneration": "Pass the same ordered Cartesian product of 2 characters as both input dictionaries.",
+        "candidateFileSha256": "c7139bea6d92546b044ceeedb7d9d827f31863957f988c9090dee156579dd9b0",
+        "outputSha256": "756d6bbe705e613fe123f0b0fd0857191b0a583b113009428161d8117594be44"
+      },
+      {
+        "id": "hiragana-six-24",
+        "targets": "afterDictionaries",
+        "status": "exhausted-retained-log",
+        "flags": "-m 20 -a 1 -O",
+        "candidateAttempts": 191102976,
+        "rejectedCandidates": 0,
+        "verifiedResultCount": 6,
+        "sessionLogSha256": "5e2331cbc6b93244548adb94aa394b0e5ea504623ea29e7975eaec603f2e1b9f",
+        "alphabet": "んういしーくちかょじこりきたるすのやっせらにおつ",
+        "length": 6,
+        "candidateGeneration": "Pass the same ordered Cartesian product of 3 characters as both input dictionaries.",
+        "candidateFileSha256": "99933191539b48de24747f39b12f519e0cf2523fb1420cf9eda64a5a0c534436",
+        "outputSha256": "9112ca9c737bbab64eb00a2b8bdcfdb707cbb616f832b07b8be1aa34340bc80c"
+      },
+      {
+        "id": "katakana-six-24",
+        "targets": "afterDictionaries",
+        "status": "exhausted-retained-log",
+        "flags": "-m 20 -a 1 -O",
+        "candidateAttempts": 191102976,
+        "rejectedCandidates": 0,
+        "verifiedResultCount": 6,
+        "sessionLogSha256": "b432b320cf2ebaa96edfc22aec16acecbd4215eba0f803aceaa8183c6ea5db27",
+        "alphabet": "ンウイシクーカコチョジキタリッストラヤルマアバオ",
+        "length": 6,
+        "candidateGeneration": "Pass the same ordered Cartesian product of 3 characters as both input dictionaries.",
+        "candidateFileSha256": "d805be6a3dd4f1e1ee8ceeee0f1fca3cd17a85f9b121330e322025b6bbe30f49",
+        "outputSha256": "288678d06feb2e5addc514f46ae40cf5adb657a3bdecf771c1722fa5e5638619"
+      },
+      {
+        "id": "hiragana-six-32",
+        "targets": "afterInitialUnicodePasses",
+        "status": "exhausted-retained-log",
+        "flags": "-m 20 -a 1 -O",
+        "candidateAttempts": 1073741824,
+        "rejectedCandidates": 0,
+        "verifiedResultCount": 1,
+        "sessionLogSha256": "23fb57ce90647aa092138e44240195855aec6f2bd603070e2f18e115d1a5647f",
+        "alphabet": "んういしーくちょじかこりきたっるすのらやせにおとつばゃまなあめさ",
+        "length": 6,
+        "candidateGeneration": "Pass the same ordered Cartesian product of 3 characters as both input dictionaries.",
+        "candidateFileSha256": "f88a703c5648ceb49b5ebd9b35dfdec988a153e5c015599e47431d09cda8f7c7",
+        "outputSha256": "0b0176efb3a268f7bab9e0b897a822bc9f81c5d1ee7aa891cc74dde5d032c9f9"
+      },
+      {
+        "id": "katakana-six-32",
+        "targets": "afterInitialUnicodePasses",
+        "status": "exhausted-retained-log",
+        "flags": "-m 20 -a 1 -O",
+        "candidateAttempts": 1073741824,
+        "rejectedCandidates": 0,
+        "verifiedResultCount": 1,
+        "sessionLogSha256": "49a52c465aeba923a27dafa9871f114e7f5f6052e944b4588ad80b1418d55f16",
+        "alphabet": "ンウイシークョカコジチッキタリストラヤルマアバオャセノロフサツケ",
+        "length": 6,
+        "candidateGeneration": "Pass the same ordered Cartesian product of 3 characters as both input dictionaries.",
+        "candidateFileSha256": "609f1ad7ccd16165707ebd9f330aede204728749caa4e8ad73acba2d5ac69383",
+        "outputSha256": "cc3c372fbe1fb56cddde0e52ba79661843ec6f72671e411ecd65de6dd26e4b21"
+      }
+    ]
+  }
 }
