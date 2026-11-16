@@ -19,6 +19,8 @@ I don't expect this project to bring the house down, but this was a fun afternoo
 
 [![Recovery progress by language](research/recovery.svg)](https://slothdotexe.github.io/names-that-must-not-be-named/#recovery)
 
+**Recovery tracker:** 7,454 of 7,614 hashes recovered (**97.90%**), with **160 remaining**. The latest import adds 1,435 verified recoveries; the site tracker and heatmap above use the same source data.
+
 Type a name into the checker, and results appear automatically after a short pause. English definitions appear when available. The checker searches all 14 language lists together, so a match does not necessarily mean a particular game screen or language will reject the name. The game may also use an updated online list or other validation rules. Recovered words may be offensive and are hidden on the site until revealed.
 
 Matching happens locally. Definitions automatically send flagged text to [Dictionary API](https://dictionaryapi.dev/), including the entire entry when it is itself a match. This site does not put input in its page URL, persistent storage, analytics or application logs. The external provider receives lookup requests; no claim is made about its retention.
