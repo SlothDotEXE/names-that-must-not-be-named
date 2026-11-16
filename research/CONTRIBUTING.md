@@ -6,7 +6,7 @@ The checker already uses every hash. Cracking adds readable words to the recover
 
 The [README heatmap](../README.md) shows **imported** results. Run `npm run data:build` for current counts and remaining targets in `public/data/language-segments/summary.json`.
 
-The [coverage ledger](coverage.json) keeps exact masks, flags, target checksums and dictionary versions in one place. It includes the reconciled research results as of **12 November 2026**: **6,019 verified recoveries and 1,595 remaining hashes**, including the completed longer Unicode queue. No recorded session is pending merge. Completion evidence remains qualified below; saved matches alone do not prove exhaustive traversal.
+The [coverage ledger](coverage.json) keeps masks, flags, target checksums and dictionary versions in one place. As of **15 November 2026**, **7,454 hashes have verified recoveries and 160 remain**. The two latest imports added 1,246 and 189 recoveries. All verified results in the ledger have been imported. Saved matches alone do not prove exhaustive traversal.
 
 | Search | Scope | Recorded coverage |
 | --- | --- | --- |
@@ -18,10 +18,14 @@ The [coverage ledger](coverage.json) keeps exact masks, flags, target checksums 
 | Pinned FrequencyWords dictionaries | All locales | Completed; original and lowercase candidates, not generated phrases |
 | Short Unicode byte masks | All locales | Observed `Exhausted`: kana 1–4 units, CJK/Hangul 1–2, Russian/Arabic 1–5 |
 | Longer Unicode queue | All-locales unresolved snapshot, 2,179 targets | Retained log confirms all 7 masks exhausted: kana 5, Hangul/CJK 3, Russian/Arabic 6–7; 584 new recoveries merged |
+| Multilingual dictionaries, seed variants and compounds | All-locales unresolved subsets, up to 1,595 targets | Retained logs confirm each recorded candidate list exhausted. The last Hunspell list used a bounded set with partial Korean and Italian affix coverage |
+| Targeted six-character kana and four-character Hangul and Han searches | All-locales unresolved subsets, 507 or 354 targets | Retained logs confirm the recorded masks, combinations and hybrids exhausted. These added 24 distinct recoveries beyond the dictionary and variant passes |
+| Selected nine-character ASCII searches | All-locales unresolved subset, 422 targets | Retained logs confirm both the 59-prefix hybrid and restricted-alphabet mask exhausted, with zero matches |
+| Expanded kana, Han and Hangul searches, dictionaries and phrase variants | All-locales unresolved subsets, up to 349 targets | Retained logs confirm 28 searches exhausted their recorded candidate spaces. The combined output added 189 distinct recoveries |
 
 The Latin-script group includes English, German, both Spanish lists, French, Italian, Polish and Brazilian Portuguese. It overlaps those individual exports. Every coverage claim applies only to its recorded target snapshot: a completed Latin-only search says nothing about targets outside that input. Locale does **not** prove a word's alphabet. Unicode lengths above count repeated byte-pattern units, not arbitrary Unicode characters; the ledger contains the exact masks.
 
-**Useful uncompleted work:** lowercase letters + digits at length 9; new dictionaries or phrase/accent rules; kana at six units (prepared but unrun; only speed-tested). Lowercase length 11 and punctuation/space length 8 were proposed but can be very expensive. None is a promise of recovery or a confirmed free assignment—check issues and the ledger first. A speed benchmark, runtime cap, partial output or `Cracked` target set is not proof that an entire candidate space was exhausted.
+**Useful uncompleted work** includes the full nine-character lowercase ASCII and digit space and the full six-unit kana byte envelope. The ledger identifies which subsets were searched. Lowercase length 11 and punctuation/space length 8 were also proposed and can be expensive. Check issues and the ledger before claiming a search. A speed benchmark, runtime cap, partial output or `Cracked` target set is not proof that an entire candidate space was exhausted.
 
 ## Claim a search
 
